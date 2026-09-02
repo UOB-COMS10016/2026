@@ -1,0 +1,5 @@
+- Webpage: https://uob-coms10016.github.io/2026/
+- Compile functional DSL to functional.js file:
+  - bash, sh: `runghc functionalPageDSL.hs > functional.js`
+  - nushell: `runghc functionalPageDSL.hs out> functional.js`
+  - sam: `runghc -package --ghc-arg=containers functionalPageDSL.hs > functional.js`
