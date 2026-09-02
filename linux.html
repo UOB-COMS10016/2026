@@ -98,6 +98,69 @@ If you have any problems while installing, try these tips:
   <li>In "test.hs", start typing some invalid Haskell code, e.g. <code>x = True && 'c'</code>. If HLS is working, you should see that VSCode underlines the error. You might need to give it a little bit of time to load.</li>
 </ul>
 
+<h2>SET UP SEARCH ENGINES (OPTIONAL)</h2>
+
+<h3>Chrome / Chromium</h3>
+
+<ul>
+  <li>"..." -> Settings -> Search engine -> Manage search engines and site search
+</li>
+  <li>
+    To the right of "Site search", click "Add" and add each of the following:
+    <ul>
+      <li>
+        DuckDuckGo (Private searches and no AI results)
+        <ul>
+          <li><b>Name:</b> NoAI DuckDuckGo</li>
+          <li><b>Shortcut:</b> noai.duckduckgo.com</li>
+          <li><b>URL with %s in place of query:</b> https://noai.duckduckgo.com/?q=%s</li>
+          <li><b>Suggestions URL with %s in place of query:</b> https://noai.duckduckgo.com/ac/?q=%s&type=list</li>
+        </ul>
+      </li>
+      <li>
+        Hoogle (Haskell API search engine)
+        <ul>
+          <li><b>Name:</b> Hoogle</li>
+          <li><b>Shortcut:</b> h</li>
+          <li><b>URL with %s in place of query:</b> https://hoogle.haskell.org/?hoogle=%s</li>
+          <li>Leave 'Suggestions URL with %s in place of query' blank</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>To the right of "NoAI DuckDuckGo", click '"..." -> Make default' to make it your default search engine</li>
+  <li>Now, normal searches will go through DuckDuckGo and typing 'h' + Space will search Hoogle.</li>
+</ul>
+
+<h3>Firefox (and derivatives)</h3>
+
+<ul>
+  <li>Burger menu/"|||" -> Settings -> Search -> Additional search engines -> Add search engine</li>
+  <li>
+    Add each of the following:
+    <ul>
+      <li>
+        DuckDuckGo (Private searches and no AI results)
+        <ul>
+          <li><b>Search engine name:</b> NoAI DuckDuckGo</li>
+          <li><b>URL with %s in place of search term:</b> https://noai.duckduckgo.com/?q=%s</li>
+          <li>(Click Advanced) <b>Suggestions URL with %s in place of search term:</b> https://noai.duckduckgo.com/ac/?q=%s&type=list</li>
+        </ul>
+      </li>
+      <li>
+        Hoogle (Haskell API search engine)
+        <ul>
+          <li><b>Search engine name:</b> Hoogle</li>
+          <li><b>URL with %s in place of search term:</b> https://hoogle.haskell.org/?hoogle=%s</li>
+          <li><b>Keyword:</b> h</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Under "Default search engine" select "NoAI DuckDuckGo"</li>
+  <li>Now, normal searches will go through DuckDuckGo and typing 'h' + Space will search Hoogle.</li>
+</ul>
+
 <hr/>
 
 At this point your system is ready for most of the COMS10016 unit and you are ready to start programming in C and Haskell. Further installations
