@@ -142,22 +142,22 @@ functionalPage =
             ]
         },
       Entry
-        { title = "ADTs, Polymorphism and Typeclasses",
+        { title = "ADTs, Polymorphism and Type Classes",
           spec =
             Lecture
               { slot = Second,
-                slidesFile' = Just (BBLectureCode "ADTsPolymorphismTypeclassesLive.hs"),
+                slidesFile' = Just (BBLectureCode "ADTsPolymorphismTypeClassesLive.hs"),
                 lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/6ff54ed428af4d1b9d25ea70135c572e1d"
               },
           materials =
             [ minSheet "https://forms.office.com/e/6fkHNR7iaW"
-            , lectureCode "ADTsPolymorphismTypeclassesLive.hs"
+            , lectureCode "ADTsPolymorphismTypeClassesLive.hs"
             , lectureCode "ADTsTemplate.hs"
             , lectureCode "ADTsBP.hs"
             , lectureCode "PolymorphismTemplate.hs"
             , lectureCode "PolymorphismBP.hs"
-            , lectureCode "TypeclassesTemplate.hs"
-            , lectureCode "TypeclassesBP.hs"
+            , lectureCode "TypeClassesTemplate.hs"
+            , lectureCode "TypeClassesBP.hs"
             ]
         },
       Entry
@@ -168,22 +168,22 @@ functionalPage =
     ],
     -- Week 4
     [ Entry
-        { title = "ADTs, Polymorphism and Typeclasses cont.",
+        { title = "ADTs, Polymorphism and TypeClasses cont.",
           spec =
             Lecture
               { slot = First,
-                slidesFile' = Just (BBLectureCode "ADTsPolymorphismTypeclassesLive.hs"),
+                slidesFile' = Just (BBLectureCode "ADTsPolymorphismTypeClassesLive.hs"),
                 lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/e0ac0f0e335d4589a517c97906c67aa61d"
               },
           materials =
             [ minSheet "https://forms.office.com/e/p70YZ9AvMK"
-            , lectureCode "ADTsPolymorphismTypeclassesLive.hs"
+            , lectureCode "ADTsPolymorphismTypeClassesLive.hs"
             , lectureCode "ADTsTemplate.hs"
             , lectureCode "ADTsBP.hs"
             , lectureCode "PolymorphismTemplate.hs"
             , lectureCode "PolymorphismBP.hs"
-            , lectureCode "TypeclassesTemplate.hs"
-            , lectureCode "TypeclassesBP.hs"
+            , lectureCode "TypeClassesTemplate.hs"
+            , lectureCode "TypeClassesBP.hs"
             ]
         },
       Entry
@@ -202,7 +202,7 @@ functionalPage =
             ]
         },
       Entry
-        { title = "ADTs, Polymorphism and Typeclasses",
+        { title = "ADTs, Polymorphism and TypeClasses",
           spec = Worksheet "sheet03.pdf",
           materials = sheets 3 ++ answers 3
         },

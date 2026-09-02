@@ -42,7 +42,7 @@ If you have any problems while installing, try these tips:
 <li><b>Reread the steps closely:</b> It's easy to skim instructions and assume you know what they're saying, but if you run into problems, make sure to <i>actually</i> read them. You might have missed something important.</li>
 <li><b>Turn it off and on again:</b> It might seem silly, but this works ~90% of the time because <i>initialising</i> a program with a valid state is much easier than <i>maintaining</i> a valid state. This could mean restarting a program, the terminal, or even your laptop.</li>
 <li><b>Try using a different WiFi network:</b> The most annoying problems are caused by the network, which can be particularly unreliable when 200-300 students are all trying to download a lot of data at the same time in the same place. Try switching from 'eduroam' to 'UoB Guest' (or vice versa), or even using a mobile hotspot if you have a particularly generous data plan (you will need to download gigabytes of data for this setup). You could also try doing the setup in a different place and/or at a different time. There's always the second lab, which should have fewer people.</li>
-<li><b>Check your firewall/antivirus/VPN:</b> It could be that your firewall, antivirus, or VPN is blocking network requests. Try temporarily disabling them to see if they're causing the problem. Third-party antivirus software is particularly bad for this sort of thing. The built-in Windows Defender is much better than most other antiviruses and it's less invasive too. In fact, you should probably go ahead and delete your third-party antivirus, it's almost certainly bloatware. If you have McAfee, you should nuke it from orbit.</li>
+<li><b>Check your firewall/antivirus/VPN:</b> It could be that your firewall, antivirus, or VPN is blocking network requests. Try temporarily disabling them to see if they're causing the problem. Third-party antivirus software is particularly bad for this sort of thing. The built-in Windows Defender is one of the best antiviruses out there and has the <a href="https://support.microsoft.com/en-gb/help/4456067/windows-10-switch-out-of-s-mode" target="_blank">lowest false-positive rate of all of them</a>. For an easy life, you can safely delete your third-party antivirus and switch to Windows Defender instead. If you have McAfee, you should nuke it from orbit.</li>
 <li><b>Ask a TA for help:</b> That's what they're there for! They might not know the solution immediately, especially if none of the above helped, but they can help you try to diagnose the problem and work towards a solution.</li>
 </ul>
 
@@ -56,6 +56,7 @@ If you have any problems while installing, try these tips:
     <li>Your system is not in S-Mode and your "Edition" is either "Windows 10 Home" or "Windows 10 Professional" or "Windows 11 Home" or "Windows 11 Professional" without "S Mode". If you need to switch out of S-Mode, follow the instructions on the <a href="https://support.microsoft.com/en-gb/help/4456067/windows-10-switch-out-of-s-mode" target="_blank">Microsoft Support Page</a>.</li>
     <li>If you use Windows 10 then "Version" must be at least 2004, including 20H2, 20H2, 21H1, 21H2. Version 1909 and before are unsupported. If you are running Version 1909 or earlier, you must update your system by going to "Settings -> Update & Security -> Windows Update", then checking for updates and installing any that are available.</li>
   </ul>
+<li><b>Ensure virtualisation is enabled on your laptop:</b> The WSL step relies on hardware virtualisation being enabled. This should be enabled by default in the majority of cases, but you can check whether virtualisation is enabled by clicking the Start/Windows button, typing "Windows features", selecting "Turn Windows features on or off", and then see if "Virtual Machine Platform" is enabled/ticked. If it's not, try to enable it. If you can't, <a href="https://support.microsoft.com/en-us/windows/experience/enable-virtualization-on-windows" target="_blank">follow this guide</a>.</li>
 <li>Unfortunately, the Chinese Family Edition (家庭中文版) of Windows <i>will not work</i> with the following instructions. This is because it restricts certain virtual machine features. You will have to install a different operating system (e.g. Ubuntu or Windows 11 Home), use a different computer with a supported OS, or use the lab machines. <b>NOTE:</b> Just because your Windows machine is from China or set to Chinese, doesn't mean it won't work. It's specifically 家庭中文版 which doesn't work. Windows 10 or 11 Home or Professional editions should work regardless of where they were purchased or the language settings (though English is appreciated, for the benefit of our TAs trying to help you).</li>
 </ul> 
 
@@ -72,10 +73,11 @@ If you have any problems while installing, try these tips:
       </ul>
   </li>
   <li>In PowerShell, run <code>wsl --set-default-version 2</code> (i.e. type "wsl --set-default-version 2" and press enter), then run <code>wsl --install -d Ubuntu</code>.</li>
-  <li>Once the command finishes, restart your computer (unless an Ubuntu window opens immediately, in which case just continue to the next step).</li>
-  <li>Soon after your computer reboots, an Ubuntu window should open and complete the installation process. This may take a few minutes.</li>
-  <li>Once the installation is complete, you will be prompted to enter a UNIX username and password in the Ubuntu window. Make sure you remember them. You can use any username, but many people just use their name in lowercase (eg. "tilo"). <strong>Important:</strong> When you enter your password it won't display any characters as you type. <strong>This is not a bug, your password is still being entered.</strong></li>
-  <li>Update Ubuntu by running <code>sudo apt update</code> (this checks for upgrades), then <code>sudo apt upgrade</code> (this installs the upgrades). When asked "Do you want to continue? [Y/n]", press enter to select the default "Y"/"Yes" option, and wait for the upgrade to complete. [Side note: <code>apt</code> is a "package manager", which does what it says on the tin and manages packages/software on your system. <code>sudo</code> stands for "SuperUser DO" and you add it to the front of a command to run that command as the superuser (a.k.a. administrator or "root").]</li>
+  <li>As part of the installation, you will be prompted to create a default Unix user account name and password. Make sure you remember them. You can use any username, but many people just use their name in lowercase (eg. "tilo"). <strong>Important:</strong> When you enter your password it won't display any characters as you type. <strong>This is not a bug, your password is still being entered.</strong></li>
+  <li>You will be asked to opt-in to platform metrics collection. We recommend opting out by entering 'n' (for 'no') instead of the default 'y' (for 'yes'). You may opt-in if you want to, however.</li>
+  <li>If an Ubuntu window opens immediately, just continue to the next step. If you're prompted to restart your computer, do so. Soon after your computer reboots, an Ubuntu window should open and complete the installation process. This may take a few minutes.</li>
+  <!-- <li>Once the installation is complete, you will be prompted to enter a UNIX username and password in the Ubuntu window. Make sure you remember them. You can use any username, but many people just use their name in lowercase (eg. "tilo"). <strong>Important:</strong> When you enter your password it won't display any characters as you type. <strong>This is not a bug, your password is still being entered.</strong></li> -->
+  <li>Update Ubuntu by running <code>sudo apt update</code> (this checks for upgrades), then <code>sudo apt upgrade</code> (this installs the upgrades). When asked "Do you want to continue? [Y/n]", press enter to select the default "Y"/"Yes" option, and wait for the upgrade to complete. [Side note: <code>apt</code> is a "package manager", which does what it says on the tin and manages packages/software on your system. <code>sudo</code> stands for "<b>S</b>uper<b>U</b>ser <b>DO</b>" and you add it to the front of a command to run that command as the superuser (a.k.a. administrator or "root").]</li>
   <li>Your Ubuntu files are stored in a separate filesystem to your Windows files, which makes difficult to access from Windows (and you shouldn't try to). However, you can access your Windows C drive from Ubuntu by going to the "/mnt/c" directory in the Ubuntu terminal (if your Windows is on the D drive, it would be "/mnt/d" instead etc.). For convenience, you can create a "symbolic link" (similar to a shortcut) from your Linux home directory to your Windows files by running: <code>ln -s /mnt/c/Users/[insert your Windows username here]/Documents ~/WindowsDocuments</code> (e.g. <code>ln -s /mnt/c/Users/tilo/Documents ~/WindowsDocuments</code>)</li>
   <li>Whenever you want to open a new Ubuntu terminal, you can Windows search "Ubuntu" and click the Ubuntu application.</li>
 </ul>
@@ -90,35 +92,45 @@ If you have any problems while installing, try these tips:
 
 
 <ul>
-<li>In an Ubuntu terminal, first install the dependencies for GHCup by running <code>sudo apt update</code> then <code>sudo apt install build-essential curl libffi-dev libffi8 libgmp-dev libgmp10 libncurses-dev pkg-config</code></li>
+<li>In an Ubuntu terminal, first install the dependencies for GHCup by running <code>sudo apt update</code> then <code>sudo apt install build-essential curl libffi-dev libffi8 libgmp-dev libgmp10 libncurses-dev pkg-config</code>
+<ul>
+  <li>To copy-paste into the terminal, copy the text as normal with Ctrl + C, then Right Click in the terminal (this can be a little bit unreliable, just keep recopying and pasting until it works)</li>
+</ul>
+</li>
 
-<li>Once that's done, run <code>curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh</code></li>
+<li>Once that's done, use GHCup to install the Haskell tools we need by running <code>curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | BOOTSTRAP_HASKELL_NONINTERACTIVE=y BOOTSTRAP_HASKELL_GHC_VERSION=9.14.1 BOOTSTRAP_HASKELL_CABAL_VERSION=3.16.1.0 BOOTSTRAP_HASKELL_INSTALL_NO_STACK=y BOOTSTRAP_HASKELL_INSTALL_HLS=y BOOTSTRAP_HASKELL_HLS_VERSION=2.14.0.0 BOOTSTRAP_HASKELL_ADJUST_BASHRC=y sh</code>
+<ul>
+  <li>Make sure you copy the whole command in one go, from "curl" all the way to "sh"</li>
+  <li>This will take some time and is the step most likely to fail due to network problems. See the Troubleshooting Tips section if this happens.</li>
+</ul>
+</li>
 
-<li>Press enter to proceed</li>
+<!-- <li>Press enter to proceed</li>
 <li>When asked about adding the required PATH variable to .bashrc, select "Yes, prepend" by typing "P" and pressing enter. [Side note: Your PATH variable contains a list of directories your terminal will look through to find executables, e.g. when you use <code>curl</code> as a command, your terminal looks for an executable named "curl" in those directories. GHCup creates a new directory where it will put executables, so this has to be added to your PATH if you want to use them in your terminal.]</li>
 <li>When asked about installing haskell-language-server, select "Yes" by entering "Y".</li>
 <li>When asked about enabling better integration of stack, select "Yes" by entering "Y".</li>
-<li>Press enter to proceed and wait for the installation to finish.</li>
-<li>This will install <code>ghc</code> (the Haskell compiler), <code>ghci</code> (the Haskell <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop" target="_blank">REPL</a>), <code>cabal</code> (a Haskell package manager), and the Haskell Language Server (a.k.a. HLS, which adds <a href="https://en.wikipedia.org/wiki/Integrated_development_environment" target="_blank">IDE</a> support for Haskell)</li>
-<li><b>Close and reopen your Ubuntu terminal</b> so the updated PATH variable in .bashrc can take effect, giving you access to the programs you just installed.</li>
-<li>Check they're working by running <code>ghc --version</code>, <code>cabal --version</code>, and <code>haskell-language-server-wrapper --version</code>. If they've installed correctly, each of these commands should print out version information.</li>
+<li>Press enter to proceed and wait for the installation to finish.</li> -->
+<li>Once the previous step completes successfully, you'll need to restart your terminal. [Side note: This is because your default PATH variable has been modified and needs to be reinitialised. Your PATH variable contains a list of directories your terminal will look through to find executables, e.g. when you use <code>curl</code> as a command, your terminal looks for an executable named "curl" in those directories. GHCup creates a new directory where it will put executables, so this has to be added to your PATH if you want to use them in your terminal.] </li>
+<li>You should now have <code>ghc</code> (the Haskell compiler), <code>ghci</code> (the Haskell <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop" target="_blank">REPL</a>), <code>cabal</code> (a Haskell package manager), and the Haskell Language Server (a.k.a. HLS, which adds <a href="https://en.wikipedia.org/wiki/Integrated_development_environment" target="_blank">IDE</a> support for Haskell)</li>
+<li>Check they're working by running <code>ghc --version</code>, <code>ghci --version</code>, <code>cabal --version</code>, and <code>haskell-language-server-wrapper --version</code>. If they've installed correctly, each of these commands should print out version information.</li>
 <li>Update cabal's package list by running <code>cabal update</code></li>
-<li>Install QuickCheck by running <code>cabal install --lib QuickCheck</code></li>
-
+<!-- <li>Install QuickCheck by running <code>cabal install --lib QuickCheck</code></li> -->
 </ul>
 
 <h2>INSTALL THE VSCODE EDITOR</h2>
 <ul>
-  <li>go to <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>
-  <li>download and run the installer for <b>Windows</b></li>
+  <li>Go to <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>
+  <li>Download and run the installer for <b>Windows</b>.</li>
   <li>During installation, under the Additional Tasks step, ensure all the checkboxes under "Other:" are checked.</li>
-  <li>Once VSCode is installed, open it.</li>
+  <li>Once VSCode is installed, open it and <b>DO NOT SIGN IN</b> if prompted. Close the prompt by clicking the 'X' in the top right corner of the prompt instead. If another 'Sign in to use GitHub Copilot' prompt pops up, close that as well. <u><b>DO NOT SIGN IN</b></u>.</li>
+  <li>Press Ctrl + ',' or click "File -> Preferences -> Settings" to open the Settings menu. Search for 'chat.disableAIFeatures' and click the 'Disable AI Features' checkbox.</li>
+  <li>We also recommend disabling telemetry (i.e. automatically sending Microsoft your usage data). To do this, open the Settings menu and search "telemetry.telemetryLevel", then set the dropdown menu to 'off'. You may need to restart VSCode after changing this setting.</li>
   <li>Install the "Remote - WSL" extension by pressing Ctrl + P and then entering "ext install ms-vscode-remote.remote-wsl".</li>
-  <li>Whenever using VSCode, make sure you're using a WSL window. The easiest way to do that is to look in the bottom-left corner of the window. If it's using WSL, it will say "WSL: Ubuntu". If it doesn't say that, click it and select one of the commands to open a WSL Window, e.g. "New WSL Window" or "Reopen Folder in WSL" if you have a folder open already. For more detailed information, see: <a href="https://code.visualstudio.com/docs/remote/wsl" target="_blank">Developing in WSL</a></li>
-  <li>You can open an Ubuntu/WSL terminal from within a VSCode WSL window with "Terminal -> New Terminal" or Ctrl + Shift + `</li>
-  <li>Make sure your VSCode window is in WSL mode, then open and install the "Haskell" extension by pressing Ctrl + P and entering "ext install haskell.haskell". It's important you do this in a WSL window, because it relies on GHCup, which is installed on WSL, not on Windows.</li>
+  <li><b>Whenever using VSCode, make sure you're using a WSL window</b>. The easiest way to do that is to look in the bottom-left corner of the window. If it's using WSL, it will say "WSL: Ubuntu". If it doesn't say that, click it and select "Connect to WSL" to open a WSL Window. If you already have a folder open in VSCode, use Ctrl + Shift + P to open the command palette, then type "WSL: Reopen Folder in WSL" and press enter. For more detailed information, see: <a href="https://code.visualstudio.com/docs/remote/wsl" target="_blank">Developing in WSL</a></li>
+  <li>You can open an Ubuntu/WSL terminal from within a VSCode WSL window with "Terminal -> New Terminal" (the "Terminal" button might be hiding under the "..." next to "File", "Edit" etc. if your VSCode window is too small to show all the options).</li>
+  <li><b>Make sure your VSCode window is in WSL mode</b>, then open and install the "Haskell" extension by pressing Ctrl + P and entering "ext install haskell.haskell". It's important you do this in a WSL window, because it relies on GHCup, which is installed on WSL, not on Windows.</li>
   <li>Test HLS is working by creating a new Haskell file named "test.hs" (e.g. with "File -> New File" and naming it "test.hs"). This might give you a prompt saying "How do you want the extension to manage/discover HLS and the relevant toolchain?". Select "Automatically via GHCup".</li>
-  <li>If it says "Need to download stack, continue?", you can safely select either "Yes" or "No". We will not be using stack either way, but you may want to say "Yes" just to make the popup go away.</li>
+  <li>If it says "Need to download stack, continue?", click "No". We will not be using stack, so this will just take up unnecessary bandwidth in the setup lab. If it comes up again in the future, feel free to click "Yes" just to make the pop-up go away.</li>
   <li>In "test.hs", start typing some invalid Haskell code, e.g. <code>x = True && 'c'</code>. If HLS is working, you should see that VSCode underlines the error. You might need to give it a little bit of time to load.</li>
 </ul>
 

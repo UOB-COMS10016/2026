@@ -91,19 +91,25 @@ If all of that fails, as a last resort install 'Xcode' from the App Store on you
 
   </li> -->
    
-  <li>In a terminal, run <code>curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh</code></li>
+  <li>Use GHCup to install the Haskell tools we need by running <code>curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | BOOTSTRAP_HASKELL_NONINTERACTIVE=y BOOTSTRAP_HASKELL_GHC_VERSION=9.14.1 BOOTSTRAP_HASKELL_CABAL_VERSION=3.16.1.0 BOOTSTRAP_HASKELL_INSTALL_NO_STACK=y BOOTSTRAP_HASKELL_INSTALL_HLS=y BOOTSTRAP_HASKELL_HLS_VERSION=2.14.0.0 BOOTSTRAP_HASKELL_ADJUST_BASHRC=y sh</code>
+  <ul>
+    <li>Make sure you copy the whole command in one go, from "curl" all the way to "sh"</li>
+    <li>This will take some time and is the step most likely to fail due to network problems. See the Troubleshooting Tips section if this happens.</li>
+  </ul>
+  </li>
   
-  <li>Press enter to proceed</li>
+  <!-- <li>Press enter to proceed</li>
   <li>When asked about adding the required PATH variable to .zshrc, select "Yes, prepend" by typing "P" and pressing enter. [Side note: Your PATH variable contains a list of directories your terminal will look through to find executables, e.g. when you use <code>curl</code> as a command, your terminal looks for an executable named "curl" in those directories. GHCup creates a new directory where it will put executables, so this has to be added to your PATH if you want to use them in your terminal.]</li>
   <li>When asked about installing haskell-language-server, select "Yes" by entering "Y".</li>
   <li>When asked about enabling better integration of stack, select "Yes" by entering "Y".</li>
-  <!-- <li>When asked about installing stack, select "No" by entering "N".</li> -->
-  <li>Press enter to proceed and wait for the installation to finish.</li>
-  <li>This will install <code>ghc</code> (the Haskell compiler), <code>ghci</code> (the Haskell <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop" target="_blank">REPL</a>), <code>cabal</code> (a Haskell package manager), and the Haskell Language Server (a.k.a. HLS, which adds <a href="https://en.wikipedia.org/wiki/Integrated_development_environment" target="_blank">IDE</a> support for Haskell)</li>
-  <li>Close and reopen your terminal so the updated PATH variable in .zshrc can take effect, giving you access to the programs you just installed.</li>
-  <li>Check they're working by running <code>ghc --version</code>, <code>cabal --version</code>, and <code>haskell-language-server-wrapper --version</code>. If they've installed correctly, each of these commands should print out version information.</li>
+  <li>When asked about installing stack, select "No" by entering "N".</li>
+  <li>Press enter to proceed and wait for the installation to finish.</li> -->
+
+  <li>Once the previous step completes successfully, you'll need to restart your terminal. [Side note: This is because your default PATH variable has been modified and needs to be reinitialised. Your PATH variable contains a list of directories your terminal will look through to find executables, e.g. when you use <code>curl</code> as a command, your terminal looks for an executable named "curl" in those directories. GHCup creates a new directory where it will put executables, so this has to be added to your PATH if you want to use them in your terminal.] </li>
+  <li>You should now have <code>ghc</code> (the Haskell compiler), <code>ghci</code> (the Haskell <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop" target="_blank">REPL</a>), <code>cabal</code> (a Haskell package manager), and the Haskell Language Server (a.k.a. HLS, which adds <a href="https://en.wikipedia.org/wiki/Integrated_development_environment" target="_blank">IDE</a> support for Haskell)</li>
+  <li>Check they're working by running <code>ghc --version</code>, <code>ghci --version</code>, <code>cabal --version</code>, and <code>haskell-language-server-wrapper --version</code>. If they've installed correctly, each of these commands should print out version information.</li>
   <li>Update cabal's package list by running <code>cabal update</code></li>
-  <li>Install QuickCheck by running <code>cabal install --lib QuickCheck</code></li>
+  <!-- <li>Install QuickCheck by running <code>cabal install --lib QuickCheck</code></li> -->
   
 </ul>
 
@@ -112,10 +118,12 @@ If all of that fails, as a last resort install 'Xcode' from the App Store on you
 <ul>
 <li>In your web browser, navigate to: <a href="https://code.visualstudio.com/docs/setup/mac" target="_blank">https://code.visualstudio.com/docs/setup/mac</a></li>
 <li>Follow the 'Installation' and 'Launching from the command line' instructions</li>
-<li>Open a VSCode window.</li>
+<li>Open a VSCode window and <b>DO NOT SIGN IN</b> if prompted. Close the prompt by clicking the 'X' in the top right corner of the prompt instead. If another 'Sign in to use GitHub Copilot' prompt pops up, close that as well. <u><b>DO NOT SIGN IN</b></u>.</li>
+<li>Press Ctrl + ',' or click "File -> Preferences -> Settings" to open the Settings menu. Search for 'chat.disableAIFeatures' and click the 'Disable AI Features' checkbox.</li>
+<li>We also recommend disabling telemetry (i.e. automatically sending Microsoft your usage data). To do this, open the Settings menu and search "telemetry.telemetryLevel", then set the dropdown menu to 'off'. You may need to restart VSCode after changing this setting.</li>
 <li>Install the "Haskell" extension by pressing Command + P and entering "ext install haskell.haskell".</li>
 <li>Test HLS is working by creating a new Haskell file named "test.hs" (e.g. with "File -> New File" and naming it "test.hs"). This might give you a prompt saying "How do you want the extension to manage/discover HLS and the relevant toolchain?". Select "Automatically via GHCup".</li>
-<li>If it says "Need to download stack, continue?", you can safely select either "Yes" or "No". We will not be using stack either way, but you may want to say "Yes" just to make the popup go away.</li>
+<li>If it says "Need to download stack, continue?", click "No". We will not be using stack, so this will just take up unnecessary bandwidth in the setup lab. If it comes up again in the future, feel free to click "Yes" just to make the pop-up go away.</li>
 <li>In "test.hs", start typing some invalid Haskell code, e.g. <code>x = True && 'c'</code>. If HLS is working, you should see that VSCode underlines the error. You might need to give it a little bit of time to load.</li>
 </ul>
 
