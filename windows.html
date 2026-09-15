@@ -30,7 +30,7 @@
 
 <p>This is a brief tutorial on how to setup your personal Windows 10 or 11 64bit <b>Home</b> or <b>Professional</b> system to be ready for the COMS10016 unit.</p>
 
-<p>The below steps represent one out of many ways of setting up your Windows 10 or 11 system for the unit. Before you start make sure Windows 10 or 11 is up-to-date with respect to updates and features.</p>
+<p>Before you start make sure Windows 10 or 11 is up-to-date with respect to updates and features.</p>
 
 <p>It is your responsibility to keep your personal system and passwords safe.</p>
 
@@ -88,7 +88,7 @@ If you have any problems while installing, try these tips:
   <li>In an Ubuntu terminal, run <code>sudo apt install clang</code></li>
 </ul>
 
-<h2>INSTALL HASKELL, QUICKCHECK, and HLS</h2>
+<h2>INSTALL HASKELL</h2>
 
 
 <ul>
@@ -128,7 +128,7 @@ If you have any problems while installing, try these tips:
   <li>Install the "Remote - WSL" extension by pressing Ctrl + P and then entering "ext install ms-vscode-remote.remote-wsl".</li>
   <li><b>Whenever using VSCode, make sure you're using a WSL window</b>. The easiest way to do that is to look in the bottom-left corner of the window. If it's using WSL, it will say "WSL: Ubuntu". If it doesn't say that, click it and select "Connect to WSL" to open a WSL Window. If you already have a folder open in VSCode, use Ctrl + Shift + P to open the command palette, then type "WSL: Reopen Folder in WSL" and press enter. For more detailed information, see: <a href="https://code.visualstudio.com/docs/remote/wsl" target="_blank">Developing in WSL</a></li>
   <li>You can open an Ubuntu/WSL terminal from within a VSCode WSL window with "Terminal -> New Terminal" (the "Terminal" button might be hiding under the "..." next to "File", "Edit" etc. if your VSCode window is too small to show all the options).</li>
-  <li><b>Make sure your VSCode window is in WSL mode</b>, then open and install the "Haskell" extension by pressing Ctrl + P and entering "ext install haskell.haskell". It's important you do this in a WSL window, because it relies on GHCup, which is installed on WSL, not on Windows.</li>
+  <li><b>Make sure your VSCode window is in WSL mode</b>, then open and install the "Haskell" extension by pressing Ctrl + P and entering "ext install haskell.haskell". It's important you do this in a WSL window, because it relies on GHCup, which is installed on WSL, not on Windows. If asked 'Do you trust the publisher "Haskell"?' select 'Trust Publisher & Install'.</li>
   <li>Test HLS is working by creating a new Haskell file named "test.hs" (e.g. with "File -> New File" and naming it "test.hs"). This might give you a prompt saying "How do you want the extension to manage/discover HLS and the relevant toolchain?". Select "Automatically via GHCup".</li>
   <li>If it says "Need to download stack, continue?", click "No". We will not be using stack, so this will just take up unnecessary bandwidth in the setup lab. If it comes up again in the future, feel free to click "Yes" just to make the pop-up go away.</li>
   <li>In "test.hs", start typing some invalid Haskell code, e.g. <code>x = True && 'c'</code>. If HLS is working, you should see that VSCode underlines the error. You might need to give it a little bit of time to load.</li>
@@ -218,9 +218,9 @@ are optional at the beginning of the unit. However, during the last part of the 
 
 <h2>CHECKING SDL2</h2>
 <ul>
-<li>Download the program <a href="hellosdl.c" target="_blank">hellosdl.c</a> and save it into a new folder, e.g. you could make a folder called "SDL-Test" in your local "Documents" folder and save it there.</li>
-<li>In your Ubuntu terminal, change directory to folder where you just saved the file, e.g. if you saved it in "Documents\SDL-Test" and you set up the "WindowsDocuments" symlink earlier, you could run <code>cd ~/WindowsDocuments/SDL-Test</code>
-<li>Compile the program in that folder by running <code>clang -std=c11 -Wall hellosdl.c -I /usr/include/SDL2 -l SDL2 -o hellosdl</code> , where the 'I' (uppercase i) in <code>-I /usr/include/SDL2</code> stands for "Include" and the 'l' (lowercase L) in <code>-l SDL2</code> stands for "link".</li>
+<li>Download the program <a href="hellosdl.c" target="_blank">hellosdl.c</a>by running the following in a WSL terminal: <code>curl -o hellosdl.c https://uob-coms10016.github.io/2026/hellosdl.c</code></li>
+<li>Compile the program by running <code>clang -std=c11 -Wall hellosdl.c -I /usr/include/SDL2 -l SDL2 -o hellosdl</code> , where the 'I' (uppercase i) in <code>-I /usr/include/SDL2</code> stands for "Include" and the 'l' (lowercase L) in <code>-l SDL2</code> stands for "link".</li>
+<li>If the compilation was sucessful, you will see the new executable file <b>hellosdl</b> in the current directory. You can check this by running the <code>ls</code> command to list the contents of the current folder.</li>
 <li>Run the compiled program by running <code>./hellosdl</code> - if you see a sky blue window appear then SDL2 is working properly!</li>
 <li>Note that some parts of the SDL library unfortunately have memory leaks, but there's nothing you can do about them, so don't be alarmed if you see some warnings.</li>
 </ul>

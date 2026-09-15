@@ -29,7 +29,7 @@
 <div align="center"><img src="linux.jpg" width="100px"><br/>COMS10016 | Week 01 | Preparation<br/><h1>SYSTEM SETUP FOR UBUNTU LINUX</h1></div>
 
 This is a brief tutorial on how to setup your personal Linux Ubuntu system to be ready for the COMS10016 unit. 
-The below steps represent one out of many ways of setting up your system for the unit. Before you start make sure your system is up-to-date with respect to updates and features. 
+Before you start make sure your system is up-to-date with respect to updates and features.
 It is your responsibility to keep your personal system and passwords safe.
 
 <h2>TROUBLESHOOTING TIPS</h2>
@@ -53,7 +53,7 @@ If you have any problems while installing, try these tips:
 <li>Once ready, run <code>sudo apt install clang</code></li>
 </ul>
 
-<h2>INSTALL HASKELL, QUICKCHECK, and HLS</h2>
+<h2>INSTALL HASKELL</h2>
 
 <ul>
   <li>In a terminal, first install the dependencies for GHCup by running <code>sudo apt install build-essential curl libffi-dev libffi8 libgmp-dev libgmp10 libncurses-dev pkg-config</code>
@@ -92,7 +92,7 @@ If you have any problems while installing, try these tips:
   <li>Open a VSCode window and <b>DO NOT SIGN IN</b> if prompted. Close the prompt by clicking the 'X' in the top right corner of the prompt instead. If another 'Sign in to use GitHub Copilot' prompt pops up, close that as well. <u><b>DO NOT SIGN IN</b></u>.</li>
   <li>Press Ctrl + ',' or click "File -> Preferences -> Settings" to open the Settings menu. Search for 'chat.disableAIFeatures' and click the 'Disable AI Features' checkbox.</li>
   <li>We also recommend disabling telemetry (i.e. automatically sending Microsoft your usage data). To do this, open the Settings menu and search "telemetry.telemetryLevel", then set the dropdown menu to 'off'. You may need to restart VSCode after changing this setting.</li>
-  <li>Install the "Haskell" extension by pressing Ctrl + P and entering "ext install haskell.haskell".</li>
+  <li>Install the "Haskell" extension by pressing Ctrl + P and entering "ext install haskell.haskell". If asked 'Do you trust the publisher "Haskell"?' select 'Trust Publisher & Install'.</li>
   <li>Test HLS is working by creating a new Haskell file named "test.hs" (e.g. with "File -> New File" and naming it "test.hs"). This might give you a prompt saying "How do you want the extension to manage/discover HLS and the relevant toolchain?". Select "Automatically via GHCup".</li>
   <li>If it says "Need to download stack, continue?", click "No". We will not be using stack, so this will just take up unnecessary bandwidth in the setup lab. If it comes up again in the future, feel free to click "Yes" just to make the pop-up go away.</li>
   <li>In "test.hs", start typing some invalid Haskell code, e.g. <code>x = True && 'c'</code>. If HLS is working, you should see that VSCode underlines the error. You might need to give it a little bit of time to load.</li>
@@ -175,9 +175,9 @@ are optional at the beginning of the unit. However, during the last part of the 
 <h2>CHECK SDL2 GRAPHICS</h2>
 
 <ul>
-  <li>Download the program <a href="hellosdl.c" target="_blank">hellosdl.c</a> and save it into a new folder, e.g. you could make a folder with <code>mkdir ~/SDL-Test</code> and save it there.</li>
-  <li>In your terminal, change directory to folder where you just saved the file, e.g. if you saved it in "~/SDL-Test" you could run <code>cd ~/SDL-Test</code>
-  <li>Compile the program in that folder by running <code>clang -std=c11 -Wall hellosdl.c -I /usr/include/SDL2 -l SDL2 -o hellosdl</code> , where the 'I' (uppercase i) in <code>-I /usr/include/SDL2</code> stands for "Include" and the 'l' (lowercase L) in <code>-l SDL2</code> stands for "link".</li>
+  <li>Download the program <a href="hellosdl.c" target="_blank">hellosdl.c</a> by running: <code>curl -o hellosdl.c https://uob-coms10016.github.io/2026/hellosdl.c</code></li>
+  <li>Compile the program by running <code>clang -std=c11 -Wall hellosdl.c -I /usr/include/SDL2 -l SDL2 -o hellosdl</code> , where the 'I' (uppercase i) in <code>-I /usr/include/SDL2</code> stands for "Include" and the 'l' (lowercase L) in <code>-l SDL2</code> stands for "link".</li>
+  <li>If the compilation was sucessful, you will see the new executable file <b>hellosdl</b> in the current directory. You can check this by running the <code>ls</code> command to list the contents of the current folder.</li>
   <li>Run the compiled program by running <code>./hellosdl</code> - if you see a sky blue window appear then SDL2 is working properly!</li>
   <li>Note that some parts of the SDL library unfortunately have memory leaks, but there's nothing you can do about them, so don't be alarmed if you see some warnings.</li>
 </ul>
