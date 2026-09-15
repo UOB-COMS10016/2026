@@ -58,14 +58,14 @@ If you have any problems while installing, try these tips:
   </ul>
 <li><b>Ensure virtualisation is enabled on your laptop:</b> The WSL step relies on hardware virtualisation being enabled. This should be enabled by default in the majority of cases, but you can check whether virtualisation is enabled by clicking the Start/Windows button, typing "Windows features", selecting "Turn Windows features on or off", and then see if "Virtual Machine Platform" is enabled/ticked. If it's not, try to enable it. If you can't, <a href="https://support.microsoft.com/en-us/windows/experience/enable-virtualization-on-windows" target="_blank">follow this guide</a>.</li>
 <li>Unfortunately, the Chinese Family Edition (家庭中文版) of Windows <i>will not work</i> with the following instructions. This is because it restricts certain virtual machine features. You will have to install a different operating system (e.g. Ubuntu or Windows 11 Home), use a different computer with a supported OS, or use the lab machines. <b>NOTE:</b> Just because your Windows machine is from China or set to Chinese, doesn't mean it won't work. It's specifically 家庭中文版 which doesn't work. Windows 10 or 11 Home or Professional editions should work regardless of where they were purchased or the language settings (though English is appreciated, for the benefit of our TAs trying to help you).</li>
-</ul> 
+</ul>
 
 
 <h3>ACTIVATE WSL2 (WINDOWS SUBSYSTEM FOR LINUX) IN WINDOWS 10 or 11</h3>
 
 <ul>
-  <li>Windows search "powershell".</li> 
-  <li>Right-click "Windows PowerShell" (<strong>not</strong> "Windows Powershell (x86)") and click "Run as administrator".</li> 
+  <li>Windows search "powershell".</li>
+  <li>Right-click "Windows PowerShell" (<strong>not</strong> "Windows Powershell (x86)") and click "Run as administrator".</li>
   <li>Click yes on the consent prompt and an elevated PowerShell will open.</li>
   <li>Make sure WSL is updated: <code>wsl --update</code>
       <ul>

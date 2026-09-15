@@ -28,7 +28,7 @@
 
 <div align="center"><img src="linux.jpg" width="100px"><br/>COMS10016 | Week 01 | Preparation<br/><h1>SYSTEM SETUP FOR UBUNTU LINUX</h1></div>
 
-This is a brief tutorial on how to setup your personal Linux Ubuntu system to be ready for the COMS10016 unit. 
+This is a brief tutorial on how to setup your personal Linux Ubuntu system to be ready for the COMS10016 unit.
 Before you start make sure your system is up-to-date with respect to updates and features.
 It is your responsibility to keep your personal system and passwords safe.
 
@@ -61,14 +61,14 @@ If you have any problems while installing, try these tips:
     <li>To copy-paste into the terminal, copy the text as normal with Ctrl + C, then click in the terminal and paste with Ctrl + Shift + V</li>
   </ul>
   </li>
-  
+
   <li>Once that's done, use GHCup to install the Haskell tools we need by running <code>curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | BOOTSTRAP_HASKELL_NONINTERACTIVE=y BOOTSTRAP_HASKELL_GHC_VERSION=9.14.1 BOOTSTRAP_HASKELL_CABAL_VERSION=3.16.1.0 BOOTSTRAP_HASKELL_INSTALL_NO_STACK=y BOOTSTRAP_HASKELL_INSTALL_HLS=y BOOTSTRAP_HASKELL_HLS_VERSION=2.14.0.0 BOOTSTRAP_HASKELL_ADJUST_BASHRC=y sh</code>
   <ul>
     <li>Make sure you copy the whole command in one go, from "curl" all the way to "sh"</li>
     <li>This will take some time and is the step most likely to fail due to network problems. See the Troubleshooting Tips section if this happens.</li>
   </ul>
   </li>
-  
+
   <!-- <li>Press enter to proceed</li>
   <li>When asked about adding the required PATH variable to .bashrc, select "Yes, prepend" by typing "P" and pressing enter. [Side note: Your PATH variable contains a list of directories your terminal will look through to find executables, e.g. when you use <code>curl</code> as a command, your terminal looks for an executable named "curl" in those directories. GHCup creates a new directory where it will put executables, so this has to be added to your PATH if you want to use them in your terminal.]</li>
   <li>When asked about installing haskell-language-server, select "Yes" by entering "Y".</li>
