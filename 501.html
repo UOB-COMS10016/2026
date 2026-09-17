@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Adapted from: https://www.w3schools.com/CSS/css_howto.asp -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <title>
+        501 Not (Yet) Implemented
+    </title>
+    <style>
+      * {
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      span {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .error-container {
+        text-align: center;
+        background-color: #e5e6e5;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 5rem;
+        color: #b01c2e;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: #000000;
+        margin-bottom: 20px;
+      }
+    </style>
+    <script>
+      const init = () => {
+        const params = new URLSearchParams(document.location.search);
+        const expireDate = new Date(params.get("d"));
+        const timeNow = new Date();
+        const timeDiffDays = Math.ceil((expireDate - timeNow)/(1000 * 60 * 60 * 24));
+
+        document.getElementById("date").innerHTML = expireDate.toDateString();
+        document.getElementById("daysLeft").innerHTML = timeDiffDays;
+      }
+
+      window.onload = init;
+    </script>
+</head>
+
+<body>
+  <div class="error-container">
+    <h1>501</h1>
+    <h2>Not (yet) implemented!</h2>
+    <p>
+      Please let one of the lecturers know if this placeholder has not been updated by the following date:
+    </p>
+
+    <h2 id="date">[Either missing a correctly formatted 'd' parameter or JavaScript is disabled]</h2>
+
+    <p>That is in <span id="daysLeft">X</span> day(s).</p>
+
+</body>
+
+</html>
