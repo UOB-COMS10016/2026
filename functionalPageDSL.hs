@@ -50,30 +50,31 @@ functionalPage =
             ]
         },
       Entry
-        { title = "Welcome & Introduction",
+        { title = "Introduction + Expressions and Evaluation",
           spec =
             Lecture
               { slot = First,
-                slidesFile' = Nothing, -- Just (External "https://docs.google.com/presentation/d/1MKHf1CZkwJsLV3uAFo5z_BxJaFF6kmA1Vuc6TKloAjM/edit?usp=sharing"),
+                slidesFile' = Left "2026-09-23", -- Right (External "https://docs.google.com/presentation/d/1MKHf1CZkwJsLV3uAFo5z_BxJaFF6kmA1Vuc6TKloAjM/edit?usp=sharing"),
                 lectureRecording = Nothing
               },
           materials =
             [ -- external "Welcome to Functional Programming Slides" "https://docs.google.com/presentation/d/1MKHf1CZkwJsLV3uAFo5z_BxJaFF6kmA1Vuc6TKloAjM/edit?usp=sharing"
-              MkMaterial "Roadmap" (funcRootDir ++ "Roadmap.pdf")
+              misc "Roadmap.pdf"
+            , minSheet "https://forms.cloud.microsoft/e/w1iprVsbWX"
             ]
         },
       Entry
-        { title = "Expressions and Evaluation",
+        { title = "Expressions and Evaluation (cont.)",
           spec =
             Lecture
               { slot = Second,
-                slidesFile' = Just (BBLectureCode "ExpressionsBP.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/e8988639f39144fe870cde47f75b90671d"
+                slidesFile' = Left "2026-09-28", -- Right (BBCode "ExpressionsBP.hs"),
+                lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/e8988639f39144fe870cde47f75b90671d"
               },
           materials =
-            [ lectureCode "ExpressionsBP.hs"
-            , lectureCode "ExpressionsLive.hs"
-            , minSheet "https://forms.office.com/e/QZ62B9rgG8"
+            [ -- code "ExpressionsBP.hs"
+            -- , code "ExpressionsLive.hs"
+              minSheet "https://forms.cloud.microsoft/e/QZ62B9rgG8"
             ]
         },
       Entry
@@ -88,13 +89,13 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = First,
-    --             slidesFile' = Just (BBLectureCode "PatternsAndRecursionBP.hs"),
+    --             slidesFile' = Right (BBCode "PatternsAndRecursionBP.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/e1f29257460e4182bd80fa64a623fe3f1d"
     --           },
     --       materials =
-    --         [ lectureCode "PatternsAndRecursionBP.hs"
-    --         , lectureCode "PatternsAndRecursionLive.hs"
-    --         , minSheet "https://forms.office.com/e/2WYXgw55gE"
+    --         [ code "PatternsAndRecursionBP.hs"
+    --         , code "PatternsAndRecursionLive.hs"
+    --         , minSheet "https://forms.cloud.microsoft/e/2WYXgw55gE"
     --         ]
     --     },
     --   Entry
@@ -102,14 +103,14 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = Second,
-    --             slidesFile' = Just (BBLectureCode "Types.hs"),
+    --             slidesFile' = Right (BBCode "Types.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/8b31499164f14e8eb9429ee6e79c469b1d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/BpZuXP2fVc"
-    --         , lectureCode "TypesLive.hs"
-    --         , lectureCode "TypesTemplate.hs"
-    --         , lectureCode "TypesBP.hs"
+    --         [ minSheet "https://forms.cloud.microsoft/e/BpZuXP2fVc"
+    --         , code "TypesLive.hs"
+    --         , code "TypesTemplate.hs"
+    --         , code "TypesBP.hs"
     --         ]
     --     },
     --   Entry
@@ -132,13 +133,13 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = First,
-    --             slidesFile' = Just (BBLectureCode "ListsPatternMatchingBP.hs"),
+    --             slidesFile' = Right (BBCode "ListsPatternMatchingBP.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/a17919b245bf4b7fb6e8fc1a030cd6e81d"
     --           },
     --       materials =
-    --         [ lectureCode "ListsPatternMatchingBP.hs"
-    --         , lectureCode "ListsPatternMatchingLive.hs"
-    --         , minSheet "https://forms.office.com/e/6fkHNR7iaW"
+    --         [ code "ListsPatternMatchingBP.hs"
+    --         , code "ListsPatternMatchingLive.hs"
+    --         , minSheet "https://forms.cloud.microsoft/e/6fkHNR7iaW"
     --         ]
     --     },
     --   Entry
@@ -146,18 +147,18 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = Second,
-    --             slidesFile' = Just (BBLectureCode "ADTsPolymorphismTypeClassesLive.hs"),
+    --             slidesFile' = Right (BBCode "ADTsPolymorphismTypeClassesLive.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/6ff54ed428af4d1b9d25ea70135c572e1d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/6fkHNR7iaW"
-    --         , lectureCode "ADTsPolymorphismTypeClassesLive.hs"
-    --         , lectureCode "ADTsTemplate.hs"
-    --         , lectureCode "ADTsBP.hs"
-    --         , lectureCode "PolymorphismTemplate.hs"
-    --         , lectureCode "PolymorphismBP.hs"
-    --         , lectureCode "TypeClassesTemplate.hs"
-    --         , lectureCode "TypeClassesBP.hs"
+    --         [ minSheet "https://forms.cloud.microsoft/e/6fkHNR7iaW"
+    --         , code "ADTsPolymorphismTypeClassesLive.hs"
+    --         , code "ADTsTemplate.hs"
+    --         , code "ADTsBP.hs"
+    --         , code "PolymorphismTemplate.hs"
+    --         , code "PolymorphismBP.hs"
+    --         , code "TypeClassesTemplate.hs"
+    --         , code "TypeClassesBP.hs"
     --         ]
     --     },
     --   Entry
@@ -172,18 +173,18 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = First,
-    --             slidesFile' = Just (BBLectureCode "ADTsPolymorphismTypeClassesLive.hs"),
+    --             slidesFile' = Right (BBCode "ADTsPolymorphismTypeClassesLive.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/e0ac0f0e335d4589a517c97906c67aa61d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/p70YZ9AvMK"
-    --         , lectureCode "ADTsPolymorphismTypeClassesLive.hs"
-    --         , lectureCode "ADTsTemplate.hs"
-    --         , lectureCode "ADTsBP.hs"
-    --         , lectureCode "PolymorphismTemplate.hs"
-    --         , lectureCode "PolymorphismBP.hs"
-    --         , lectureCode "TypeClassesTemplate.hs"
-    --         , lectureCode "TypeClassesBP.hs"
+    --         [ minSheet "https://forms.cloud.microsoft/e/p70YZ9AvMK"
+    --         , code "ADTsPolymorphismTypeClassesLive.hs"
+    --         , code "ADTsTemplate.hs"
+    --         , code "ADTsBP.hs"
+    --         , code "PolymorphismTemplate.hs"
+    --         , code "PolymorphismBP.hs"
+    --         , code "TypeClassesTemplate.hs"
+    --         , code "TypeClassesBP.hs"
     --         ]
     --     },
     --   Entry
@@ -191,14 +192,14 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = Second,
-    --             slidesFile' = Just (BBLectureCode "HOLive.hs"),
+    --             slidesFile' = Right (BBCode "HOLive.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/08b75ad11e4a40799af16ad46219723e1d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/szsFDhzxzC"
-    --         , lectureCode "HOLive.hs"
-    --         , lectureCode "HOtemplate.hs"
-    --         , lectureCode "HObp.hs"
+    --         [ minSheet "https://forms.cloud.microsoft/e/szsFDhzxzC"
+    --         , code "HOLive.hs"
+    --         , code "HOtemplate.hs"
+    --         , code "HObp.hs"
     --         ]
     --     },
     --   Entry
@@ -229,14 +230,14 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = Other "Mon 10:00-10:50<br/><u><b>PRIORY RD COMPLX LT</b></u>",
-    --             slidesFile' = Just (BBLectureCode "HOLive.hs"),
+    --             slidesFile' = Right (BBCode "HOLive.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/1cc5a03904124b5394267386be7c6b231d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/5LyvfU8eUu"
-    --         , lectureCode "HOLive.hs"
-    --         , lectureCode "HOtemplate.hs"
-    --         , lectureCode "HObp.hs"
+    --         [ minSheet "https://forms.cloud.microsoft/e/5LyvfU8eUu"
+    --         , code "HOLive.hs"
+    --         , code "HOtemplate.hs"
+    --         , code "HObp.hs"
     --         ]
     --     },
     --   Entry
@@ -244,14 +245,14 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = Second,
-    --             slidesFile' = Just (BBLectureCode "FoldsPart1BP.hs"),
+    --             slidesFile' = Right (BBCode "FoldsPart1BP.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/0c25e462134346d5a8a51a03c300b95c1d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/0TFiDaNH9J"
-    --         , lectureCode "FoldsPart1BP.hs"
-    --         , lectureCode "FoldsPart1Template.hs"
-    --         , lectureCode "FoldsPart1Live.hs"
+    --         [ minSheet "https://forms.cloud.microsoft/e/0TFiDaNH9J"
+    --         , code "FoldsPart1BP.hs"
+    --         , code "FoldsPart1Template.hs"
+    --         , code "FoldsPart1Live.hs"
     --         ]
     --     },
     --   Entry
@@ -276,14 +277,14 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = First,
-    --             slidesFile' = Just (BBLectureCode "FoldsPart2BP.hs"),
+    --             slidesFile' = Right (BBCode "FoldsPart2BP.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/eb4ecdeefcff41d9b3b2abc4e83d38c31d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/RDDRdr688j"
-    --         , lectureCode "FoldsPart2BP.hs"
-    --         , lectureCode "FoldsPart2Template.hs"
-    --         , lectureCode "FoldsPart2Live.hs"
+    --         [ minSheet "https://forms.cloud.microsoft/e/RDDRdr688j"
+    --         , code "FoldsPart2BP.hs"
+    --         , code "FoldsPart2Template.hs"
+    --         , code "FoldsPart2Live.hs"
     --         ]
     --     },
     --   Entry
@@ -291,14 +292,14 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = Second,
-    --             slidesFile' = Just (BBLectureCode "FunctorBP.hs"),
+    --             slidesFile' = Right (BBCode "FunctorBP.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/491661c7f706461a979d45347d286e9a1d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/vKdE4rXTkw"
-    --         , lectureCode "FunctorLive.hs"
-    --         , lectureCode "FunctorTemplate.hs"
-    --         , lectureCode "FunctorBP.hs"
+    --         [ minSheet "https://forms.cloud.microsoft/e/vKdE4rXTkw"
+    --         , code "FunctorLive.hs"
+    --         , code "FunctorTemplate.hs"
+    --         , code "FunctorBP.hs"
     --         ]
     --     },
     --   Entry
@@ -334,14 +335,14 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = First,
-    --             slidesFile' = Just (BBLectureCode "ParsersTemplate.hs"),
+    --             slidesFile' = Right (BBCode "ParsersTemplate.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/1ef73f2313204762a9334b09011735801d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/d7Sv7F7kPF"
-    --         , lectureCode "ParsersLive.hs"
-    --         , lectureCode "ParsersTemplate.hs"
-    --         , lectureCode "ParsersBP.hs"
+    --         [ minSheet "https://forms.cloud.microsoft/e/d7Sv7F7kPF"
+    --         , code "ParsersLive.hs"
+    --         , code "ParsersTemplate.hs"
+    --         , code "ParsersBP.hs"
     --         ]
     --     },
     --   Entry
@@ -349,14 +350,14 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = Second,
-    --             slidesFile' = Just (BBLectureCode "ApplicativeTemplate.hs"),
+    --             slidesFile' = Right (BBCode "ApplicativeTemplate.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/a98978fda34a4af6a46a542456c394361d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/iacb4N8pbh"
-    --         , lectureCode "ApplicativeLive.hs"
-    --         , lectureCode "ApplicativeTemplate.hs"
-    --         , lectureCode "ApplicativeBP.hs"
+    --         [ minSheet "https://forms.cloud.microsoft/e/iacb4N8pbh"
+    --         , code "ApplicativeLive.hs"
+    --         , code "ApplicativeTemplate.hs"
+    --         , code "ApplicativeBP.hs"
     --         ]
     --     },
     --   Entry
@@ -404,17 +405,17 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = First,
-    --             slidesFile' = Just (BBLectureCode "ApplicativeChessParsingBP.hs"),
+    --             slidesFile' = Right (BBCode "ApplicativeChessParsingBP.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/35dc3f438d8148c6b6ddec46dd280c8a1d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/9Hd3RVV27R"
-    --         , lectureCode "ApplicativeLive.hs"
-    --         , lectureCode "ApplicativeTemplate.hs"
-    --         , lectureCode "ApplicativeBP.hs"
-    --         , lectureCode "ApplicativeChessParsingBP.hs"
-    --         , lectureCode "ApplicativeChessParsingLive.hs"
-    --         , lectureCode "ApplicativeChessParsingTemplate.hs"
+    --         [ minSheet "https://forms.cloud.microsoft/e/9Hd3RVV27R"
+    --         , code "ApplicativeLive.hs"
+    --         , code "ApplicativeTemplate.hs"
+    --         , code "ApplicativeBP.hs"
+    --         , code "ApplicativeChessParsingBP.hs"
+    --         , code "ApplicativeChessParsingLive.hs"
+    --         , code "ApplicativeChessParsingTemplate.hs"
     --         ]
     --     },
     --   Entry
@@ -422,17 +423,15 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = Second,
-    --             slidesFile' = Just (BBLectureCode "IOBP.hs"),
+    --             slidesFile' = Right (BBCode "IOBP.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/062d4c1d1b504f4799c9d0c255dd0a3f1d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/pkByWDsxVn"
-    --         , lectureCode "IOBP.hs"
-    --         , lectureCode "IOLive.hs"
+    --         [ minSheet "https://forms.cloud.microsoft/e/pkByWDsxVn"
+    --         , code "IOBP.hs"
+    --         , code "IOLive.hs"
     --         ]
     --     },
-    --   --   slide "IO-and-Gen.pdf"
-    --   -- , code "ExampleIO.hs"
     --   Entry
     --     { title = "Applicative Parsing",
     --       spec = Worksheet "sheet07.pdf",
@@ -450,14 +449,14 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = First,
-    --             slidesFile' = Just (BBLectureCode "KatamariHaskacyBP.hs"),
+    --             slidesFile' = Right (BBCode "KatamariHaskacyBP.hs"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/f185786896274e328a172000e5d4c6fd1d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/Q8rH5TSGCa"
-    --         , lectureCode "MinSheetLecture16.hs"
-    --         , lectureCode "KatamariHaskacyBP.hs"
-    --         , lectureCode "KatamariHaskacyTemplate.hs"
+    --         [ minSheet "https://forms.cloud.microsoft/e/Q8rH5TSGCa"
+    --         , code "MinSheetLecture16.hs"
+    --         , code "KatamariHaskacyBP.hs"
+    --         , code "KatamariHaskacyTemplate.hs"
     --         ]
     --     },
     --   Entry
@@ -465,11 +464,11 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = Second,
-    --             slidesFile' = Just (External "https://wayground.com/join?gc=60715962"),
+    --             slidesFile' = Right (External "https://wayground.com/join?gc=60715962"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/b4130a3e72e04b1dac534b1efb6038421d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/fJHcHfLUsz"
+    --         [ minSheet "https://forms.cloud.microsoft/e/fJHcHfLUsz"
     --         , external "Functor and Applicative slides + quiz" "https://wayground.com/join?gc=60715962"
     --         ]
     --     },
@@ -501,11 +500,11 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = Other "Mon 10:00-10:50<br/><u><b>PRIORY RD COMPLX LT</b></u>",
-    --             slidesFile' = Just (External "https://wayground.com/join?gc=43039994"),
+    --             slidesFile' = Right (External "https://wayground.com/join?gc=43039994"),
     --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/41f1261416714e4cb705dba6674ed55e1d"
     --           },
     --       materials =
-    --         [ minSheet "https://forms.office.com/e/jscNkH3f5Z"
+    --         [ minSheet "https://forms.cloud.microsoft/e/jscNkH3f5Z"
     --         , external "Monads slides + quiz" "https://wayground.com/join?gc=43039994"
     --         ]
     --     },
@@ -518,7 +517,7 @@ functionalPage =
     --       spec =
     --         Lecture
     --           { slot = Second,
-    --             slidesFile' = Just (External $ "https://wayground.com/join?gc=59581434"),
+    --             slidesFile' = Right (External $ "https://wayground.com/join?gc=59581434"),
     --             lectureRecording = Nothing -- Just "https://"
     --           },
     --       materials =
@@ -539,21 +538,19 @@ functionalPage =
       --     , spec =
       --       Lecture
       --         { slot = First
-      --         , slidesFile' = Just (External $ noteLink "COMS10016-Mock.pdf")
+      --         , slidesFile' = Right (External $ noteLink "COMS10016-Mock.pdf")
       --         , lectureRecording = Nothing
       --         }
       --     , materials =
       --         [ note' "COMS10016-Mock.pdf"
       --         , note' "COMS10016-Mock-answers.pdf"
-      --         , slide "Mock.hs"
-      --         , slide "SamMock.pdf"
       --         ]
       --     }
       -- , Entry
       --     { title = "Functor/Applicative recap and Quiz + Q&A"
       --     , spec = Lecture
       --         { slot = Second
-      --         , slidesFile' = Just (External "https://quizizz.com/admin/presentation/619be26fa9afb8001d4e68fa")
+      --         , slidesFile' = Right (External "https://quizizz.com/admin/presentation/619be26fa9afb8001d4e68fa")
       --         , lectureRecording = Nothing
       --         }
       --     , materials =
@@ -754,7 +751,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials}) =
         Coursework {instructions} -> courseworkLink instructions
         FormativePractical {file} -> courseworkLink file
         LectureExtra {videoLink} -> videoLink
-        Lecture {slidesFile'} -> maybeSlidesPathToURL slidesFile'
+        Lecture {slidesFile'} -> either notYetImplemented slidesPathToUrl slidesFile'
         MockTest {test} -> test
         _ -> "",
       slidesURL = case spec of
@@ -805,7 +802,7 @@ data EntrySpec
       }
   | Lecture
       { slot :: Slot,
-        slidesFile' :: Maybe SlidesPath,
+        slidesFile' :: Either DateString SlidesPath,
         lectureRecording :: Maybe URL
       }
   | LectureExtra {videoLink :: String}
@@ -826,10 +823,10 @@ data EntrySpec
 
 data Slot = First | Second | Other String deriving (Show, Eq, Ord)
 
+type DateString = String
+
 data SlidesPath
-  = BBSlide FilePath
-  | BBCode FilePath
-  | BBLectureCode FilePath
+  = BBCode FilePath
   | External URL
   | NoTemplate
   deriving (Show, Eq)
@@ -924,17 +921,14 @@ note' file = MkMaterial file (noteLink file)
 code :: String -> Material
 code file = MkMaterial file (codeLink file)
 
-lectureCode :: String -> Material
-lectureCode file = MkMaterial file (lectureCodeLink file)
-
-slide :: String -> Material
-slide file = MkMaterial file (slideLink file)
-
 coursework :: String -> String -> Material
 coursework cwDir file = MkMaterial file (courseworkLink (cwDir ++ "/" ++ file))
 
 external :: String -> URL -> Material
 external = MkMaterial
+
+misc :: String -> Material
+misc file = MkMaterial file (miscLink file)
 
 minSheet :: URL -> Material
 minSheet = MkMaterial "Minute Sheet"
@@ -999,14 +993,11 @@ sheetLink = dir "sheets"
 noteLink :: String -> URL
 noteLink = dir "notes"
 
-slideLink :: String -> URL
-slideLink = dir "slides"
-
-maybeSlidesPathToURL :: Maybe SlidesPath -> URL
-maybeSlidesPathToURL = maybe notFoundPage slidesPathToUrl
-
 notFoundPage :: URL
 notFoundPage = "404.html"
+
+notYetImplemented :: DateString -> URL
+notYetImplemented d = "501.html?d=" ++ d
 
 noTemplatePage :: URL
 noTemplatePage = "no-template.html"
@@ -1014,20 +1005,18 @@ noTemplatePage = "no-template.html"
 slidesPathToUrl :: SlidesPath -> URL
 slidesPathToUrl slidesFile =
   case slidesFile of
-    BBSlide path -> slideLink path
     BBCode path -> codeLink path
-    BBLectureCode path -> lectureCodeLink path
     External url -> url
     NoTemplate   -> noTemplatePage
 
 codeLink :: String -> URL
 codeLink = dir "code"
 
-lectureCodeLink :: String -> URL
-lectureCodeLink = dir "lectureCode"
-
 courseworkLink :: String -> URL
 courseworkLink = dir "coursework"
+
+miscLink :: String -> URL
+miscLink = dir "code"
 
 -- Grid entries
 
