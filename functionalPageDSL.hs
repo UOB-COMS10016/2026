@@ -21,7 +21,7 @@ main = putStr $ pageToJS functionalPage config
 config :: Config
 config =
   MkConfig
-    { currentWeek = 0,
+    { currentWeek = 1,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -54,12 +54,12 @@ functionalPage =
           spec =
             Lecture
               { slot = First,
-                slidesFile' = Just (External "https://docs.google.com/presentation/d/1MKHf1CZkwJsLV3uAFo5z_BxJaFF6kmA1Vuc6TKloAjM/edit?usp=sharing"),
+                slidesFile' = Nothing, -- Just (External "https://docs.google.com/presentation/d/1MKHf1CZkwJsLV3uAFo5z_BxJaFF6kmA1Vuc6TKloAjM/edit?usp=sharing"),
                 lectureRecording = Nothing
               },
           materials =
-            [ external "Welcome to Functional Programming Slides" "https://docs.google.com/presentation/d/1MKHf1CZkwJsLV3uAFo5z_BxJaFF6kmA1Vuc6TKloAjM/edit?usp=sharing"
-            , MkMaterial "Roadmap" (funcRootDir ++ "Roadmap.pdf")
+            [ -- external "Welcome to Functional Programming Slides" "https://docs.google.com/presentation/d/1MKHf1CZkwJsLV3uAFo5z_BxJaFF6kmA1Vuc6TKloAjM/edit?usp=sharing"
+              MkMaterial "Roadmap" (funcRootDir ++ "Roadmap.pdf")
             ]
         },
       Entry
@@ -83,455 +83,455 @@ functionalPage =
         }
     ],
     -- Week 2
-    [ Entry
-        { title = "Pattern Matching and Recursion",
-          spec =
-            Lecture
-              { slot = First,
-                slidesFile' = Just (BBLectureCode "PatternsAndRecursionBP.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/e1f29257460e4182bd80fa64a623fe3f1d"
-              },
-          materials =
-            [ lectureCode "PatternsAndRecursionBP.hs"
-            , lectureCode "PatternsAndRecursionLive.hs"
-            , minSheet "https://forms.office.com/e/2WYXgw55gE"
-            ]
-        },
-      Entry
-        { title = "Types",
-          spec =
-            Lecture
-              { slot = Second,
-                slidesFile' = Just (BBLectureCode "Types.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/8b31499164f14e8eb9429ee6e79c469b1d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/BpZuXP2fVc"
-            , lectureCode "TypesLive.hs"
-            , lectureCode "TypesTemplate.hs"
-            , lectureCode "TypesBP.hs"
-            ]
-        },
-      Entry
-        { title = "Basic Programming",
-          spec = Worksheet "sheet01.pdf",
-          materials = sheets 1 ++ answers 1
-        }
-    ],
-    -- Week 3
-    [ Entry
-        { title = "History of Haskell",
-          spec = History,
-          materials =
-            [ note "History of Haskell" "HistoryOfHaskell.pdf",
-              note "How Functional Programming Mattered" "HowFPMattered.pdf"
-            ]
-        },
-      Entry
-        { title = "Lists",
-          spec =
-            Lecture
-              { slot = First,
-                slidesFile' = Just (BBLectureCode "ListsPatternMatchingBP.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/a17919b245bf4b7fb6e8fc1a030cd6e81d"
-              },
-          materials =
-            [ lectureCode "ListsPatternMatchingBP.hs"
-            , lectureCode "ListsPatternMatchingLive.hs"
-            , minSheet "https://forms.office.com/e/6fkHNR7iaW"
-            ]
-        },
-      Entry
-        { title = "ADTs, Polymorphism and Type Classes",
-          spec =
-            Lecture
-              { slot = Second,
-                slidesFile' = Just (BBLectureCode "ADTsPolymorphismTypeClassesLive.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/6ff54ed428af4d1b9d25ea70135c572e1d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/6fkHNR7iaW"
-            , lectureCode "ADTsPolymorphismTypeClassesLive.hs"
-            , lectureCode "ADTsTemplate.hs"
-            , lectureCode "ADTsBP.hs"
-            , lectureCode "PolymorphismTemplate.hs"
-            , lectureCode "PolymorphismBP.hs"
-            , lectureCode "TypeClassesTemplate.hs"
-            , lectureCode "TypeClassesBP.hs"
-            ]
-        },
-      Entry
-        { title = "Lists",
-          spec = Worksheet "sheet02.pdf",
-          materials = sheets 2 ++ answers 2
-        }
-    ],
-    -- Week 4
-    [ Entry
-        { title = "ADTs, Polymorphism and TypeClasses cont.",
-          spec =
-            Lecture
-              { slot = First,
-                slidesFile' = Just (BBLectureCode "ADTsPolymorphismTypeClassesLive.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/e0ac0f0e335d4589a517c97906c67aa61d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/p70YZ9AvMK"
-            , lectureCode "ADTsPolymorphismTypeClassesLive.hs"
-            , lectureCode "ADTsTemplate.hs"
-            , lectureCode "ADTsBP.hs"
-            , lectureCode "PolymorphismTemplate.hs"
-            , lectureCode "PolymorphismBP.hs"
-            , lectureCode "TypeClassesTemplate.hs"
-            , lectureCode "TypeClassesBP.hs"
-            ]
-        },
-      Entry
-        { title = "Higher-Order Functions",
-          spec =
-            Lecture
-              { slot = Second,
-                slidesFile' = Just (BBLectureCode "HOLive.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/08b75ad11e4a40799af16ad46219723e1d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/szsFDhzxzC"
-            , lectureCode "HOLive.hs"
-            , lectureCode "HOtemplate.hs"
-            , lectureCode "HObp.hs"
-            ]
-        },
-      Entry
-        { title = "ADTs, Polymorphism and TypeClasses",
-          spec = Worksheet "sheet03.pdf",
-          materials = sheets 3 ++ answers 3
-        },
-      Entry
-        { title = "Power to the People",
-          spec =
-            Coursework
-              { instructions = "CW1/CW1-Instrs.pdf",
-                submissionLink = "https://www.ole.bris.ac.uk/ultra/courses/_264153_1/outline",
-                deadline = "Noon, Tues 04/11/25"
-              },
-          materials =
-            map
-              (coursework "CW1")
-              [ "CW1-Instrs.pdf",
-                "CW1-InstrsDyslexic.pdf",
-                "CW1-PowerToThePeople.zip"
-              ]
-        }
-    ],
-    -- Week 5
-    [ Entry
-        { title = "Higher-Order Functions cont. + Laziness Intro",
-          spec =
-            Lecture
-              { slot = Other "Mon 10:00-10:50<br/><u><b>PRIORY RD COMPLX LT</b></u>",
-                slidesFile' = Just (BBLectureCode "HOLive.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/1cc5a03904124b5394267386be7c6b231d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/5LyvfU8eUu"
-            , lectureCode "HOLive.hs"
-            , lectureCode "HOtemplate.hs"
-            , lectureCode "HObp.hs"
-            ]
-        },
-      Entry
-        { title = "Folds",
-          spec =
-            Lecture
-              { slot = Second,
-                slidesFile' = Just (BBLectureCode "FoldsPart1BP.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/0c25e462134346d5a8a51a03c300b95c1d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/0TFiDaNH9J"
-            , lectureCode "FoldsPart1BP.hs"
-            , lectureCode "FoldsPart1Template.hs"
-            , lectureCode "FoldsPart1Live.hs"
-            ]
-        },
-      Entry
-        { title = "HO Programming and Laziness",
-          spec = Worksheet "sheet04.pdf",
-          materials = sheets  4
-                   ++ answers 4
-                   ++ [sheet "sheetLazy.pdf",  sheet "sheetLazyDyslexic.pdf"]
-                   ++ [sheet "answerLazy.pdf", sheet "answerLazyDyslexic.pdf"]
-        },
-      Entry
-        { title = "Structural Inductive Proofs",
-          spec = WorksheetBonus "sheetBonus1.pdf",
-          materials = sheetsBonus 1 ++ [note "Structural Inductive Proofs" "StructuralInductiveProofs.pdf"] ++ answersBonus 1
-        }
-    ],
-    -- Reading week
-    [],
-    -- Week 7
-    [ Entry
-        { title = "Folds cont.",
-          spec =
-            Lecture
-              { slot = First,
-                slidesFile' = Just (BBLectureCode "FoldsPart2BP.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/eb4ecdeefcff41d9b3b2abc4e83d38c31d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/RDDRdr688j"
-            , lectureCode "FoldsPart2BP.hs"
-            , lectureCode "FoldsPart2Template.hs"
-            , lectureCode "FoldsPart2Live.hs"
-            ]
-        },
-      Entry
-        { title = "Functor",
-          spec =
-            Lecture
-              { slot = Second,
-                slidesFile' = Just (BBLectureCode "FunctorBP.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/491661c7f706461a979d45347d286e9a1d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/vKdE4rXTkw"
-            , lectureCode "FunctorLive.hs"
-            , lectureCode "FunctorTemplate.hs"
-            , lectureCode "FunctorBP.hs"
-            ]
-        },
-      Entry
-        { title = "",
-          spec = NotesExtra,
-          materials =
-            map
-              (uncurry note)
-              [ ("Prelude Functions Cheatsheet", "PreludeFunctionsCheatsheet.pdf")
-              ]
-        },
-      Entry
-        { title = "Folding",
-          spec = Worksheet "sheet05.pdf",
-          materials = sheets 5 ++ answers 5
-        },
-      Entry
-        { title = "Sudoku",
-          spec = FormativePractical "Sudoku/SudokuInstrs.pdf",
-          materials =
-            map
-              (coursework "Sudoku")
-              [ "SudokuInstrs.pdf",
-                "SudokuInstrsDyslexic.pdf",
-                "Sudoku.hs",
-                "hard.txt"
-              ]
-        }
-    ],
-    -- Week 8
-    [ Entry
-        { title = "Parsers",
-          spec =
-            Lecture
-              { slot = First,
-                slidesFile' = Just (BBLectureCode "ParsersTemplate.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/1ef73f2313204762a9334b09011735801d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/d7Sv7F7kPF"
-            , lectureCode "ParsersLive.hs"
-            , lectureCode "ParsersTemplate.hs"
-            , lectureCode "ParsersBP.hs"
-            ]
-        },
-      Entry
-        { title = "Applicatives",
-          spec =
-            Lecture
-              { slot = Second,
-                slidesFile' = Just (BBLectureCode "ApplicativeTemplate.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/a98978fda34a4af6a46a542456c394361d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/iacb4N8pbh"
-            , lectureCode "ApplicativeLive.hs"
-            , lectureCode "ApplicativeTemplate.hs"
-            , lectureCode "ApplicativeBP.hs"
-            ]
-        },
-      Entry
-        { title = "Binary Trees with Alex Kavvos",
-          spec =
-            LectureExtra
-              { videoLink = "https://mediasite.bris.ac.uk/Mediasite/Play/b3fcbbfaf52a4ea0a850d131b088c8ac1d"
-              },
-          materials = []
-        },
-      Entry
-        { title = "",
-          spec = NotesExtra,
-          materials =
-            [ note "How to Design \"Co\"-Programs" "copro.pdf",
-              external "Design Patterns as Higher-Order Datatype-Generic Programs" "https://www.cs.ox.ac.uk/jeremy.gibbons/publications/hodgp-journal.pdf"
-            ]
-        },
-      Entry
-        { title = "Functors and Parsers",
-          spec = Worksheet "sheet06.pdf",
-          materials = sheets 6 ++ answers 6
-        }
-        ,
-      Entry
-        { title = "Simplify",
-          spec =
-            Coursework
-              { instructions = "CW2/CW2-Instrs.pdf",
-                submissionLink = "https://www.ole.bris.ac.uk/ultra/courses/_264153_1/outline",
-                deadline = "Noon, Thurs 27/11/25<br/>(submit at least 1 hour early)"
-              },
-          materials =
-            map
-              (coursework "CW2")
-              [ "CW2-Instrs.pdf",
-                "CW2-InstrsDyslexic.pdf",
-                "CW2-Simplify.zip"
-              ]
-        }
-    ],
-    -- Week 9
-    [ Entry
-        { title = "Applicatives cont.",
-          spec =
-            Lecture
-              { slot = First,
-                slidesFile' = Just (BBLectureCode "ApplicativeChessParsingBP.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/35dc3f438d8148c6b6ddec46dd280c8a1d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/9Hd3RVV27R"
-            , lectureCode "ApplicativeLive.hs"
-            , lectureCode "ApplicativeTemplate.hs"
-            , lectureCode "ApplicativeBP.hs"
-            , lectureCode "ApplicativeChessParsingBP.hs"
-            , lectureCode "ApplicativeChessParsingLive.hs"
-            , lectureCode "ApplicativeChessParsingTemplate.hs"
-            ]
-        },
-      Entry
-        { title = "IO",
-          spec =
-            Lecture
-              { slot = Second,
-                slidesFile' = Just (BBLectureCode "IOBP.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/062d4c1d1b504f4799c9d0c255dd0a3f1d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/pkByWDsxVn"
-            , lectureCode "IOBP.hs"
-            , lectureCode "IOLive.hs"
-            ]
-        },
-      --   slide "IO-and-Gen.pdf"
-      -- , code "ExampleIO.hs"
-      Entry
-        { title = "Applicative Parsing",
-          spec = Worksheet "sheet07.pdf",
-          materials = sheets 7 ++ [MkMaterial "Skeleton code" (sheetLink "Sheet7Skeleton.hs")] ++ answers 7
-        },
-      Entry
-        { title = "Monoids",
-          spec = WorksheetBonus "sheetBonus2.pdf",
-          materials = sheetsBonus 2 ++ [note "Monoids notes" "Monoids.pdf"] ++ answersBonus 2
-        }
-    ],
-    -- Week 10
-    [ Entry
-        { title = "IO Cont. (Katamari Haskacy)",
-          spec =
-            Lecture
-              { slot = First,
-                slidesFile' = Just (BBLectureCode "KatamariHaskacyBP.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/f185786896274e328a172000e5d4c6fd1d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/Q8rH5TSGCa"
-            , lectureCode "MinSheetLecture16.hs"
-            , lectureCode "KatamariHaskacyBP.hs"
-            , lectureCode "KatamariHaskacyTemplate.hs"
-            ]
-        },
-      Entry
-        { title = "Functor and Applicative Power Scaling",
-          spec =
-            Lecture
-              { slot = Second,
-                slidesFile' = Just (External "https://wayground.com/join?gc=60715962"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/b4130a3e72e04b1dac534b1efb6038421d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/fJHcHfLUsz"
-            , external "Functor and Applicative slides + quiz" "https://wayground.com/join?gc=60715962"
-            ]
-        },
+    -- [ Entry
+    --     { title = "Pattern Matching and Recursion",
+    --       spec =
+    --         Lecture
+    --           { slot = First,
+    --             slidesFile' = Just (BBLectureCode "PatternsAndRecursionBP.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/e1f29257460e4182bd80fa64a623fe3f1d"
+    --           },
+    --       materials =
+    --         [ lectureCode "PatternsAndRecursionBP.hs"
+    --         , lectureCode "PatternsAndRecursionLive.hs"
+    --         , minSheet "https://forms.office.com/e/2WYXgw55gE"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "Types",
+    --       spec =
+    --         Lecture
+    --           { slot = Second,
+    --             slidesFile' = Just (BBLectureCode "Types.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/8b31499164f14e8eb9429ee6e79c469b1d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/BpZuXP2fVc"
+    --         , lectureCode "TypesLive.hs"
+    --         , lectureCode "TypesTemplate.hs"
+    --         , lectureCode "TypesBP.hs"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "Basic Programming",
+    --       spec = Worksheet "sheet01.pdf",
+    --       materials = sheets 1 ++ answers 1
+    --     }
+    -- ],
+    -- -- Week 3
+    -- [ Entry
+    --     { title = "History of Haskell",
+    --       spec = History,
+    --       materials =
+    --         [ note "History of Haskell" "HistoryOfHaskell.pdf",
+    --           note "How Functional Programming Mattered" "HowFPMattered.pdf"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "Lists",
+    --       spec =
+    --         Lecture
+    --           { slot = First,
+    --             slidesFile' = Just (BBLectureCode "ListsPatternMatchingBP.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/a17919b245bf4b7fb6e8fc1a030cd6e81d"
+    --           },
+    --       materials =
+    --         [ lectureCode "ListsPatternMatchingBP.hs"
+    --         , lectureCode "ListsPatternMatchingLive.hs"
+    --         , minSheet "https://forms.office.com/e/6fkHNR7iaW"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "ADTs, Polymorphism and Type Classes",
+    --       spec =
+    --         Lecture
+    --           { slot = Second,
+    --             slidesFile' = Just (BBLectureCode "ADTsPolymorphismTypeClassesLive.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/6ff54ed428af4d1b9d25ea70135c572e1d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/6fkHNR7iaW"
+    --         , lectureCode "ADTsPolymorphismTypeClassesLive.hs"
+    --         , lectureCode "ADTsTemplate.hs"
+    --         , lectureCode "ADTsBP.hs"
+    --         , lectureCode "PolymorphismTemplate.hs"
+    --         , lectureCode "PolymorphismBP.hs"
+    --         , lectureCode "TypeClassesTemplate.hs"
+    --         , lectureCode "TypeClassesBP.hs"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "Lists",
+    --       spec = Worksheet "sheet02.pdf",
+    --       materials = sheets 2 ++ answers 2
+    --     }
+    -- ],
+    -- -- Week 4
+    -- [ Entry
+    --     { title = "ADTs, Polymorphism and TypeClasses cont.",
+    --       spec =
+    --         Lecture
+    --           { slot = First,
+    --             slidesFile' = Just (BBLectureCode "ADTsPolymorphismTypeClassesLive.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/e0ac0f0e335d4589a517c97906c67aa61d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/p70YZ9AvMK"
+    --         , lectureCode "ADTsPolymorphismTypeClassesLive.hs"
+    --         , lectureCode "ADTsTemplate.hs"
+    --         , lectureCode "ADTsBP.hs"
+    --         , lectureCode "PolymorphismTemplate.hs"
+    --         , lectureCode "PolymorphismBP.hs"
+    --         , lectureCode "TypeClassesTemplate.hs"
+    --         , lectureCode "TypeClassesBP.hs"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "Higher-Order Functions",
+    --       spec =
+    --         Lecture
+    --           { slot = Second,
+    --             slidesFile' = Just (BBLectureCode "HOLive.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/08b75ad11e4a40799af16ad46219723e1d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/szsFDhzxzC"
+    --         , lectureCode "HOLive.hs"
+    --         , lectureCode "HOtemplate.hs"
+    --         , lectureCode "HObp.hs"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "ADTs, Polymorphism and TypeClasses",
+    --       spec = Worksheet "sheet03.pdf",
+    --       materials = sheets 3 ++ answers 3
+    --     },
+    --   Entry
+    --     { title = "Power to the People",
+    --       spec =
+    --         Coursework
+    --           { instructions = "CW1/CW1-Instrs.pdf",
+    --             submissionLink = "https://www.ole.bris.ac.uk/ultra/courses/_264153_1/outline",
+    --             deadline = "Noon, Tues 04/11/25"
+    --           },
+    --       materials =
+    --         map
+    --           (coursework "CW1")
+    --           [ "CW1-Instrs.pdf",
+    --             "CW1-InstrsDyslexic.pdf",
+    --             "CW1-PowerToThePeople.zip"
+    --           ]
+    --     }
+    -- ],
+    -- -- Week 5
+    -- [ Entry
+    --     { title = "Higher-Order Functions cont. + Laziness Intro",
+    --       spec =
+    --         Lecture
+    --           { slot = Other "Mon 10:00-10:50<br/><u><b>PRIORY RD COMPLX LT</b></u>",
+    --             slidesFile' = Just (BBLectureCode "HOLive.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/1cc5a03904124b5394267386be7c6b231d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/5LyvfU8eUu"
+    --         , lectureCode "HOLive.hs"
+    --         , lectureCode "HOtemplate.hs"
+    --         , lectureCode "HObp.hs"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "Folds",
+    --       spec =
+    --         Lecture
+    --           { slot = Second,
+    --             slidesFile' = Just (BBLectureCode "FoldsPart1BP.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/0c25e462134346d5a8a51a03c300b95c1d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/0TFiDaNH9J"
+    --         , lectureCode "FoldsPart1BP.hs"
+    --         , lectureCode "FoldsPart1Template.hs"
+    --         , lectureCode "FoldsPart1Live.hs"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "HO Programming and Laziness",
+    --       spec = Worksheet "sheet04.pdf",
+    --       materials = sheets  4
+    --                ++ answers 4
+    --                ++ [sheet "sheetLazy.pdf",  sheet "sheetLazyDyslexic.pdf"]
+    --                ++ [sheet "answerLazy.pdf", sheet "answerLazyDyslexic.pdf"]
+    --     },
+    --   Entry
+    --     { title = "Structural Inductive Proofs",
+    --       spec = WorksheetBonus "sheetBonus1.pdf",
+    --       materials = sheetsBonus 1 ++ [note "Structural Inductive Proofs" "StructuralInductiveProofs.pdf"] ++ answersBonus 1
+    --     }
+    -- ],
+    -- -- Reading week
+    -- [],
+    -- -- Week 7
+    -- [ Entry
+    --     { title = "Folds cont.",
+    --       spec =
+    --         Lecture
+    --           { slot = First,
+    --             slidesFile' = Just (BBLectureCode "FoldsPart2BP.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/eb4ecdeefcff41d9b3b2abc4e83d38c31d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/RDDRdr688j"
+    --         , lectureCode "FoldsPart2BP.hs"
+    --         , lectureCode "FoldsPart2Template.hs"
+    --         , lectureCode "FoldsPart2Live.hs"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "Functor",
+    --       spec =
+    --         Lecture
+    --           { slot = Second,
+    --             slidesFile' = Just (BBLectureCode "FunctorBP.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/491661c7f706461a979d45347d286e9a1d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/vKdE4rXTkw"
+    --         , lectureCode "FunctorLive.hs"
+    --         , lectureCode "FunctorTemplate.hs"
+    --         , lectureCode "FunctorBP.hs"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "",
+    --       spec = NotesExtra,
+    --       materials =
+    --         map
+    --           (uncurry note)
+    --           [ ("Prelude Functions Cheatsheet", "PreludeFunctionsCheatsheet.pdf")
+    --           ]
+    --     },
+    --   Entry
+    --     { title = "Folding",
+    --       spec = Worksheet "sheet05.pdf",
+    --       materials = sheets 5 ++ answers 5
+    --     },
+    --   Entry
+    --     { title = "Sudoku",
+    --       spec = FormativePractical "Sudoku/SudokuInstrs.pdf",
+    --       materials =
+    --         map
+    --           (coursework "Sudoku")
+    --           [ "SudokuInstrs.pdf",
+    --             "SudokuInstrsDyslexic.pdf",
+    --             "Sudoku.hs",
+    --             "hard.txt"
+    --           ]
+    --     }
+    -- ],
+    -- -- Week 8
+    -- [ Entry
+    --     { title = "Parsers",
+    --       spec =
+    --         Lecture
+    --           { slot = First,
+    --             slidesFile' = Just (BBLectureCode "ParsersTemplate.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/1ef73f2313204762a9334b09011735801d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/d7Sv7F7kPF"
+    --         , lectureCode "ParsersLive.hs"
+    --         , lectureCode "ParsersTemplate.hs"
+    --         , lectureCode "ParsersBP.hs"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "Applicatives",
+    --       spec =
+    --         Lecture
+    --           { slot = Second,
+    --             slidesFile' = Just (BBLectureCode "ApplicativeTemplate.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/a98978fda34a4af6a46a542456c394361d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/iacb4N8pbh"
+    --         , lectureCode "ApplicativeLive.hs"
+    --         , lectureCode "ApplicativeTemplate.hs"
+    --         , lectureCode "ApplicativeBP.hs"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "Binary Trees with Alex Kavvos",
+    --       spec =
+    --         LectureExtra
+    --           { videoLink = "https://mediasite.bris.ac.uk/Mediasite/Play/b3fcbbfaf52a4ea0a850d131b088c8ac1d"
+    --           },
+    --       materials = []
+    --     },
+    --   Entry
+    --     { title = "",
+    --       spec = NotesExtra,
+    --       materials =
+    --         [ note "How to Design \"Co\"-Programs" "copro.pdf",
+    --           external "Design Patterns as Higher-Order Datatype-Generic Programs" "https://www.cs.ox.ac.uk/jeremy.gibbons/publications/hodgp-journal.pdf"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "Functors and Parsers",
+    --       spec = Worksheet "sheet06.pdf",
+    --       materials = sheets 6 ++ answers 6
+    --     }
+    --     ,
+    --   Entry
+    --     { title = "Simplify",
+    --       spec =
+    --         Coursework
+    --           { instructions = "CW2/CW2-Instrs.pdf",
+    --             submissionLink = "https://www.ole.bris.ac.uk/ultra/courses/_264153_1/outline",
+    --             deadline = "Noon, Thurs 27/11/25<br/>(submit at least 1 hour early)"
+    --           },
+    --       materials =
+    --         map
+    --           (coursework "CW2")
+    --           [ "CW2-Instrs.pdf",
+    --             "CW2-InstrsDyslexic.pdf",
+    --             "CW2-Simplify.zip"
+    --           ]
+    --     }
+    -- ],
+    -- -- Week 9
+    -- [ Entry
+    --     { title = "Applicatives cont.",
+    --       spec =
+    --         Lecture
+    --           { slot = First,
+    --             slidesFile' = Just (BBLectureCode "ApplicativeChessParsingBP.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/35dc3f438d8148c6b6ddec46dd280c8a1d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/9Hd3RVV27R"
+    --         , lectureCode "ApplicativeLive.hs"
+    --         , lectureCode "ApplicativeTemplate.hs"
+    --         , lectureCode "ApplicativeBP.hs"
+    --         , lectureCode "ApplicativeChessParsingBP.hs"
+    --         , lectureCode "ApplicativeChessParsingLive.hs"
+    --         , lectureCode "ApplicativeChessParsingTemplate.hs"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "IO",
+    --       spec =
+    --         Lecture
+    --           { slot = Second,
+    --             slidesFile' = Just (BBLectureCode "IOBP.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/062d4c1d1b504f4799c9d0c255dd0a3f1d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/pkByWDsxVn"
+    --         , lectureCode "IOBP.hs"
+    --         , lectureCode "IOLive.hs"
+    --         ]
+    --     },
+    --   --   slide "IO-and-Gen.pdf"
+    --   -- , code "ExampleIO.hs"
+    --   Entry
+    --     { title = "Applicative Parsing",
+    --       spec = Worksheet "sheet07.pdf",
+    --       materials = sheets 7 ++ [MkMaterial "Skeleton code" (sheetLink "Sheet7Skeleton.hs")] ++ answers 7
+    --     },
+    --   Entry
+    --     { title = "Monoids",
+    --       spec = WorksheetBonus "sheetBonus2.pdf",
+    --       materials = sheetsBonus 2 ++ [note "Monoids notes" "Monoids.pdf"] ++ answersBonus 2
+    --     }
+    -- ],
+    -- -- Week 10
+    -- [ Entry
+    --     { title = "IO Cont. (Katamari Haskacy)",
+    --       spec =
+    --         Lecture
+    --           { slot = First,
+    --             slidesFile' = Just (BBLectureCode "KatamariHaskacyBP.hs"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/f185786896274e328a172000e5d4c6fd1d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/Q8rH5TSGCa"
+    --         , lectureCode "MinSheetLecture16.hs"
+    --         , lectureCode "KatamariHaskacyBP.hs"
+    --         , lectureCode "KatamariHaskacyTemplate.hs"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "Functor and Applicative Power Scaling",
+    --       spec =
+    --         Lecture
+    --           { slot = Second,
+    --             slidesFile' = Just (External "https://wayground.com/join?gc=60715962"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/b4130a3e72e04b1dac534b1efb6038421d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/fJHcHfLUsz"
+    --         , external "Functor and Applicative slides + quiz" "https://wayground.com/join?gc=60715962"
+    --         ]
+    --     },
 
-      Entry
-        { title = "IO",
-          spec = Worksheet "sheet08.pdf",
-          materials = sheets 8 ++ answers 8
-        },
-      Entry
-        { title = "Maps, Tries, Sets, and Perfect Trees",
-          spec = WorksheetBonus "sheetBonus3.pdf",
-          materials = note "Data.Map" "DataMap.pdf" : sheetsBonus 3 ++ answersBonus 3
-        }
-    ],
-    -- Week 11
-    [ Entry
-        { title = "Mock Test",
-          spec = MockTest {test = noteLink "mock.pdf"},
-          materials =
-            map
-              note'
-              [ "mock.pdf"
-              , "mock-answers.pdf"
-              ]
-        },
-      Entry
-        { title = "Monad Power Scaling",
-          spec =
-            Lecture
-              { slot = Other "Mon 10:00-10:50<br/><u><b>PRIORY RD COMPLX LT</b></u>",
-                slidesFile' = Just (External "https://wayground.com/join?gc=43039994"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/41f1261416714e4cb705dba6674ed55e1d"
-              },
-          materials =
-            [ minSheet "https://forms.office.com/e/jscNkH3f5Z"
-            , external "Monads slides + quiz" "https://wayground.com/join?gc=43039994"
-            ]
-        },
-      --   external "Functors and Applicatives slides + quiz"
-      --            "https://quizizz.com/admin/presentation/619be26fa9afb8001d4e68fa"
-      -- , code "ApplicativeLive2023.hs"
+    --   Entry
+    --     { title = "IO",
+    --       spec = Worksheet "sheet08.pdf",
+    --       materials = sheets 8 ++ answers 8
+    --     },
+    --   Entry
+    --     { title = "Maps, Tries, Sets, and Perfect Trees",
+    --       spec = WorksheetBonus "sheetBonus3.pdf",
+    --       materials = note "Data.Map" "DataMap.pdf" : sheetsBonus 3 ++ answersBonus 3
+    --     }
+    -- ],
+    -- -- Week 11
+    -- [ Entry
+    --     { title = "Mock Test",
+    --       spec = MockTest {test = noteLink "mock.pdf"},
+    --       materials =
+    --         map
+    --           note'
+    --           [ "mock.pdf"
+    --           , "mock-answers.pdf"
+    --           ]
+    --     },
+    --   Entry
+    --     { title = "Monad Power Scaling",
+    --       spec =
+    --         Lecture
+    --           { slot = Other "Mon 10:00-10:50<br/><u><b>PRIORY RD COMPLX LT</b></u>",
+    --             slidesFile' = Just (External "https://wayground.com/join?gc=43039994"),
+    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/41f1261416714e4cb705dba6674ed55e1d"
+    --           },
+    --       materials =
+    --         [ minSheet "https://forms.office.com/e/jscNkH3f5Z"
+    --         , external "Monads slides + quiz" "https://wayground.com/join?gc=43039994"
+    --         ]
+    --     },
+    --   --   external "Functors and Applicatives slides + quiz"
+    --   --            "https://quizizz.com/admin/presentation/619be26fa9afb8001d4e68fa"
+    --   -- , code "ApplicativeLive2023.hs"
 
-      Entry
-        { title = "Mock Test (interactive quiz)",
-          spec =
-            Lecture
-              { slot = Second,
-                slidesFile' = Just (External $ "https://wayground.com/join?gc=59581434"),
-                lectureRecording = Nothing -- Just "https://"
-              },
-          materials =
-            [ external "Mock quiz" "https://wayground.com/join?gc=59581434"
-            , note' "interactive-mock-sheet-with-answers.pdf"
-            ]
-        },
-      Entry
-        { title = "Monads",
-          spec = Worksheet "sheet09.pdf",
-          materials = sheets 9 ++ answers 9 -- ++ [sheet "Grogu.hs"]
-        }
-    ],
+    --   Entry
+    --     { title = "Mock Test (interactive quiz)",
+    --       spec =
+    --         Lecture
+    --           { slot = Second,
+    --             slidesFile' = Just (External $ "https://wayground.com/join?gc=59581434"),
+    --             lectureRecording = Nothing -- Just "https://"
+    --           },
+    --       materials =
+    --         [ external "Mock quiz" "https://wayground.com/join?gc=59581434"
+    --         , note' "interactive-mock-sheet-with-answers.pdf"
+    --         ]
+    --     },
+    --   Entry
+    --     { title = "Monads",
+    --       spec = Worksheet "sheet09.pdf",
+    --       materials = sheets 9 ++ answers 9 -- ++ [sheet "Grogu.hs"]
+    --     }
+    -- ],
     -- Week 12/revision week
     [
       --   Entry
@@ -727,13 +727,13 @@ entryToActivity catDict entry@(Entry {title, spec, materials}) =
       dateTime = case spec of
         ExtraMaterials -> "(optional)"
         History -> "(optional)"
-        SetupLab {} -> "Mon 16/09/24<br/>15:00-18:00<br/>Wed 18/09/24<br/>10:00-13:00<br/>MVB2.11/1.15"
-        Worksheet {} -> "Mon 15:00-18:00<br/>MVB2.11/1.15"
+        SetupLab {} -> "Mon 21/09/26<br/>15:00-18:00<br/>Wed 23/09/26<br/>9:00-11:00<br/>MVB2.11/2.34/1.15"
+        Worksheet {} -> "Wed 9:00-11:00<br/>MVB2.11/2.34/1.15"
         WorksheetBonus {} -> "(optional)"
-        Lectures {} -> "Mon 10:00-10:50<br/>Tues 16:00-16:50"
+        Lectures {} -> "Tues 15:00-17:00<br/>Thur 15:00-16:00"
         Lecture {slot} -> case slot of
-          First -> "Mon 10:00-10:50<br/>BIOMEDICAL BLDG E29"
-          Second -> "Tues 16:00-16:50<br/>CHEM BLDG LT1"
+          First -> "Tues 15:00-17:00<br/>CHEM BLDG LT1"
+          Second -> "Thur 15:00-16:00<br/>CHEM BLDG LT1"
           Other s -> s
         LectureExtra {} -> "(optional)"
         NotesExtra -> "(optional)"
