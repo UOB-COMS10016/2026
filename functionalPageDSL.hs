@@ -1016,7 +1016,7 @@ courseworkLink :: String -> URL
 courseworkLink = dir "coursework"
 
 miscLink :: String -> URL
-miscLink = dir "code"
+miscLink = dir "misc"
 
 -- Grid entries
 
