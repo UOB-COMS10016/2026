@@ -51,7 +51,7 @@ var categories = [
 var activities = [
 
 //WEEK 01 - INTRO
-["5", "in your own time",   "<a href='https://seis.bristol.ac.uk/~sh1670/LinTut.pdf' target='_blank'>THE LINUX TUTORIAL</a><hr/><a href='http://people.cs.bris.ac.uk/~burghard/setup/COMS10016_Marking.pdf' target='_blank'>MARKING GUIDE</a><hr/><a href='http://people.cs.bris.ac.uk/~burghard/setup/COMS10016_PGuide.pdf' target='_blank'>GOLDEN C RULES</a>",         "", "", "0", "0"],
+["5", "in your own time",   "<a href='https://seis.bristol.ac.uk/~sh1670/LinTut.pdf' target='_blank'>THE LINUX TUTORIAL</a><hr/><a href='https://uob-coms10016.github.io/2026/COMS10016_Marking.pdf' target='_blank'>MARKING GUIDE</a><hr/><a href='http://people.cs.bris.ac.uk/~burghard/setup/COMS10016_PGuide.pdf' target='_blank'>GOLDEN C RULES</a>",         "", "", "0", "0"],
 // <a href='https://uob.sharepoint.com/:b:/r/teams/UnitTeams-COMS10016-2024-25-TB-1-A/Shared%20Documents/General/studycs2024.pdf?csf=1&web=1&e=7N6tVa' target='_blank'>HOW TO STUDY CS</a>
 ["1", "Mon 21/09/26<br/>10am-11am<br/>CHEM BLDG LT1", "Welcome Lecture",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_01.pdf", "", "21", "4"],
 // ["1", "Tue 17/09/24<br/>05:00pm-05:50pm<br/>CHEM BLDG LT1", "Welcome Lecture",  "https://uob.sharepoint.com/:b:/r/teams/UnitTeams-COMS10016-2024-25-TB-1-A/Shared%20Documents/General/COMS10016_00.pdf?csf=1&web=1&e=0jQgfY", "", "21", "4"],
