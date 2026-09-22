@@ -54,12 +54,13 @@ functionalPage =
           spec =
             Lecture
               { slot = First,
-                slidesFile' = Right (External "https://docs.google.com/presentation/d/1gzT3-odHvnrTALIdno_fo3Sbx2UCW4p6b0Lom5E5zEQ/edit?usp=sharing"),
+                slidesFile' = Right (External "https://docs.google.com/presentation/d/1DiapOoijfu_mNmz7vajflsmM7kC2c4-IdmqEzG0nKRM"),
                 lectureRecording = Nothing
               },
           materials =
             [ -- external "Welcome to Functional Programming Slides" "https://docs.google.com/presentation/d/1MKHf1CZkwJsLV3uAFo5z_BxJaFF6kmA1Vuc6TKloAjM/edit?usp=sharing"
               misc "Roadmap.pdf"
+            , code "ExpressionsLive-v0.1.hs"
             , minSheet "https://forms.cloud.microsoft/e/w1iprVsbWX"
             ]
         },

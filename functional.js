@@ -25,8 +25,8 @@ var categories = [
 
 const activities = [
 ["1","(optional)","","","","0","1",],
-["2","Tues 15:00-17:00<br/>CHEM BLDG LT1","Introduction + Expressions and Evaluation","https://docs.google.com/presentation/d/1gzT3-odHvnrTALIdno_fo3Sbx2UCW4p6b0Lom5E5zEQ/edit?usp=sharing","","1","2",],
-["2","Thur 15:00-16:00<br/>CHEM BLDG LT1","Expressions and Evaluation (cont.)","501.html?d=2026-09-28","","3","1",],
+["2","Tues 15:00-17:00<br/>CHEM BLDG LT1","Introduction + Expressions and Evaluation","https://docs.google.com/presentation/d/1DiapOoijfu_mNmz7vajflsmM7kC2c4-IdmqEzG0nKRM","","1","3",],
+["2","Thur 15:00-16:00<br/>CHEM BLDG LT1","Expressions and Evaluation (cont.)","501.html?d=2026-09-28","","4","1",],
 ["3","Mon 21/09/26<br/>15:00-18:00<br/>Wed 23/09/26<br/>9:00-11:00<br/>MVB2.11/2.34/1.15","GET YOUR PC READY","./setup.html","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -62,8 +62,9 @@ const activities = [
 const files = [
 ["0","https://plrg-bristol.github.io/","Bristol PL Research Group",],
 ["1","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/misc/Roadmap.pdf","Roadmap.pdf",],
-["2","https://forms.cloud.microsoft/e/w1iprVsbWX","Minute Sheet",],
-["3","https://forms.cloud.microsoft/e/QZ62B9rgG8","Minute Sheet",],
+["2","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/ExpressionsLive-v0.1.hs","ExpressionsLive-v0.1.hs",],
+["3","https://forms.cloud.microsoft/e/w1iprVsbWX","Minute Sheet",],
+["4","https://forms.cloud.microsoft/e/QZ62B9rgG8","Minute Sheet",],
 
 ];
 
