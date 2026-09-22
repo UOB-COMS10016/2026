@@ -25,7 +25,7 @@ var categories = [
 
 const activities = [
 ["1","(optional)","","","","0","1",],
-["2","Tues 15:00-17:00<br/>CHEM BLDG LT1","Introduction + Expressions and Evaluation","501.html?d=2026-09-23","","1","2",],
+["2","Tues 15:00-17:00<br/>CHEM BLDG LT1","Introduction + Expressions and Evaluation","https://docs.google.com/presentation/d/1gzT3-odHvnrTALIdno_fo3Sbx2UCW4p6b0Lom5E5zEQ/edit?usp=sharing","","1","2",],
 ["2","Thur 15:00-16:00<br/>CHEM BLDG LT1","Expressions and Evaluation (cont.)","501.html?d=2026-09-28","","3","1",],
 ["3","Mon 21/09/26<br/>15:00-18:00<br/>Wed 23/09/26<br/>9:00-11:00<br/>MVB2.11/2.34/1.15","GET YOUR PC READY","./setup.html","","0","0",],
 ["0","","","","","0","0",],

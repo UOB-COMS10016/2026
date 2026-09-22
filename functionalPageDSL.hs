@@ -54,7 +54,7 @@ functionalPage =
           spec =
             Lecture
               { slot = First,
-                slidesFile' = Left "2026-09-23", -- Right (External "https://docs.google.com/presentation/d/1MKHf1CZkwJsLV3uAFo5z_BxJaFF6kmA1Vuc6TKloAjM/edit?usp=sharing"),
+                slidesFile' = Right (External "https://docs.google.com/presentation/d/1gzT3-odHvnrTALIdno_fo3Sbx2UCW4p6b0Lom5E5zEQ/edit?usp=sharing"),
                 lectureRecording = Nothing
               },
           materials =
