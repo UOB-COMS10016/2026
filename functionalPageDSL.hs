@@ -21,7 +21,7 @@ main = putStr $ pageToJS functionalPage config
 config :: Config
 config =
   MkConfig
-    { currentWeek = 1,
+    { currentWeek = 2,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -85,41 +85,41 @@ functionalPage =
         }
     ],
     -- Week 2
-    -- [ Entry
-    --     { title = "Pattern Matching and Recursion",
-    --       spec =
-    --         Lecture
-    --           { slot = First,
-    --             slidesFile' = Right (BBCode "PatternsAndRecursionBP.hs"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/e1f29257460e4182bd80fa64a623fe3f1d"
-    --           },
-    --       materials =
-    --         [ code "PatternsAndRecursionBP.hs"
-    --         , code "PatternsAndRecursionLive.hs"
-    --         , minSheet "https://forms.cloud.microsoft/e/2WYXgw55gE"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "Types",
-    --       spec =
-    --         Lecture
-    --           { slot = Second,
-    --             slidesFile' = Right (BBCode "Types.hs"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/8b31499164f14e8eb9429ee6e79c469b1d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/BpZuXP2fVc"
-    --         , code "TypesLive.hs"
-    --         , code "TypesTemplate.hs"
-    --         , code "TypesBP.hs"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "Basic Programming",
-    --       spec = Worksheet "sheet01.pdf",
-    --       materials = sheets 1 ++ answers 1
-    --     }
-    -- ],
+    [ Entry
+        { title = "Pattern Matching and Recursion",
+          spec =
+            Lecture
+              { slot = First,
+                slidesFile' = Left "2026-09-30",-- Right (BBCode "PatternsAndRecursionBP.hs"),
+                lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/e1f29257460e4182bd80fa64a623fe3f1d"
+              },
+          materials =
+            [ -- code "PatternsAndRecursionBP.hs"
+            -- , code "PatternsAndRecursionLive.hs"
+              minSheet "https://forms.cloud.microsoft/e/2WYXgw55gE"
+            ]
+        },
+      Entry
+        { title = "Types",
+          spec =
+            Lecture
+              { slot = Second,
+                slidesFile' = Left "2026-10-02", -- Right (BBCode "Types.hs"),
+                lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/8b31499164f14e8eb9429ee6e79c469b1d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/BpZuXP2fVc"
+            -- , code "TypesLive.hs"
+            -- , code "TypesTemplate.hs"
+            -- , code "TypesBP.hs"
+            ]
+        },
+      Entry
+        { title = "Basic Programming",
+          spec = Worksheet "sheet01.pdf",
+          materials = sheets 1 -- ++ answers 1
+        }
+    ],
     -- -- Week 3
     -- [ Entry
     --     { title = "History of Haskell",
