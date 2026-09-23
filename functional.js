@@ -18,16 +18,17 @@ const extendCatNum2 = -1;
 var categories = [
 ["0","","#CCCCCC","0","","",],
 ["1","Extra Materials","#DDDDDD","0","","Materials",],
-["2","Lecture","#CCCFFF","0","","Materials",],
-["3","Setup Lab:","#EEEEDD","0","","",],
+["2","Lecture","#CCCFFF","0","Lecture Recording","Materials",],
+["3","Lecture","#CCCFFF","0","","Materials",],
+["4","Setup Lab:","#EEEEDD","0","","",],
 
 ];
 
 const activities = [
 ["1","(optional)","","","","0","1",],
-["2","Tues 15:00-17:00<br/>CHEM BLDG LT1","Introduction + Expressions and Evaluation","https://docs.google.com/presentation/d/1DiapOoijfu_mNmz7vajflsmM7kC2c4-IdmqEzG0nKRM","","1","3",],
-["2","Thur 15:00-16:00<br/>CHEM BLDG LT1","Expressions and Evaluation (cont.)","501.html?d=2026-09-28","","4","1",],
-["3","Mon 21/09/26<br/>15:00-18:00<br/>Wed 23/09/26<br/>9:00-11:00<br/>MVB2.11/2.34/1.15","GET YOUR PC READY","./setup.html","","0","0",],
+["2","Tues 15:00-17:00<br/>CHEM BLDG LT1","Introduction + Expressions and Evaluation","https://docs.google.com/presentation/d/1DiapOoijfu_mNmz7vajflsmM7kC2c4-IdmqEzG0nKRM","https://mediasite.bris.ac.uk/Mediasite/Play/a0ce3259bfc6444a8768d6942750dfd61d","1","3",],
+["3","Thur 15:00-16:00<br/>CHEM BLDG LT1","Expressions and Evaluation (cont.)","501.html?d=2026-09-28","","4","1",],
+["4","Mon 21/09/26<br/>15:00-18:00<br/>Wed 23/09/26<br/>9:00-11:00<br/>MVB2.11/2.34/1.15","GET YOUR PC READY","./setup.html","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],

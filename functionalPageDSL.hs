@@ -55,7 +55,7 @@ functionalPage =
             Lecture
               { slot = First,
                 slidesFile' = Right (External "https://docs.google.com/presentation/d/1DiapOoijfu_mNmz7vajflsmM7kC2c4-IdmqEzG0nKRM"),
-                lectureRecording = Nothing
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/a0ce3259bfc6444a8768d6942750dfd61d"
               },
           materials =
             [ -- external "Welcome to Functional Programming Slides" "https://docs.google.com/presentation/d/1MKHf1CZkwJsLV3uAFo5z_BxJaFF6kmA1Vuc6TKloAjM/edit?usp=sharing"
