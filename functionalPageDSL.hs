@@ -60,6 +60,7 @@ functionalPage =
           materials =
             [ -- external "Welcome to Functional Programming Slides" "https://docs.google.com/presentation/d/1MKHf1CZkwJsLV3uAFo5z_BxJaFF6kmA1Vuc6TKloAjM/edit?usp=sharing"
               misc "Roadmap.pdf"
+            , code "ExpressionsBP.hs"
             , code "ExpressionsLive-v0.1.hs"
             , minSheet "https://forms.cloud.microsoft/e/w1iprVsbWX"
             ]
@@ -69,13 +70,13 @@ functionalPage =
           spec =
             Lecture
               { slot = Second,
-                slidesFile' = Left "2026-09-28", -- Right (BBCode "ExpressionsBP.hs"),
-                lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/e8988639f39144fe870cde47f75b90671d"
+                slidesFile' = Right (BBCode "ExpressionsBP.hs"),
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/0f1a125fbd6340ab97cc998f6d28816d1d"
               },
           materials =
-            [ -- code "ExpressionsBP.hs"
-            -- , code "ExpressionsLive.hs"
-              minSheet "https://forms.cloud.microsoft/e/QZ62B9rgG8"
+            [ code "ExpressionsBP.hs"
+            , code "ExpressionsLive.hs"
+            , minSheet "https://forms.cloud.microsoft/e/QZ62B9rgG8"
             ]
         },
       Entry
