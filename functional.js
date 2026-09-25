@@ -35,9 +35,9 @@ const activities = [
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
-["4","Tues 15:00-17:00<br/>CHEM BLDG LT1","Pattern Matching and Recursion","501.html?d=2026-09-30","","8","1",],
-["4","Thur 15:00-16:00<br/>CHEM BLDG LT1","Types","501.html?d=2026-10-02","","9","1",],
-["5","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Basic Programming","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet01.pdf","","10","2",],
+["4","Tues 15:00-17:00<br/>CHEM BLDG LT1","Pattern Matching and Recursion","501.html?d=2026-09-30","","8","3",],
+["4","Thur 15:00-16:00<br/>CHEM BLDG LT1","Types","501.html?d=2026-10-02","","11","1",],
+["5","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Basic Programming","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet01.pdf","","12","2",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -79,9 +79,11 @@ const files = [
 ["6","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/ExpressionsLive.hs","ExpressionsLive.hs",],
 ["7","https://forms.cloud.microsoft/e/QZ62B9rgG8","Minute Sheet",],
 ["8","https://forms.cloud.microsoft/e/2WYXgw55gE","Minute Sheet",],
-["9","https://forms.cloud.microsoft/e/BpZuXP2fVc","Minute Sheet",],
-["10","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet01.pdf","sheet01.pdf",],
-["11","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet01Dyslexic.pdf","sheet01Dyslexic.pdf",],
+["9","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/RecursionTemplate.hs","RecursionTemplate.hs",],
+["10","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/BeautyOfRecursion.png","BeautyOfRecursion.png",],
+["11","https://forms.cloud.microsoft/e/BpZuXP2fVc","Minute Sheet",],
+["12","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet01.pdf","sheet01.pdf",],
+["13","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet01Dyslexic.pdf","sheet01Dyslexic.pdf",],
 
 ];
 

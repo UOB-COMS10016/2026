@@ -95,9 +95,11 @@ functionalPage =
                 lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/e1f29257460e4182bd80fa64a623fe3f1d"
               },
           materials =
-            [ -- code "PatternsAndRecursionBP.hs"
-            -- , code "PatternsAndRecursionLive.hs"
-              minSheet "https://forms.cloud.microsoft/e/2WYXgw55gE"
+            [ minSheet "https://forms.cloud.microsoft/e/2WYXgw55gE"
+            , code "RecursionTemplate.hs"
+            , code "BeautyOfRecursion.png"
+            --, code "RecursionBP.hs"
+            --, code "RecursionLive.hs"
             ]
         },
       Entry
