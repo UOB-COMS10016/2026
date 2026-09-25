@@ -113,7 +113,7 @@ functionalPage =
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/BpZuXP2fVc"
             -- , code "TypesLive.hs"
-            -- , code "TypesTemplate.hs"
+            , code "TypesTemplate.hs"
             -- , code "TypesBP.hs"
             ]
         },
