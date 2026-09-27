@@ -67,7 +67,7 @@ var activities = [
 ["0", "Mon 28/09/26<br/>10am-11am<br/>CHEM BLDG LT1",     "LITERALS, ENUMS &amp; CONSTANTS", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_04.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/87f3017862004a37ae1ac8b3fbdab33a1d", "31", "2"],
 ["0", "Mon 28/09/26<br/>3pm-5pm<br/>MVB2.11/1.15/2.34",     "LOOPS &amp; JUMPS",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_05.pdf",   "https://mediasite.bris.ac.uk/Mediasite/Play/ecad33ee4d3f4d6889d4a0993c8c64fc1d", "33", "2"],
 ["6", "Mon 28/09/26<br/>3pm-5pm<br/>MVB2.11/1.15/2.34", "BIG INTEGER CHALLENGE",   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week02/index.html", "", "17", "4"],
-["4", "in your own time",     "TOWERS OF HANOI",               "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_Task02.pdf", "", "165", "6"],
+["3", "in your own time",     "TOWERS OF HANOI",               "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_Task02.pdf", "", "165", "6"],
 ["0", "Fri 02/10/26<br/>10am-11am<br/>PHYS G42 POWELL",     "ARRAYS",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_06.pdf",       "https://mediasite.bris.ac.uk/Mediasite/Play/6fc2ef02c0cf4c14946695028ed6d8921d", "35", "3"],
 ["9", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                 "", "", "0", "0"],
