@@ -96,6 +96,9 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/2WYXgw55gE"
+            , code "PatternMatchingTemplate.hs"
+            --, code "PatternMatchingBP.hs"
+            --, code "PatternMatchingLive.hs"
             , code "RecursionTemplate.hs"
             , code "BeautyOfRecursion.png"
             --, code "RecursionBP.hs"
