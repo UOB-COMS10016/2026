@@ -123,7 +123,7 @@ functionalPage =
       Entry
         { title = "Basic Programming",
           spec = Worksheet "sheet01.pdf",
-          materials = sheets 1 -- ++ answers 1
+          materials = sheets 1 ++ answers 1
         }
     ],
     -- Week 3
