@@ -91,7 +91,7 @@ functionalPage =
           spec =
             Lecture
               { slot = First,
-                slidesFile' = Left "2026-09-30",-- Right (BBCode "PatternsAndRecursionBP.hs"),
+                slidesFile' = Right (BBCode "Lecture2MasterBP.hs"),
                 lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/e1f29257460e4182bd80fa64a623fe3f1d"
               },
           materials =
