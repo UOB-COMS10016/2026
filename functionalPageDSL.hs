@@ -92,7 +92,7 @@ functionalPage =
             Lecture
               { slot = First,
                 slidesFile' = Right (BBCode "Lecture2MasterBP.hs"),
-                lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/e1f29257460e4182bd80fa64a623fe3f1d"
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/5f28bc1639f44aaf98503ea06ba7ef7f1d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/2WYXgw55gE"

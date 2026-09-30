@@ -35,7 +35,7 @@ const activities = [
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
-["4","Tues 15:00-17:00<br/>CHEM BLDG LT1","Pattern Matching and Recursion","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/Lecture2MasterBP.hs","","8","8",],
+["2","Tues 15:00-17:00<br/>CHEM BLDG LT1","Pattern Matching and Recursion","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/Lecture2MasterBP.hs","https://mediasite.bris.ac.uk/Mediasite/Play/5f28bc1639f44aaf98503ea06ba7ef7f1d","8","8",],
 ["4","Thur 15:00-16:00<br/>CHEM BLDG LT1","Types","501.html?d=2026-10-02","","16","2",],
 ["5","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Basic Programming","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet01.pdf","","18","2",],
 ["0","","","","","0","0",],
