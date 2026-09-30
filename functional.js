@@ -22,6 +22,7 @@ var categories = [
 ["3","Setup Lab:","#EEEEDD","0","","",],
 ["4","Lecture","#CCCFFF","0","","Materials",],
 ["5","Worksheet","#EEEEDD","1","","Materials",],
+["6","History","#EEEEDD","0","","Materials",],
 
 ];
 
@@ -38,6 +39,14 @@ const activities = [
 ["2","Tues 15:00-17:00<br/>CHEM BLDG LT1","Pattern Matching and Recursion","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/Lecture2MasterBP.hs","https://mediasite.bris.ac.uk/Mediasite/Play/5f28bc1639f44aaf98503ea06ba7ef7f1d","8","8",],
 ["4","Thur 15:00-16:00<br/>CHEM BLDG LT1","Types","501.html?d=2026-10-02","","16","2",],
 ["5","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Basic Programming","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet01.pdf","","18","2",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["6","(optional)","History of Haskell","","","20","2",],
+["4","Tues 15:00-17:00<br/>CHEM BLDG LT1","Lists","501.html?d=2026-10-08","","22","1",],
+["2","Thur 15:00-16:00<br/>CHEM BLDG LT1","ADTs","501.html?d=2026-10-10","https://mediasite.bris.ac.uk/Mediasite/Play/6ff54ed428af4d1b9d25ea70135c572e1d","23","1",],
+["5","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Lists","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet02.pdf","","24","5",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -90,6 +99,15 @@ const files = [
 ["17","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/TypesTemplate.hs","TypesTemplate.hs",],
 ["18","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet01.pdf","sheet01.pdf",],
 ["19","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet01Dyslexic.pdf","sheet01Dyslexic.pdf",],
+["20","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/notes/HistoryOfHaskell.pdf","History of Haskell",],
+["21","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/notes/HowFPMattered.pdf","How Functional Programming Mattered",],
+["22","https://forms.cloud.microsoft/e/6fkHNR7iaW","Minute Sheet",],
+["23","https://forms.cloud.microsoft/e/6fkHNR7iaW","Minute Sheet",],
+["24","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet02.pdf","sheet02.pdf",],
+["25","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet02Dyslexic.pdf","sheet02Dyslexic.pdf",],
+["26","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/answer02.pdf","answer02.pdf",],
+["27","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/answer02Dyslexic.pdf","answer02Dyslexic.pdf",],
+["28","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/code02.hs","code02.hs",],
 
 ];
 
