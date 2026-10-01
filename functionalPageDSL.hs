@@ -170,9 +170,9 @@ functionalPage =
             ]
         },
       Entry
-        { title = "Lists",
+        { title = "Types and Lists",
           spec = Worksheet "sheet02.pdf",
-          materials = sheets 2 ++ answers 2
+          materials = sheets 2 -- ++ answers 2
         }
     ],
     -- -- Week 4
@@ -213,7 +213,7 @@ functionalPage =
     --   Entry
     --     { title = "ADTs, Polymorphism and TypeClasses",
     --       spec = Worksheet "sheet03.pdf",
-    --       materials = sheets 3 ++ answers 3
+    --       materials = sheets 3 -- ++ answers 3
     --     },
     --   Entry
     --     { title = "Power to the People",
@@ -267,9 +267,9 @@ functionalPage =
     --     { title = "HO Programming and Laziness",
     --       spec = Worksheet "sheet04.pdf",
     --       materials = sheets  4
-    --                ++ answers 4
-    --                ++ [sheet "sheetLazy.pdf",  sheet "sheetLazyDyslexic.pdf"]
-    --                ++ [sheet "answerLazy.pdf", sheet "answerLazyDyslexic.pdf"]
+    --                -- ++ answers 4
+    --                -- ++ [sheet "sheetLazy.pdf",  sheet "sheetLazyDyslexic.pdf"]
+    --                -- ++ [sheet "answerLazy.pdf", sheet "answerLazyDyslexic.pdf"]
     --     },
     --   Entry
     --     { title = "Structural Inductive Proofs",
@@ -322,7 +322,7 @@ functionalPage =
     --   Entry
     --     { title = "Folding",
     --       spec = Worksheet "sheet05.pdf",
-    --       materials = sheets 5 ++ answers 5
+    --       materials = sheets 5 -- ++ answers 5
     --     },
     --   Entry
     --     { title = "Sudoku",
@@ -387,7 +387,7 @@ functionalPage =
     --   Entry
     --     { title = "Functors and Parsers",
     --       spec = Worksheet "sheet06.pdf",
-    --       materials = sheets 6 ++ answers 6
+    --       materials = sheets 6 -- ++ answers 6
     --     }
     --     ,
     --   Entry
@@ -443,7 +443,7 @@ functionalPage =
     --   Entry
     --     { title = "Applicative Parsing",
     --       spec = Worksheet "sheet07.pdf",
-    --       materials = sheets 7 ++ [MkMaterial "Skeleton code" (sheetLink "Sheet7Skeleton.hs")] ++ answers 7
+    --       materials = sheets 7 ++ [MkMaterial "Skeleton code" (sheetLink "Sheet7Skeleton.hs")] -- ++ answers 7
     --     },
     --   Entry
     --     { title = "Monoids",
@@ -484,7 +484,7 @@ functionalPage =
     --   Entry
     --     { title = "IO",
     --       spec = Worksheet "sheet08.pdf",
-    --       materials = sheets 8 ++ answers 8
+    --       materials = sheets 8 ++ -- answers 8
     --     },
     --   Entry
     --     { title = "Maps, Tries, Sets, and Perfect Trees",
@@ -536,7 +536,7 @@ functionalPage =
     --   Entry
     --     { title = "Monads",
     --       spec = Worksheet "sheet09.pdf",
-    --       materials = sheets 9 ++ answers 9 -- ++ [sheet "Grogu.hs"]
+    --       materials = sheets 9 -- ++ answers 9 -- ++ [sheet "Grogu.hs"]
     --     }
     -- ],
     -- Week 12/revision week
