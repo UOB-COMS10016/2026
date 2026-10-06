@@ -140,14 +140,15 @@ functionalPage =
           spec =
             Lecture
               { slot = First,
-                slidesFile' = Left "2026-10-08", --Right (BBCode "ListsBP.hs"),
-                lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/a17919b245bf4b7fb6e8fc1a030cd6e81d"
+                slidesFile' = Right (BBCode "ListsBP.hs"),
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/7874f438de6b4eea947957515b14ea141d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/6fkHNR7iaW"
             , code "ListsTemplate.hs"
-            --, code "ListsBP.hs"
-            --, code "ListsLive.hs"
+            , code "ListsBP.hs"
+            , code "ListsLive.hs"
+            , code "blackboard.jpg"
             ]
         },
       Entry
