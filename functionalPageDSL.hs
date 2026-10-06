@@ -21,7 +21,7 @@ main = putStr $ pageToJS functionalPage config
 config :: Config
 config =
   MkConfig
-    { currentWeek = 2,
+    { currentWeek = 3,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -161,7 +161,7 @@ functionalPage =
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/6fkHNR7iaW"
             -- , code "ADTsPolymorphismTypeClassesLive.hs"
-            -- , code "ADTsTemplate.hs"
+            , code "ADTsTemplate.hs"
             -- , code "ADTsBP.hs"
             -- , code "PolymorphismTemplate.hs"
             -- , code "PolymorphismBP.hs"

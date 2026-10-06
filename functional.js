@@ -1,4 +1,4 @@
-const currentWeek   = 2;
+const currentWeek   = 3;
 const activityNum   = 8;
 const columnNum     = 4;
 const title         = "FUNCTIONAL PROGRAMMING";
@@ -45,8 +45,8 @@ const activities = [
 ["0","","","","","0","0",],
 ["5","(optional)","History of Haskell","","","25","2",],
 ["6","Tues 15:00-17:00<br/>CHEM BLDG LT1","Lists","501.html?d=2026-10-08","","27","2",],
-["2","Thur 15:00-16:00<br/>CHEM BLDG LT1","ADTs","501.html?d=2026-10-10","https://mediasite.bris.ac.uk/Mediasite/Play/6ff54ed428af4d1b9d25ea70135c572e1d","29","1",],
-["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Types and Lists","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet02.pdf","","30","2",],
+["2","Thur 15:00-16:00<br/>CHEM BLDG LT1","ADTs","501.html?d=2026-10-10","https://mediasite.bris.ac.uk/Mediasite/Play/6ff54ed428af4d1b9d25ea70135c572e1d","29","2",],
+["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Types and Lists","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet02.pdf","","31","2",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -109,8 +109,9 @@ const files = [
 ["27","https://forms.cloud.microsoft/e/6fkHNR7iaW","Minute Sheet",],
 ["28","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/ListsTemplate.hs","ListsTemplate.hs",],
 ["29","https://forms.cloud.microsoft/e/6fkHNR7iaW","Minute Sheet",],
-["30","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet02.pdf","sheet02.pdf",],
-["31","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet02Dyslexic.pdf","sheet02Dyslexic.pdf",],
+["30","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/ADTsTemplate.hs","ADTsTemplate.hs",],
+["31","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet02.pdf","sheet02.pdf",],
+["32","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet02Dyslexic.pdf","sheet02Dyslexic.pdf",],
 
 ];
 
