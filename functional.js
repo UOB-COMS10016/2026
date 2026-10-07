@@ -1,4 +1,4 @@
-const currentWeek   = 3;
+const currentWeek   = 4;
 const activityNum   = 8;
 const columnNum     = 4;
 const title         = "FUNCTIONAL PROGRAMMING";
@@ -23,6 +23,7 @@ var categories = [
 ["4","Worksheet","#EEEEDD","1","","Materials",],
 ["5","History","#EEEEDD","0","","Materials",],
 ["6","Lecture","#CCCFFF","0","","Materials",],
+["7","Formative Practical","#EEEEDD","1","","Materials",],
 
 ];
 
@@ -51,6 +52,14 @@ const activities = [
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
+["0","","","","","0","0",],
+["6","Tues 15:00-17:00<br/>CHEM BLDG LT1","Polymorphism and Type Classes","501.html?d=2026-10-14","","38","1",],
+["6","Thur 15:00-16:00<br/>CHEM BLDG LT1","Higher-Order Functions","501.html?d=2026-10-16","","39","1",],
+["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","ADTs, Polymorphism and Type Classes","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet03.pdf","","40","2",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["7","","Power to the People","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Power/Power-Instrs.pdf","","42","3",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -117,6 +126,13 @@ const files = [
 ["35","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/ADTsTemplate.hs","ADTsTemplate.hs",],
 ["36","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet02.pdf","sheet02.pdf",],
 ["37","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet02Dyslexic.pdf","sheet02Dyslexic.pdf",],
+["38","https://forms.cloud.microsoft/e/p70YZ9AvMK","Minute Sheet",],
+["39","https://forms.cloud.microsoft/e/szsFDhzxzC","Minute Sheet",],
+["40","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet03.pdf","sheet03.pdf",],
+["41","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet03Dyslexic.pdf","sheet03Dyslexic.pdf",],
+["42","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Power/Power-Instrs.pdf","Power-Instrs.pdf",],
+["43","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Power/Power-InstrsDyslexic.pdf","Power-InstrsDyslexic.pdf",],
+["44","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Power/Power-PowerToThePeople.zip","Power-PowerToThePeople.zip",],
 
 ];
 

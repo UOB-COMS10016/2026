@@ -21,7 +21,7 @@ main = putStr $ pageToJS functionalPage config
 config :: Config
 config =
   MkConfig
-    { currentWeek = 3,
+    { currentWeek = 4,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -163,13 +163,8 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/6fkHNR7iaW"
-            -- , code "ADTsPolymorphismTypeClassesLive.hs"
             , code "ADTsTemplate.hs"
-            -- , code "ADTsBP.hs"
-            -- , code "PolymorphismTemplate.hs"
-            -- , code "PolymorphismBP.hs"
-            -- , code "TypeClassesTemplate.hs"
-            -- , code "TypeClassesBP.hs"
+            -- , code "ADTsLive.hs"
             ]
         },
       Entry
@@ -178,63 +173,59 @@ functionalPage =
           materials = sheets 2 -- ++ answers 2
         }
     ],
-    -- -- Week 4
-    -- [ Entry
-    --     { title = "ADTs, Polymorphism and TypeClasses cont.",
-    --       spec =
-    --         Lecture
-    --           { slot = First,
-    --             slidesFile' = Right (BBCode "ADTsPolymorphismTypeClassesLive.hs"),
-    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/e0ac0f0e335d4589a517c97906c67aa61d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/p70YZ9AvMK"
-    --         , code "ADTsPolymorphismTypeClassesLive.hs"
-    --         , code "ADTsTemplate.hs"
-    --         , code "ADTsBP.hs"
-    --         , code "PolymorphismTemplate.hs"
-    --         , code "PolymorphismBP.hs"
-    --         , code "TypeClassesTemplate.hs"
-    --         , code "TypeClassesBP.hs"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "Higher-Order Functions",
-    --       spec =
-    --         Lecture
-    --           { slot = Second,
-    --             slidesFile' = Right (BBCode "HOLive.hs"),
-    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/08b75ad11e4a40799af16ad46219723e1d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/szsFDhzxzC"
-    --         , code "HOLive.hs"
-    --         , code "HOtemplate.hs"
-    --         , code "HObp.hs"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "ADTs, Polymorphism and TypeClasses",
-    --       spec = Worksheet "sheet03.pdf",
-    --       materials = sheets 3 -- ++ answers 3
-    --     },
-    --   Entry
-    --     { title = "Power to the People",
-    --       spec =
-    --         Coursework
-    --           { instructions = "CW1/CW1-Instrs.pdf",
-    --             submissionLink = "https://www.ole.bris.ac.uk/ultra/courses/_264153_1/outline",
-    --             deadline = "Noon, Tues 04/11/25"
-    --           },
-    --       materials =
-    --         map
-    --           (coursework "CW1")
-    --           [ "CW1-Instrs.pdf",
-    --             "CW1-InstrsDyslexic.pdf",
-    --             "CW1-PowerToThePeople.zip"
-    --           ]
-    --     }
-    -- ],
+    -- Week 4
+    [ Entry
+        { title = "Polymorphism and Type Classes",
+          spec =
+            Lecture
+              { slot = First,
+                slidesFile' = Left "2026-10-14", -- Right (BBCode "ADTsPolymorphismTypeClassesLive.hs"),
+                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/e0ac0f0e335d4589a517c97906c67aa61d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/p70YZ9AvMK"
+            -- , code "PolymorphismTemplate.hs"
+            -- , code "PolymorphismBP.hs"
+            -- , code "PolymorphismLive.hs"
+            -- , code "TypeClassesTemplate.hs"
+            -- , code "TypeClassesLive.hs"
+            ]
+        },
+      Entry
+        { title = "Higher-Order Functions",
+          spec =
+            Lecture
+              { slot = Second,
+                slidesFile' = Left "2026-10-16", -- Right (BBCode "HOLive.hs"),
+                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/08b75ad11e4a40799af16ad46219723e1d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/szsFDhzxzC"
+            -- , code "HOtemplate.hs"
+            -- , code "HObp.hs"
+            -- , code "HOLive.hs"
+            ]
+        },
+      Entry
+        { title = "ADTs, Polymorphism and Type Classes",
+          spec = Worksheet "sheet03.pdf",
+          materials = sheets 3 -- ++ answers 3
+        },
+      Entry
+        { title = "Power to the People",
+          spec =
+            FormativePractical
+              { file = "Power/Power-Instrs.pdf"
+              },
+          materials =
+            map
+              (coursework "Power")
+              [ "Power-Instrs.pdf",
+                "Power-InstrsDyslexic.pdf",
+                "Power-PowerToThePeople.zip"
+              ]
+        }
+    ],
     -- -- Week 5
     -- [ Entry
     --     { title = "Higher-Order Functions cont. + Laziness Intro",
