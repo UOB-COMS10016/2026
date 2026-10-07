@@ -149,6 +149,8 @@ functionalPage =
             , code "ListsBP.hs"
             , code "ListsLive.hs"
             , code "blackboard.jpg"
+            , code "ListExamplesBP.hs"
+            , code "ListExamplesLive.hs"
             ]
         },
       Entry
@@ -157,7 +159,7 @@ functionalPage =
             Lecture
               { slot = Second,
                 slidesFile' = Left "2026-10-10", --Right (BBCode "ADTsPolymorphismTypeClassesLive.hs"),
-                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/6ff54ed428af4d1b9d25ea70135c572e1d"
+                lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/6ff54ed428af4d1b9d25ea70135c572e1d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/6fkHNR7iaW"
@@ -183,7 +185,7 @@ functionalPage =
     --         Lecture
     --           { slot = First,
     --             slidesFile' = Right (BBCode "ADTsPolymorphismTypeClassesLive.hs"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/e0ac0f0e335d4589a517c97906c67aa61d"
+    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/e0ac0f0e335d4589a517c97906c67aa61d"
     --           },
     --       materials =
     --         [ minSheet "https://forms.cloud.microsoft/e/p70YZ9AvMK"
@@ -202,7 +204,7 @@ functionalPage =
     --         Lecture
     --           { slot = Second,
     --             slidesFile' = Right (BBCode "HOLive.hs"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/08b75ad11e4a40799af16ad46219723e1d"
+    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/08b75ad11e4a40799af16ad46219723e1d"
     --           },
     --       materials =
     --         [ minSheet "https://forms.cloud.microsoft/e/szsFDhzxzC"
@@ -240,7 +242,7 @@ functionalPage =
     --         Lecture
     --           { slot = Other "Mon 10:00-10:50<br/><u><b>PRIORY RD COMPLX LT</b></u>",
     --             slidesFile' = Right (BBCode "HOLive.hs"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/1cc5a03904124b5394267386be7c6b231d"
+    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/1cc5a03904124b5394267386be7c6b231d"
     --           },
     --       materials =
     --         [ minSheet "https://forms.cloud.microsoft/e/5LyvfU8eUu"
@@ -255,7 +257,7 @@ functionalPage =
     --         Lecture
     --           { slot = Second,
     --             slidesFile' = Right (BBCode "FoldsPart1BP.hs"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/0c25e462134346d5a8a51a03c300b95c1d"
+    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/0c25e462134346d5a8a51a03c300b95c1d"
     --           },
     --       materials =
     --         [ minSheet "https://forms.cloud.microsoft/e/0TFiDaNH9J"
@@ -287,7 +289,7 @@ functionalPage =
     --         Lecture
     --           { slot = First,
     --             slidesFile' = Right (BBCode "FoldsPart2BP.hs"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/eb4ecdeefcff41d9b3b2abc4e83d38c31d"
+    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/eb4ecdeefcff41d9b3b2abc4e83d38c31d"
     --           },
     --       materials =
     --         [ minSheet "https://forms.cloud.microsoft/e/RDDRdr688j"
@@ -302,7 +304,7 @@ functionalPage =
     --         Lecture
     --           { slot = Second,
     --             slidesFile' = Right (BBCode "FunctorBP.hs"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/491661c7f706461a979d45347d286e9a1d"
+    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/491661c7f706461a979d45347d286e9a1d"
     --           },
     --       materials =
     --         [ minSheet "https://forms.cloud.microsoft/e/vKdE4rXTkw"
@@ -345,7 +347,7 @@ functionalPage =
     --         Lecture
     --           { slot = First,
     --             slidesFile' = Right (BBCode "ParsersTemplate.hs"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/1ef73f2313204762a9334b09011735801d"
+    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/1ef73f2313204762a9334b09011735801d"
     --           },
     --       materials =
     --         [ minSheet "https://forms.cloud.microsoft/e/d7Sv7F7kPF"
@@ -360,7 +362,7 @@ functionalPage =
     --         Lecture
     --           { slot = Second,
     --             slidesFile' = Right (BBCode "ApplicativeTemplate.hs"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/a98978fda34a4af6a46a542456c394361d"
+    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/a98978fda34a4af6a46a542456c394361d"
     --           },
     --       materials =
     --         [ minSheet "https://forms.cloud.microsoft/e/iacb4N8pbh"
@@ -415,7 +417,7 @@ functionalPage =
     --         Lecture
     --           { slot = First,
     --             slidesFile' = Right (BBCode "ApplicativeChessParsingBP.hs"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/35dc3f438d8148c6b6ddec46dd280c8a1d"
+    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/35dc3f438d8148c6b6ddec46dd280c8a1d"
     --           },
     --       materials =
     --         [ minSheet "https://forms.cloud.microsoft/e/9Hd3RVV27R"
@@ -433,7 +435,7 @@ functionalPage =
     --         Lecture
     --           { slot = Second,
     --             slidesFile' = Right (BBCode "IOBP.hs"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/062d4c1d1b504f4799c9d0c255dd0a3f1d"
+    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/062d4c1d1b504f4799c9d0c255dd0a3f1d"
     --           },
     --       materials =
     --         [ minSheet "https://forms.cloud.microsoft/e/pkByWDsxVn"
@@ -459,7 +461,7 @@ functionalPage =
     --         Lecture
     --           { slot = First,
     --             slidesFile' = Right (BBCode "KatamariHaskacyBP.hs"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/f185786896274e328a172000e5d4c6fd1d"
+    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/f185786896274e328a172000e5d4c6fd1d"
     --           },
     --       materials =
     --         [ minSheet "https://forms.cloud.microsoft/e/Q8rH5TSGCa"
@@ -474,7 +476,7 @@ functionalPage =
     --         Lecture
     --           { slot = Second,
     --             slidesFile' = Right (External "https://wayground.com/join?gc=60715962"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/b4130a3e72e04b1dac534b1efb6038421d"
+    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/b4130a3e72e04b1dac534b1efb6038421d"
     --           },
     --       materials =
     --         [ minSheet "https://forms.cloud.microsoft/e/fJHcHfLUsz"
@@ -510,7 +512,7 @@ functionalPage =
     --         Lecture
     --           { slot = Other "Mon 10:00-10:50<br/><u><b>PRIORY RD COMPLX LT</b></u>",
     --             slidesFile' = Right (External "https://wayground.com/join?gc=43039994"),
-    --             lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/41f1261416714e4cb705dba6674ed55e1d"
+    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/41f1261416714e4cb705dba6674ed55e1d"
     --           },
     --       materials =
     --         [ minSheet "https://forms.cloud.microsoft/e/jscNkH3f5Z"
