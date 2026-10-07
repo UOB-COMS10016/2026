@@ -170,7 +170,7 @@ functionalPage =
       Entry
         { title = "Types and Lists",
           spec = Worksheet "sheet02.pdf",
-          materials = sheets 2 -- ++ answers 2
+          materials = sheets 2 ++ answers 2
         }
     ],
     -- Week 4
