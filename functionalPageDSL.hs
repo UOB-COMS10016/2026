@@ -158,13 +158,14 @@ functionalPage =
           spec =
             Lecture
               { slot = Second,
-                slidesFile' = Left "2026-10-10", --Right (BBCode "ADTsPolymorphismTypeClassesLive.hs"),
-                lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/6ff54ed428af4d1b9d25ea70135c572e1d"
+                slidesFile' = Right (BBCode "ADTsBPpt1.hs"),
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/121ef09065d24316bc1f3b7d66513ace1d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/6fkHNR7iaW"
             , code "ADTsTemplate.hs"
-            -- , code "ADTsLive.hs"
+            , code "ADTsLive.hs"
+            , code "ADTsBPpt1.hs"
             ]
         },
       Entry
