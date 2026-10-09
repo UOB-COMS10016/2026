@@ -185,10 +185,10 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/p70YZ9AvMK"
-            -- , code "PolymorphismTemplate.hs"
+            , code "PolymorphismTemplate.hs"
             -- , code "PolymorphismBP.hs"
             -- , code "PolymorphismLive.hs"
-            -- , code "TypeClassesTemplate.hs"
+            , code "TypeClassesTemplate.hs"
             -- , code "TypeClassesLive.hs"
             ]
         },
