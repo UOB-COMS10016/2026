@@ -202,7 +202,7 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/szsFDhzxzC"
-            -- , code "HOtemplate.hs"
+            , code "HOtemplate.hs"
             -- , code "HObp.hs"
             -- , code "HOLive.hs"
             ]
