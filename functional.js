@@ -1,4 +1,4 @@
-const currentWeek   = 4;
+const currentWeek   = 5;
 const activityNum   = 8;
 const columnNum     = 4;
 const title         = "FUNCTIONAL PROGRAMMING";
@@ -24,6 +24,7 @@ var categories = [
 ["5","History","#EEEEDD","0","","Materials",],
 ["6","Lecture","#CCCFFF","0","","Materials",],
 ["7","Formative Practical","#EEEEDD","1","","Materials",],
+["8","Bonus Worksheet","#EEEEDD","1","","Materials",],
 
 ];
 
@@ -55,11 +56,19 @@ const activities = [
 ["0","","","","","0","0",],
 ["2","Tues 15:00-17:00<br/>CHEM BLDG LT1","Polymorphism and Type Classes","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/PolymorphismBP.hs","https://mediasite.bris.ac.uk/Mediasite/Play/74f7885f10e741b1a8356d2184ee34241d","43","9",],
 ["6","Thur 15:00-16:00<br/>CHEM BLDG LT1","Higher-Order Functions","501.html?d=2026-10-16","","52","2",],
-["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","ADTs, Polymorphism and Type Classes","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet03.pdf","","54","2",],
+["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","ADTs, Polymorphism and Type Classes","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet03.pdf","","54","5",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
-["7","","Power to the People","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Power/Power-Instrs.pdf","","56","3",],
+["7","","Power to the People","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Power/Power-Instrs.pdf","","59","3",],
+["0","","","","","0","0",],
+["6","Tues 15:00-17:00<br/>CHEM BLDG LT1","Higher-Order Functions cont. + List Comprehensions","501.html?d=2026-10-21","","62","4",],
+["6","Thur 15:00-16:00<br/>CHEM BLDG LT1","Folds","501.html?d=2026-10-23","","66","1",],
+["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","HO Programming and List Comprehensions","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet04.pdf","","67","2",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["8","(optional)","Structural Inductive Proofs","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheetBonus1.pdf","","69","5",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -144,9 +153,24 @@ const files = [
 ["53","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/HOtemplate.hs","HOtemplate.hs",],
 ["54","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet03.pdf","sheet03.pdf",],
 ["55","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet03Dyslexic.pdf","sheet03Dyslexic.pdf",],
-["56","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Power/Power-Instrs.pdf","Power-Instrs.pdf",],
-["57","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Power/Power-InstrsDyslexic.pdf","Power-InstrsDyslexic.pdf",],
-["58","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Power/Power-PowerToThePeople.zip","Power-PowerToThePeople.zip",],
+["56","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/answer03.pdf","answer03.pdf",],
+["57","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/answer03Dyslexic.pdf","answer03Dyslexic.pdf",],
+["58","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/code03.hs","code03.hs",],
+["59","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Power/Power-Instrs.pdf","Power-Instrs.pdf",],
+["60","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Power/Power-InstrsDyslexic.pdf","Power-InstrsDyslexic.pdf",],
+["61","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Power/Power-PowerToThePeople.zip","Power-PowerToThePeople.zip",],
+["62","https://forms.cloud.microsoft/e/5LyvfU8eUu","Minute Sheet",],
+["63","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/HOLive.hs","HOLive.hs",],
+["64","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/HOtemplate.hs","HOtemplate.hs",],
+["65","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/HObp.hs","HObp.hs",],
+["66","https://forms.cloud.microsoft/e/0TFiDaNH9J","Minute Sheet",],
+["67","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet04.pdf","sheet04.pdf",],
+["68","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet04Dyslexic.pdf","sheet04Dyslexic.pdf",],
+["69","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheetBonus1.pdf","sheetBonus1.pdf",],
+["70","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheetBonus1Dyslexic.pdf","sheetBonus1Dyslexic.pdf",],
+["71","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/notes/StructuralInductiveProofs.pdf","Structural Inductive Proofs",],
+["72","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/answerBonus1.pdf","answerBonus1.pdf",],
+["73","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/answerBonus1Dyslexic.pdf","answerBonus1Dyslexic.pdf",],
 
 ];
 

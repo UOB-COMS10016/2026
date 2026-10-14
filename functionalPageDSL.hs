@@ -21,7 +21,7 @@ main = putStr $ pageToJS functionalPage config
 config :: Config
 config =
   MkConfig
-    { currentWeek = 4,
+    { currentWeek = 5,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -201,7 +201,7 @@ functionalPage =
             Lecture
               { slot = Second,
                 slidesFile' = Left "2026-10-16", -- Right (BBCode "HOLive.hs"),
-                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/08b75ad11e4a40799af16ad46219723e1d"
+                lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/08b75ad11e4a40799af16ad46219723e1d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/szsFDhzxzC"
@@ -213,7 +213,7 @@ functionalPage =
       Entry
         { title = "ADTs, Polymorphism and Type Classes",
           spec = Worksheet "sheet03.pdf",
-          materials = sheets 3 -- ++ answers 3
+          materials = sheets 3 ++ answers 3
         },
       Entry
         { title = "Power to the People",
@@ -230,51 +230,52 @@ functionalPage =
               ]
         }
     ],
-    -- -- Week 5
-    -- [ Entry
-    --     { title = "Higher-Order Functions cont. + Laziness Intro",
-    --       spec =
-    --         Lecture
-    --           { slot = Other "Mon 10:00-10:50<br/><u><b>PRIORY RD COMPLX LT</b></u>",
-    --             slidesFile' = Right (BBCode "HOLive.hs"),
-    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/1cc5a03904124b5394267386be7c6b231d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/5LyvfU8eUu"
-    --         , code "HOLive.hs"
-    --         , code "HOtemplate.hs"
-    --         , code "HObp.hs"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "Folds",
-    --       spec =
-    --         Lecture
-    --           { slot = Second,
-    --             slidesFile' = Right (BBCode "FoldsPart1BP.hs"),
-    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/0c25e462134346d5a8a51a03c300b95c1d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/0TFiDaNH9J"
-    --         , code "FoldsPart1BP.hs"
-    --         , code "FoldsPart1Template.hs"
-    --         , code "FoldsPart1Live.hs"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "HO Programming and Laziness",
-    --       spec = Worksheet "sheet04.pdf",
-    --       materials = sheets  4
-    --                -- ++ answers 4
-    --                -- ++ [sheet "sheetLazy.pdf",  sheet "sheetLazyDyslexic.pdf"]
-    --                -- ++ [sheet "answerLazy.pdf", sheet "answerLazyDyslexic.pdf"]
-    --     },
-    --   Entry
-    --     { title = "Structural Inductive Proofs",
-    --       spec = WorksheetBonus "sheetBonus1.pdf",
-    --       materials = sheetsBonus 1 ++ [note "Structural Inductive Proofs" "StructuralInductiveProofs.pdf"] ++ answersBonus 1
-    --     }
-    -- ],
+    -- Week 5
+    [ Entry
+        { title = "Higher-Order Functions cont. + List Comprehensions",
+          spec =
+            Lecture
+              { slot = First,
+                slidesFile' = Left "2026-10-21", -- Right (BBCode "HOLive.hs"),
+                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/1cc5a03904124b5394267386be7c6b231d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/5LyvfU8eUu"
+            , code "HOLive.hs"
+            , code "HOtemplate.hs"
+            , code "HObp.hs"
+            -- , code "ListCompTemplate.hs"
+            -- , code "ListCompBP.hs"
+            -- , code "ListCompLive.hs"
+            ]
+        },
+      Entry
+        { title = "Folds",
+          spec =
+            Lecture
+              { slot = Second,
+                slidesFile' = Left "2026-10-23", -- Right (BBCode "FoldsPart1BP.hs"),
+                lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/0c25e462134346d5a8a51a03c300b95c1d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/0TFiDaNH9J"
+            -- , code "FoldsPart1BP.hs"
+            -- , code "FoldsPart1Template.hs"
+            -- , code "FoldsPart1Live.hs"
+            ]
+        },
+      Entry
+        { title = "HO Programming and List Comprehensions",
+          spec = Worksheet "sheet04.pdf",
+          materials = sheets  4
+                   -- ++ answers 4
+        },
+      Entry
+        { title = "Structural Inductive Proofs",
+          spec = WorksheetBonus "sheetBonus1.pdf",
+          materials = sheetsBonus 1 ++ [note "Structural Inductive Proofs" "StructuralInductiveProofs.pdf"] ++ answersBonus 1
+        }
+    ],
     -- -- Reading week
     -- [],
     -- -- Week 7
