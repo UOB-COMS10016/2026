@@ -239,7 +239,7 @@ functionalPage =
               (coursework "Power")
               [ "Power-Instrs.pdf",
                 "Power-InstrsDyslexic.pdf",
-                "Power-PowerToThePeople.zip"
+                "PowerToThePeople.zip"
               ]
         }
     ],
@@ -254,9 +254,9 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/5LyvfU8eUu"
-            , code "HOLive.hs"
             , code "HOtemplate.hs"
-            , code "HObp.hs"
+            -- , code "HObp.hs"
+            -- , code "HOLive.hs"
             -- , code "ListCompTemplate.hs"
             -- , code "ListCompBP.hs"
             -- , code "ListCompLive.hs"
@@ -291,140 +291,139 @@ functionalPage =
       Entry
         { title = "Structural Inductive Proofs",
           spec = WorksheetBonus "sheetBonus1.pdf",
-          materials = sheetsBonus 1 ++ [note "Structural Inductive Proofs" "StructuralInductiveProofs.pdf"] ++ answersBonus 1
+          materials = sheetsBonus 1 ++ [note "Structural Inductive Proofs" "StructuralInductiveProofs.pdf"] -- ++ answersBonus 1
         }
     ],
-    -- -- Reading week
-    -- [],
-    -- -- Week 7
-    -- [ Entry
-    --     { title = "Folds cont.",
-    --       spec =
-    --         Lecture
-    --           { slot = First,
-    --             slidesFile' = Right (BBCode "FoldsPart2BP.hs"),
-    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/eb4ecdeefcff41d9b3b2abc4e83d38c31d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/RDDRdr688j"
-    --         , code "FoldsPart2BP.hs"
-    --         , code "FoldsPart2Template.hs"
-    --         , code "FoldsPart2Live.hs"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "Functor",
-    --       spec =
-    --         Lecture
-    --           { slot = Second,
-    --             slidesFile' = Right (BBCode "FunctorBP.hs"),
-    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/491661c7f706461a979d45347d286e9a1d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/vKdE4rXTkw"
-    --         , code "FunctorLive.hs"
-    --         , code "FunctorTemplate.hs"
-    --         , code "FunctorBP.hs"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "",
-    --       spec = NotesExtra,
-    --       materials =
-    --         map
-    --           (uncurry note)
-    --           [ ("Prelude Functions Cheatsheet", "PreludeFunctionsCheatsheet.pdf")
-    --           ]
-    --     },
-    --   Entry
-    --     { title = "Folding",
-    --       spec = Worksheet "sheet05.pdf",
-    --       materials = sheets 5 -- ++ answers 5
-    --     },
-    --   Entry
-    --     { title = "Sudoku",
-    --       spec = FormativePractical "Sudoku/SudokuInstrs.pdf",
-    --       materials =
-    --         map
-    --           (coursework "Sudoku")
-    --           [ "SudokuInstrs.pdf",
-    --             "SudokuInstrsDyslexic.pdf",
-    --             "Sudoku.hs",
-    --             "hard.txt"
-    --           ]
-    --     }
-    -- ],
-    -- -- Week 8
-    -- [ Entry
-    --     { title = "Parsers",
-    --       spec =
-    --         Lecture
-    --           { slot = First,
-    --             slidesFile' = Right (BBCode "ParsersTemplate.hs"),
-    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/1ef73f2313204762a9334b09011735801d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/d7Sv7F7kPF"
-    --         , code "ParsersLive.hs"
-    --         , code "ParsersTemplate.hs"
-    --         , code "ParsersBP.hs"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "Applicatives",
-    --       spec =
-    --         Lecture
-    --           { slot = Second,
-    --             slidesFile' = Right (BBCode "ApplicativeTemplate.hs"),
-    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/a98978fda34a4af6a46a542456c394361d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/iacb4N8pbh"
-    --         , code "ApplicativeLive.hs"
-    --         , code "ApplicativeTemplate.hs"
-    --         , code "ApplicativeBP.hs"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "Binary Trees with Alex Kavvos",
-    --       spec =
-    --         LectureExtra
-    --           { videoLink = "https://mediasite.bris.ac.uk/Mediasite/Play/b3fcbbfaf52a4ea0a850d131b088c8ac1d"
-    --           },
-    --       materials = []
-    --     },
-    --   Entry
-    --     { title = "",
-    --       spec = NotesExtra,
-    --       materials =
-    --         [ note "How to Design \"Co\"-Programs" "copro.pdf",
-    --           external "Design Patterns as Higher-Order Datatype-Generic Programs" "https://www.cs.ox.ac.uk/jeremy.gibbons/publications/hodgp-journal.pdf"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "Functors and Parsers",
-    --       spec = Worksheet "sheet06.pdf",
-    --       materials = sheets 6 -- ++ answers 6
-    --     }
-    --     ,
-    --   Entry
-    --     { title = "Simplify",
-    --       spec =
-    --         Coursework
-    --           { instructions = "CW2/CW2-Instrs.pdf",
-    --             submissionLink = "https://www.ole.bris.ac.uk/ultra/courses/_264153_1/outline",
-    --             deadline = "Noon, Thurs 27/11/25<br/>(submit at least 1 hour early)"
-    --           },
-    --       materials =
-    --         map
-    --           (coursework "CW2")
-    --           [ "CW2-Instrs.pdf",
-    --             "CW2-InstrsDyslexic.pdf",
-    --             "CW2-Simplify.zip"
-    --           ]
-    --     }
-    -- ],
-    -- -- Week 9
+    -- Reading week
+    [],
+    -- Week 7
+    [ Entry
+        { title = "Folds cont. + Laziness",
+          spec =
+            Lecture
+              { slot = First,
+                slidesFile' = Left "2026-11-04", -- Right (BBCode "FoldsPart2BP.hs"),
+                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/eb4ecdeefcff41d9b3b2abc4e83d38c31d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/RDDRdr688j"
+            -- , code "FoldsPart2BP.hs"
+            -- , code "FoldsPart2Template.hs"
+            -- , code "FoldsPart2Live.hs"
+            ]
+        },
+      Entry
+        { title = "Functors",
+          spec =
+            Lecture
+              { slot = Second,
+                slidesFile' = Left "2026-11-06", -- Right (BBCode "FunctorBP.hs"),
+                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/491661c7f706461a979d45347d286e9a1d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/vKdE4rXTkw"
+            -- , code "FunctorLive.hs"
+            -- , code "FunctorTemplate.hs"
+            -- , code "FunctorBP.hs"
+            ]
+        },
+      sspMaterials [],
+      Entry
+        { title = "",
+          spec = ExtraMaterials,
+          materials =
+            map
+              (uncurry note)
+              [ ("Prelude Functions Cheatsheet", "PreludeFunctionsCheatsheet.pdf")
+              ]
+        },
+      Entry
+        { title = "Folding",
+          spec = Worksheet "sheet05.pdf",
+          materials = sheets 5 -- ++ answers 5
+        },
+      Entry
+        { title = "Sudoku",
+          spec = FormativePractical "Sudoku/SudokuInstrs.pdf",
+          materials =
+            map
+              (coursework "Sudoku")
+              [ "SudokuInstrs.pdf",
+                "SudokuInstrsDyslexic.pdf",
+                "Sudoku.hs",
+                "hard.txt"
+              ]
+        }
+    ],
+    -- Week 8
+    [ Entry
+        { title = "Parsers + Applicatives",
+          spec =
+            Lecture
+              { slot = First,
+                slidesFile' = Left "2026-11-11", -- Right (BBCode "ParsersTemplate.hs"),
+                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/1ef73f2313204762a9334b09011735801d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/d7Sv7F7kPF"
+            -- , code "ParsersLive.hs"
+            -- , code "ParsersTemplate.hs"
+            -- , code "ParsersBP.hs"
+            ]
+        },
+      Entry
+        { title = "Applicatives cont.",
+          spec =
+            Lecture
+              { slot = Second,
+                slidesFile' = Left "2026-11-13", -- Right (BBCode "ApplicativeTemplate.hs"),
+                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/a98978fda34a4af6a46a542456c394361d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/iacb4N8pbh"
+            -- , code "ApplicativeLive.hs"
+            -- , code "ApplicativeTemplate.hs"
+            -- , code "ApplicativeBP.hs"
+            ]
+        },
+      Entry
+        { title = "Binary Trees with Alex Kavvos",
+          spec =
+            LectureExtra
+              { videoLink = "https://mediasite.bris.ac.uk/Mediasite/Play/b3fcbbfaf52a4ea0a850d131b088c8ac1d"
+              },
+          materials = []
+        },
+      sspMaterials [],
+      Entry
+        { title = "",
+          spec = ExtraMaterials,
+          materials =
+            [ note "How to Design \"Co\"-Programs" "copro.pdf",
+              external "Design Patterns as Higher-Order Datatype-Generic Programs" "https://www.cs.ox.ac.uk/jeremy.gibbons/publications/hodgp-journal.pdf"
+            ]
+        },
+      Entry
+        { title = "Functors and Parsers",
+          spec = Worksheet "sheet06.pdf",
+          materials = sheets 6 -- ++ answers 6
+        },
+      Entry
+        { title = "Simplify",
+          spec =
+            FormativePractical
+              { file = "Simplify/Simplify-Instrs.pdf"
+              },
+          materials =
+            map
+              (coursework "Simplify")
+              [ "Simplify-Instrs.pdf",
+                "Simplify-InstrsDyslexic.pdf",
+                "Simplify.zip"
+              ]
+        }
+    ],
+    -- Week 9
     -- [ Entry
     --     { title = "Applicatives cont.",
     --       spec =
