@@ -1,4 +1,6 @@
 - Webpage: https://uob-coms10016.github.io/2026/
 - Compile functional DSL to functional.js file:
-  - bash, sh (sam): `runghc functionalPageDSL.hs > functional.js`
-  - nushell: `runghc functionalPageDSL.hs out> functional.js`
+  - bash, sh, any (sam): `cabal run functionalPageDSL.hs`
+  - Or, using cabal shebang (https://cabal.readthedocs.io/en/latest/getting-started.html#running-a-single-file-haskell-script):
+    - make the file executable with: `chmod +x functionalPageDSL.hs`
+    - Run with: `./functionalPageDSL.hs`

@@ -1,22 +1,29 @@
+#!/usr/bin/env cabal
+{- cabal:
+build-depends: base, containers
+-}
 {-# LANGUAGE DuplicateRecordFields #-}
 {-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE NamedFieldPuns #-}
 {-# LANGUAGE RecordWildCards #-}
+{-# LANGUAGE OverloadedRecordDot #-}
 {-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
-{-# OPTIONS_GHC -Wincomplete-patterns #-}
+-- {-# OPTIONS_GHC -Wincomplete-patterns #-}
 
 {-# HLINT ignore "Evaluate" #-}
 
 module Main where
 
 import Data.List (nub, sortOn)
--- cabal install --lib containers --package-env .
+
 import Data.Map.Strict (Map)
 import Data.Map.Strict qualified as M
 import Text.Printf (printf)
 
 main :: IO ()
-main = putStr $ pageToJS functionalPage config
+main = do
+  writeFile "functionalSSP.js" (pageToJS functionalPage config)
+  writeFile "functional.js"    (pageToJS (filterOutSSP functionalPage) config)
 
 config :: Config
 config =
@@ -210,6 +217,12 @@ functionalPage =
             -- , code "HOLive.hs"
             ]
         },
+      sspMaterials
+        [ code "ADTsBP.hs"
+        , code "PolymorphismBP.hs"
+        , code "TypeclassesBP.hs"
+        , code "HObp.hs"
+        ],
       Entry
         { title = "ADTs, Polymorphism and Type Classes",
           spec = Worksheet "sheet03.pdf",
@@ -264,6 +277,11 @@ functionalPage =
             -- , code "FoldsPart1Live.hs"
             ]
         },
+      sspMaterials
+        [ code "HObp.hs"
+        , notYetImplementedMaterial "ListCompBP.hs" "2026-10-19"
+        , notYetImplementedMaterial "FoldsPart1BP.hs" "2026-10-21"
+        ],
       Entry
         { title = "HO Programming and List Comprehensions",
           spec = Worksheet "sheet04.pdf",
@@ -632,6 +650,14 @@ entryToCategory (Entry _ details materials) = case details of
         slidesLinkName = "",
         materialLinkName = "Materials"
       }
+  SSPMaterials ->
+    MkCat
+      { title = "SSP Materials",
+        colour = "#DDDDDD",
+        counter = False,
+        slidesLinkName = "",
+        materialLinkName = "Materials"
+      }
   Worksheet {} ->
     MkCat
       { title = "Worksheet",
@@ -699,6 +725,7 @@ isLectureCategory x = case x of
   Lecture {} -> True
   NotesExtra {} -> True
   LectureExtra {} -> True
+  SSPMaterials {} -> True
   _ -> False
 
 isCourseworkCategory :: EntrySpec -> Bool
@@ -813,6 +840,7 @@ data EntrySpec
         lectureRecording :: Maybe URL
       }
   | LectureExtra {videoLink :: String}
+  | SSPMaterials
   | SetupLab {setupLink :: URL}
   | Worksheet {file :: String}
   | WorksheetBonus {file :: String}
@@ -976,6 +1004,9 @@ answersBonus i =
       printf "answerBonus%01dDyslexic.pdf" i
     ]
 
+notYetImplementedMaterial :: String -> DateString -> Material
+notYetImplementedMaterial str date = MkMaterial str (notYetImplemented date)
+
 -- Link construction
 
 bbRootDir :: URL
@@ -1029,6 +1060,14 @@ miscLink = dir "misc"
 
 blankEntry :: GridEntry
 blankEntry = Entry "" Blank []
+
+sspMaterials :: [Material] -> GridEntry
+sspMaterials ms
+  = Entry
+      { title = "",
+        spec = SSPMaterials,
+        materials = ms
+      }
 
 -- Categories
 
@@ -1170,3 +1209,12 @@ infixl 0 |>
 
 (|>) :: a -> (a -> b) -> b
 x |> f = f x
+
+filterGridEntries :: (GridEntry -> Bool) -> Page -> Page
+filterGridEntries p = map (filter p)
+
+isSSP :: GridEntry -> Bool
+isSSP ge = ge.spec == SSPMaterials
+
+filterOutSSP :: Page -> Page
+filterOutSSP = filterGridEntries (not . isSSP)
