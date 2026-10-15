@@ -207,14 +207,15 @@ functionalPage =
           spec =
             Lecture
               { slot = Second,
-                slidesFile' = Left "2026-10-16", -- Right (BBCode "HOLive.hs"),
-                lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/08b75ad11e4a40799af16ad46219723e1d"
+                slidesFile' = Right (BBCode "HObpPt1.hs"),
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/dac75737ff6a4175a7cf6461f90ec74e1d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/szsFDhzxzC"
             , code "HOtemplate.hs"
+            , code "HObpPt1.hs"
+            , code "HOLive.hs"
             -- , code "HObp.hs"
-            -- , code "HOLive.hs"
             ]
         },
       sspMaterials
