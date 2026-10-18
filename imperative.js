@@ -104,7 +104,7 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Fri 23/10/26<br/>10am-11am<br/>PHYS G42 POWELL",   "LISTS",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_15.pdf",           "https://uob-my.sharepoint.com/:v:/r/personal/sh1670_bristol_ac_uk/Documents/Stream%20Migrated%20Videos/Dynamic%202d%20array%20allocation%20and%20deallocation-20201021_095007.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=0Hf8dc",  "86", "2"],
 ["9", "",                     "",                                 "", "", "0", "0"],
-["8", "",                     "",                                 "", "", "0", "0"],
+["7", "in your own time", "</a>LIST ASSIGNMENT<br/>(10% of unit mark)<hr/><b><b>Release Date:</b><br/>Fri 23/10/26<br/>Submission Deadline</b><br/>Thu 05/11/26<br/><a>", "", "", "0", "0"],
  //["8", "<b>Submission Deadline</b><br/>Thu 06/11/25<br/>01:00pm UK time<hr/><b>Submission Help</b><br/>Weds 05/11/25<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "", "", "0", "0"], 
 
 //WEEK 06 - READING WEEK
