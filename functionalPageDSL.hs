@@ -215,7 +215,7 @@ functionalPage =
             , code "HOtemplate.hs"
             , code "HObpPt1.hs"
             , code "HOLive.hs"
-            -- , code "HObp.hs"
+            , code "HObp.hs"
             ]
         },
       sspMaterials
@@ -250,14 +250,14 @@ functionalPage =
           spec =
             Lecture
               { slot = First,
-                slidesFile' = Left "2026-10-21", -- Right (BBCode "HOLive.hs"),
-                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/1cc5a03904124b5394267386be7c6b231d"
+                slidesFile' = Right (BBCode "HObp.hs"),
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/23c6f0c0e7e54b7588dd04da92960f021d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/5LyvfU8eUu"
             , code "HOtemplate.hs"
-            -- , code "HObp.hs"
-            -- , code "HOLive.hs"
+            , code "HObp.hs"
+            , code "HOLive.hs"
             , code "ListComprehensionsTemplate.hs"
             -- , code "ListCompTemplate.hs"
             -- , code "ListCompBP.hs"
