@@ -258,6 +258,7 @@ functionalPage =
             , code "HOtemplate.hs"
             -- , code "HObp.hs"
             -- , code "HOLive.hs"
+            , code "ListComprehensionsTemplate.hs"
             -- , code "ListCompTemplate.hs"
             -- , code "ListCompBP.hs"
             -- , code "ListCompLive.hs"
@@ -273,15 +274,15 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/0TFiDaNH9J"
-            -- , code "FoldsPart1BP.hs"
-            -- , code "FoldsPart1Template.hs"
-            -- , code "FoldsPart1Live.hs"
+            -- , code "FoldListBP.hs"
+            , code "FoldListTemplate.hs"
+            -- , code "FoldListLive.hs"
             ]
         },
       sspMaterials
         [ code "HObp.hs"
-        , notYetImplementedMaterial "ListCompBP.hs" "2026-10-19"
-        , notYetImplementedMaterial "FoldsPart1BP.hs" "2026-10-21"
+        , code "FoldListBP.hs"
+        , code "ListComprehensionsBP.hs"
         ],
       Entry
         { title = "HO Programming and List Comprehensions",
@@ -303,14 +304,14 @@ functionalPage =
           spec =
             Lecture
               { slot = First,
-                slidesFile' = Left "2026-11-04", -- Right (BBCode "FoldsPart2BP.hs"),
+                slidesFile' = Left "2026-11-04", -- Right (BBCode "FoldADTBP.hs"),
                 lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/eb4ecdeefcff41d9b3b2abc4e83d38c31d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/RDDRdr688j"
-            -- , code "FoldsPart2BP.hs"
-            -- , code "FoldsPart2Template.hs"
-            -- , code "FoldsPart2Live.hs"
+            -- , code "FoldADTBP.hs"
+            , code "FoldADTTemplate.hs"
+            -- , code "FoldADTLive.hs"
             ]
         },
       Entry
@@ -328,7 +329,7 @@ functionalPage =
             -- , code "FunctorBP.hs"
             ]
         },
-      sspMaterials [],
+      sspMaterials [ code "FoldADTBP.hs" ],
       Entry
         { title = "",
           spec = ExtraMaterials,
