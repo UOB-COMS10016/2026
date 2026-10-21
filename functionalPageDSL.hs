@@ -259,6 +259,8 @@ functionalPage =
             , code "HObp.hs"
             , code "HOLive.hs"
             , code "ListComprehensionsTemplate.hs"
+            , code "ListComprehensionsBP.hs"
+            , code "ListComprehensionsLive.hs"
             -- , code "ListCompTemplate.hs"
             -- , code "ListCompBP.hs"
             -- , code "ListCompLive.hs"
