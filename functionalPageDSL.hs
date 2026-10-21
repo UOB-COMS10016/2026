@@ -28,7 +28,7 @@ main = do
 config :: Config
 config =
   MkConfig
-    { currentWeek = 5,
+    { currentWeek = 6,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -288,12 +288,12 @@ functionalPage =
         { title = "HO Programming and List Comprehensions",
           spec = Worksheet "sheet04.pdf",
           materials = sheets  4
-                   -- ++ answers 4
+                   ++ answers 4
         },
       Entry
         { title = "Structural Inductive Proofs",
           spec = WorksheetBonus "sheetBonus1.pdf",
-          materials = sheetsBonus 1 ++ [note "Structural Inductive Proofs" "StructuralInductiveProofs.pdf"] -- ++ answersBonus 1
+          materials = sheetsBonus 1 ++ [note "Structural Inductive Proofs" "StructuralInductiveProofs.pdf"] ++ answersBonus 1
         }
     ],
     -- Reading week
