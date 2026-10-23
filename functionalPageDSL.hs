@@ -271,14 +271,14 @@ functionalPage =
           spec =
             Lecture
               { slot = Second,
-                slidesFile' = Left "2026-10-23", -- Right (BBCode "FoldsPart1BP.hs"),
-                lectureRecording = Nothing -- Just "https://mediasite.bris.ac.uk/Mediasite/Play/0c25e462134346d5a8a51a03c300b95c1d"
+                slidesFile' = Right (BBCode "FoldListBP.hs"),
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/7949cf605f2645c58edfc8ac074b01fe1d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/0TFiDaNH9J"
-            -- , code "FoldListBP.hs"
+            , code "FoldListBP.hs"
             , code "FoldListTemplate.hs"
-            -- , code "FoldListLive.hs"
+            , code "FoldListLive.hs"
             ]
         },
       sspMaterials
