@@ -26,7 +26,7 @@ var categories = [
 ["4", "Exercises",  "#CCCCCC","1","",          "Sample Solutions",],
 ["5", "Startup Materials:",            "#DDDDDD","0","",          "",              ],
 ["6", "Formative<br/>Lab","#EEEEDD","1","",          "Materials",     ],
-["7", "Individual Summative Coursework","#EEEEDD","1","",          "",     ],
+["7", "Individual Formative+Summative Coursework","#EEEEDD","1","",          "",     ],
 ["8",  "",                   "#EEEEDD","0","",          "",              ], // multi-week coursework
 ["9",  "",                   "#CCCCCC","0","",          "",              ], // empty slot
 ["10", "",                   "#CCCCCC","0","",          "",              ], // multi-week empty
@@ -99,13 +99,11 @@ var activities = [
 ["3", "in your own time",   "CELLULAR",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_Task05.pdf", "", "88", "1"],
 ["0", "Mon 19/10/26<br/>10am-11am<br/>CHEM BLDG LT1",    "DYNAMIC DATA",          "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_13.pdf",        "https://uob-my.sharepoint.com/:v:/r/personal/sh1670_bristol_ac_uk/Documents/Stream%20Migrated%20Videos/Dynamic%20Data-20211006_031319.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XtbF7E", "81", "5"],
 ["0", "Mon 19/10/26<br/>10am-11am<br/>CHEM BLDG LT1",     "STACKS",            "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_14.pdf",           "https://uob-my.sharepoint.com/:v:/r/personal/sh1670_bristol_ac_uk/Documents/Stream%20Migrated%20Videos/Dynamic%20Stack%20Visualization-20211006_030730.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dQwPPd",  "79", "2"],
-//["7", "in your own time", "</a>LIST ASSIGNMENT<br/>(20% of unit mark)<a><hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week06/index.html", "", "91", "3"],
-["8", "",                     "",                                 "", "", "0", "0"],
+["7", "in your own time", "</a>LIST ASSIGNMENT<br/>(10% of unit mark)<a><hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week06/index.html", "", "91", "3"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Fri 23/10/26<br/>10am-11am<br/>PHYS G42 POWELL",   "LISTS",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_15.pdf",           "https://uob-my.sharepoint.com/:v:/r/personal/sh1670_bristol_ac_uk/Documents/Stream%20Migrated%20Videos/Dynamic%202d%20array%20allocation%20and%20deallocation-20201021_095007.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=0Hf8dc",  "86", "2"],
 ["9", "",                     "",                                 "", "", "0", "0"],
-["7", "in your own time", "</a>LIST ASSIGNMENT<br/></b>(10% of unit mark)<hr/><b>Release Date:</b><br/>Fri 23/10/26<br/><b>Submission Deadline:</b><br/>Thu 05/11/26, 1pm<br/><a>", "", "", "0", "0"],
- //["8", "<b>Submission Deadline</b><br/>Thu 06/11/25<br/>01:00pm UK time<hr/><b>Submission Help</b><br/>Weds 05/11/25<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "", "", "0", "0"], 
+["8", "<b>Submission Deadline</b><br/>Thu 05/11/26<br/>01:00pm UK time<hr/><b>Help Lab</b><br/>Mon 02/11/26<br/>3pm-6pm<br/>MVB2.11/1.15", "", "", "0", "0"], 
 
 //WEEK 06 - READING WEEK
 ["12", "",                     "",                                 "", "", "0", "0"],
