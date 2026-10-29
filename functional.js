@@ -1,4 +1,4 @@
-const currentWeek   = 6;
+const currentWeek   = 7;
 const activityNum   = 8;
 const columnNum     = 4;
 const title         = "FUNCTIONAL PROGRAMMING";
@@ -81,7 +81,7 @@ const activities = [
 ["1","(optional)","","","","86","1",],
 ["8","Tues 15:00-17:00<br/>CHEM BLDG LT1","Folds cont. + Laziness","501.html?d=2026-11-04","","87","2",],
 ["8","Thur 15:00-16:00<br/>CHEM BLDG LT1","Functors","501.html?d=2026-11-06","","89","1",],
-["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Folding","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet05.pdf","","90","2",],
+["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Folding + Laziness","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet05.pdf","","90","2",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],

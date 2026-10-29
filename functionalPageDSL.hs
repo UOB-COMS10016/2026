@@ -28,7 +28,7 @@ main = do
 config :: Config
 config =
   MkConfig
-    { currentWeek = 6,
+    { currentWeek = 7,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -331,7 +331,11 @@ functionalPage =
             -- , code "FunctorBP.hs"
             ]
         },
-      sspMaterials [ code "FoldADTBP.hs" ],
+      sspMaterials
+        [ code "FoldADTBP.hs"
+        , notYetImplementedMaterial "LazinessBP.hs" "2026-11-02"
+        , notYetImplementedMaterial "FunctorBP.hs" "2026-11-04"
+        ],
       Entry
         { title = "",
           spec = ExtraMaterials,
@@ -342,7 +346,7 @@ functionalPage =
               ]
         },
       Entry
-        { title = "Folding",
+        { title = "Folding + Laziness",
           spec = Worksheet "sheet05.pdf",
           materials = sheets 5 -- ++ answers 5
         },
