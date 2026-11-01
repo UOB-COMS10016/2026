@@ -106,9 +106,9 @@ var activities = [
 ["8", "<b>Submission Deadline</b><br/>Thu 05/11/26<br/>01:00pm UK time<hr/><b>Help Lab</b><br/>Mon 02/11/26<br/>3pm-6pm<br/>MVB2.11/1.15", "", "", "0", "0"], 
 
 //WEEK 06 - READING WEEK
+["10", "",                     "",                                 "", "", "0", "0"],
 ["12", "",                     "",                                 "", "", "0", "0"],
-["12", "",                     "",                                 "", "", "0", "0"],
-["12", "",                     "",                                 "", "", "0", "0"],
+["10", "",                     "",                                 "", "", "0", "0"],
 ["8", "<hr/><a target='_blank' href='https://www.ole.bris.ac.uk/ultra/courses/_264153_1/outline'><b>SUBMIT via Gradebook (Top Menu on Blackboard Page)</b></a>",                     "",                                  "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
