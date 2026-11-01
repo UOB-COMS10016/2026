@@ -109,7 +109,7 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["12", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["8", "<hr/><a target='_blank' href='https://www.ole.bris.ac.uk/ultra/courses/_264153_1/outline'><b>SUBMIT via Gradebook (Top Menu on Blackboard Page)</b></a>",                     "",                                  "", "", "0", "0"],
+["8", "<hr/><a target='_blank' href='https://www.ole.bris.ac.uk/ultra/courses/_269189_1/outline'><b>SUBMIT via Gradebook (Top Menu on Blackboard Page)</b></a>",                     "",                                  "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
