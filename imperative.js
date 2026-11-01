@@ -1,5 +1,5 @@
 //LAYOUT CUSTOMIZATION
-var currentWeek   = 5;                         // current week [releases content fully visible up to this week]
+var currentWeek   = 7;                         // current week [releases content fully visible up to this week]
 var activityNum   = 8;                         // number of activities per week (empty slots possible)
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "IMPERATIVE PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
@@ -96,7 +96,7 @@ var activities = [
 ["8", "",                     "",                                 "", "", "0", "0"],
 
 //WEEK 05 - WORKING WITH POINTERS
-["3", "in your own time",   "CELLULAR",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_Task05.pdf", "", "88", "1"],
+["4", "in your own time",   "CELLULAR",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_Task05.pdf", "", "88", "1"],
 ["0", "Mon 19/10/26<br/>10am-11am<br/>CHEM BLDG LT1",    "DYNAMIC DATA",          "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_13.pdf",        "https://uob-my.sharepoint.com/:v:/r/personal/sh1670_bristol_ac_uk/Documents/Stream%20Migrated%20Videos/Dynamic%20Data-20211006_031319.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XtbF7E", "81", "5"],
 ["0", "Mon 19/10/26<br/>10am-11am<br/>CHEM BLDG LT1",     "STACKS",            "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_14.pdf",           "https://uob-my.sharepoint.com/:v:/r/personal/sh1670_bristol_ac_uk/Documents/Stream%20Migrated%20Videos/Dynamic%20Stack%20Visualization-20211006_030730.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dQwPPd",  "79", "2"],
 ["7", "in your own time", "LIST ASSIGNMENT<br/>(10% of unit mark)<hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week06/index.html", "", "91", "3"],
@@ -116,12 +116,12 @@ var activities = [
 ["8", "",                     "",                                  "", "", "0", "0"],
 
 //WEEK 07 - 
-["4", "in your own time",   "BUBBLE",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_Task06.pdf", "", "95", "1"],
-["0", "Thu 06/11/25<br/>16:00pm-16:50pm<br/>CHEM BLDG LT1",   "TREES",                       "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_16_OR.pdf",   "https://mediasite.bris.ac.uk/Mediasite/Play/ba910510d107433b8ef0b94b1e92d2d81d", "94", "1"],
+["3", "in your own time",   "BUBBLE",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_Task06.pdf", "", "95", "1"],
+["0", "Mon 02/11/26<br/>10am-11am<br/>CHEM BLDG LT1",   "TREES",                       "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_16_OR.pdf",   "https://mediasite.bris.ac.uk/Mediasite/Play/ba910510d107433b8ef0b94b1e92d2d81d", "94", "1"],
 ["15", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                  "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["0", "Fri 07/11/25<br/>10:00am-10:50am<br/>PHYS G42 POWELL",   "SORTING",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_17_OR.pdf",      "https://mediasite.bris.ac.uk/Mediasite/Play/ab93766ee4b64918925dd1d8e18f8e111d", "105", "1"],
+["0", "Fri 06/11/26<br/>10am-11am<br/>PHYS G42 POWELL",   "SORTING",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_17_OR.pdf",      "https://mediasite.bris.ac.uk/Mediasite/Play/ab93766ee4b64918925dd1d8e18f8e111d", "105", "1"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                 "", "", "0", "0"],
  
