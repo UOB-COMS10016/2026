@@ -360,7 +360,7 @@ var files = [
 [ "18", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/hello.c",                   "hello.c"],
 [ "19", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/trianglenum.c",             "trianglenum.c"],
 [ "20", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/smallestInt.c",             "smallestInt.c"],
-[ "21", "https://tiloburghardt.github.io", "Website of Tilo"],
+[ "21", "https://tilo.earth", "Website of Tilo"],
 [ "22", "https://obrookes.github.io/otto.github.io/", "Website of Otto"],
 [ "23", "http://people.cs.bris.ac.uk/~oray",      "Website of Oliver"],
 [ "24", "https://samfrohlich.github.io","Website of Samantha"],
