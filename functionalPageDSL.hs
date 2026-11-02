@@ -334,7 +334,7 @@ functionalPage =
       sspMaterials
         [ code "FoldADTBP.hs"
         , notYetImplementedMaterial "LazinessBP.hs" "2026-11-02"
-        , notYetImplementedMaterial "FunctorBP.hs" "2026-11-04"
+        , code "FunctorBP.hs"
         ],
       Entry
         { title = "",
