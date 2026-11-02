@@ -327,7 +327,7 @@ functionalPage =
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/vKdE4rXTkw"
             -- , code "FunctorLive.hs"
-            -- , code "FunctorTemplate.hs"
+            , code "FunctorTemplate.hs"
             -- , code "FunctorBP.hs"
             ]
         },
