@@ -306,14 +306,14 @@ functionalPage =
           spec =
             Lecture
               { slot = First,
-                slidesFile' = Left "2026-11-04", -- Right (BBCode "FoldADTBP.hs"),
-                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/eb4ecdeefcff41d9b3b2abc4e83d38c31d"
+                slidesFile' = Right (BBCode "FoldADTBP.hs"),
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/7723ed4d4fe84405a6bc07c5f06bae161d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/RDDRdr688j"
-            -- , code "FoldADTBP.hs"
+            , code "FoldADTBP.hs"
             , code "FoldADTTemplate.hs"
-            -- , code "FoldADTLive.hs"
+            , code "FoldADTLive.hs"
             ]
         },
       Entry
