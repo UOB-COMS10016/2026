@@ -314,6 +314,7 @@ functionalPage =
             , code "FoldADTBP.hs"
             , code "FoldADTTemplate.hs"
             , code "FoldADTLive.hs"
+            , code "LazinessLive.hs"
             ]
         },
       Entry
