@@ -28,7 +28,7 @@ main = do
 config :: Config
 config =
   MkConfig
-    { currentWeek = 7,
+    { currentWeek = 8,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -349,7 +349,7 @@ functionalPage =
       Entry
         { title = "Folding + Laziness",
           spec = Worksheet "sheet05.pdf",
-          materials = sheets 5 -- ++ answers 5
+          materials = sheets 5 ++ answers 5
         },
       Entry
         { title = "Sudoku",
@@ -375,9 +375,13 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/d7Sv7F7kPF"
+            , notYetImplementedMaterial "ParsersTemplate.hs" "2026-11-09"
+            , notYetImplementedMaterial "ApplicativeTemplate.hs" "2026-11-09"
             -- , code "ParsersLive.hs"
             -- , code "ParsersTemplate.hs"
             -- , code "ParsersBP.hs"
+            -- , code "ApplicativeLive.hs"
+            -- , code "ApplicativeTemplate.hs"
             ]
         },
       Entry
@@ -390,6 +394,7 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/iacb4N8pbh"
+            , notYetImplementedMaterial "ApplicativeTemplate.hs" "2026-11-09"
             -- , code "ApplicativeLive.hs"
             -- , code "ApplicativeTemplate.hs"
             -- , code "ApplicativeBP.hs"
@@ -403,7 +408,10 @@ functionalPage =
               },
           materials = []
         },
-      sspMaterials [],
+      sspMaterials
+      [ notYetImplementedMaterial "ParsersBP.hs" "2026-11-11"
+      , notYetImplementedMaterial "ApplicativeBP.hs" "2026-11-11"
+      ],
       Entry
         { title = "",
           spec = ExtraMaterials,
@@ -414,8 +422,8 @@ functionalPage =
         },
       Entry
         { title = "Functors and Parsers",
-          spec = Worksheet "sheet06.pdf",
-          materials = sheets 6 -- ++ answers 6
+          spec = Worksheet "", -- "sheet06.pdf",
+          materials = [notYetImplementedMaterial "sheet06.pdf" "2026-11-11"] -- sheets 6 -- ++ answers 6
         },
       Entry
         { title = "Simplify",
