@@ -322,14 +322,14 @@ functionalPage =
           spec =
             Lecture
               { slot = Second,
-                slidesFile' = Left "2026-11-06", -- Right (BBCode "FunctorBP.hs"),
-                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/491661c7f706461a979d45347d286e9a1d"
+                slidesFile' = Right (BBCode "FunctorBP.hs"),
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/51d932cf0873417b87e2fe413874c3851d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/vKdE4rXTkw"
-            -- , code "FunctorLive.hs"
+            , code "FunctorLive.hs"
             , code "FunctorTemplate.hs"
-            -- , code "FunctorBP.hs"
+            , code "FunctorBP.hs"
             ]
         },
       sspMaterials
