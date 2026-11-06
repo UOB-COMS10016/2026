@@ -375,10 +375,9 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/d7Sv7F7kPF"
-            , notYetImplementedMaterial "ParsersTemplate.hs" "2026-11-09"
             , notYetImplementedMaterial "ApplicativeTemplate.hs" "2026-11-09"
             -- , code "ParsersLive.hs"
-            -- , code "ParsersTemplate.hs"
+            , code "ParsersTemplate.hs"
             -- , code "ParsersBP.hs"
             -- , code "ApplicativeLive.hs"
             -- , code "ApplicativeTemplate.hs"
@@ -409,7 +408,7 @@ functionalPage =
           materials = []
         },
       sspMaterials
-      [ notYetImplementedMaterial "ParsersBP.hs" "2026-11-11"
+      [ code "ParsersBP.hs"
       , notYetImplementedMaterial "ApplicativeBP.hs" "2026-11-11"
       ],
       Entry
