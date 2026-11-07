@@ -314,6 +314,7 @@ functionalPage =
             , code "FoldADTBP.hs"
             , code "FoldADTTemplate.hs"
             , code "FoldADTLive.hs"
+            , code "LazinessBP.hs"
             , code "LazinessLive.hs"
             ]
         },
@@ -334,7 +335,7 @@ functionalPage =
         },
       sspMaterials
         [ code "FoldADTBP.hs"
-        , notYetImplementedMaterial "LazinessBP.hs" "2026-11-02"
+        , code "LazinessBP.hs"
         , code "FunctorBP.hs"
         ],
       Entry
