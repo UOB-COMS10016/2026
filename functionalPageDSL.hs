@@ -371,16 +371,16 @@ functionalPage =
           spec =
             Lecture
               { slot = First,
-                slidesFile' = Left "2026-11-11", -- Right (BBCode "ParsersTemplate.hs"),
-                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/1ef73f2313204762a9334b09011735801d"
+                slidesFile' = Right (BBCode "ParsersBP.hs"),
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/383d91613c9946ddbd2e5736208e89f41d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/d7Sv7F7kPF"
             , notYetImplementedMaterial "ApplicativeTemplate.hs" "2026-11-09"
-            -- , code "ParsersLive.hs"
+            , code "ParsersLive.hs"
             , code "ParsersTemplate.hs"
             , code "ApplicativeChessParsingTemplate.hs"
-            -- , code "ParsersBP.hs"
+            , code "ParsersBP.hs"
             -- , code "ApplicativeLive.hs"
             -- , code "ApplicativeTemplate.hs"
             ]
