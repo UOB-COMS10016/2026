@@ -379,6 +379,7 @@ functionalPage =
             , notYetImplementedMaterial "ApplicativeTemplate.hs" "2026-11-09"
             -- , code "ParsersLive.hs"
             , code "ParsersTemplate.hs"
+            , code "ApplicativeChessParsingTemplate.hs"
             -- , code "ParsersBP.hs"
             -- , code "ApplicativeLive.hs"
             -- , code "ApplicativeTemplate.hs"
