@@ -90,7 +90,7 @@ const activities = [
 ["1","(optional)","","","","116","2",],
 ["2","Tues 15:00-17:00<br/>CHEM BLDG LT1","Parsers + Applicatives","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/ParsersBP.hs","https://mediasite.bris.ac.uk/Mediasite/Play/383d91613c9946ddbd2e5736208e89f41d","118","7",],
 ["9","Thur 15:00-16:00<br/>CHEM BLDG LT1","Applicatives cont.","501.html?d=2026-11-13","","125","2",],
-["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Functors and Parsers","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/","","127","2",],
+["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Functors and Parsers","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet06.pdf","","127","2",],
 ["0","","","","","0","0",],
 ["10","(optional)","Binary Trees with Alex Kavvos","https://mediasite.bris.ac.uk/Mediasite/Play/b3fcbbfaf52a4ea0a850d131b088c8ac1d","","0","0",],
 ["6","","","","","129","2",],
