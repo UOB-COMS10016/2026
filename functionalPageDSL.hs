@@ -28,7 +28,7 @@ main = do
 config :: Config
 config =
   MkConfig
-    { currentWeek = 8,
+    { currentWeek = 9,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -443,49 +443,41 @@ functionalPage =
         }
     ],
     -- Week 9
-    -- [ Entry
-    --     { title = "Applicatives cont.",
-    --       spec =
-    --         Lecture
-    --           { slot = First,
-    --             slidesFile' = Right (BBCode "ApplicativeChessParsingBP.hs"),
-    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/35dc3f438d8148c6b6ddec46dd280c8a1d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/9Hd3RVV27R"
-    --         , code "ApplicativeLive.hs"
-    --         , code "ApplicativeTemplate.hs"
-    --         , code "ApplicativeBP.hs"
-    --         , code "ApplicativeChessParsingBP.hs"
-    --         , code "ApplicativeChessParsingLive.hs"
-    --         , code "ApplicativeChessParsingTemplate.hs"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "IO",
-    --       spec =
-    --         Lecture
-    --           { slot = Second,
-    --             slidesFile' = Right (BBCode "IOBP.hs"),
-    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/062d4c1d1b504f4799c9d0c255dd0a3f1d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/pkByWDsxVn"
-    --         , code "IOBP.hs"
-    --         , code "IOLive.hs"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "Applicative Parsing",
-    --       spec = Worksheet "sheet07.pdf",
-    --       materials = sheets 7 ++ [MkMaterial "Skeleton code" (sheetLink "Sheet7Skeleton.hs")] -- ++ answers 7
-    --     },
-    --   Entry
-    --     { title = "Monoids",
-    --       spec = WorksheetBonus "sheetBonus2.pdf",
-    --       materials = sheetsBonus 2 ++ [note "Monoids notes" "Monoids.pdf"] ++ answersBonus 2
-    --     }
-    -- ],
+    [ Entry
+        { title = "IO",
+          spec =
+            Lecture
+              { slot = First,
+                slidesFile' = Left "2026-11-18",-- Right (BBCode "ApplicativeChessParsingBP.hs"),
+                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/35dc3f438d8148c6b6ddec46dd280c8a1d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/9Hd3RVV27R"
+            ]
+        },
+      Entry
+        { title = "Monads",
+          spec =
+            Lecture
+              { slot = Second,
+                slidesFile' = Left "2026-11-20",
+                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/062d4c1d1b504f4799c9d0c255dd0a3f1d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/pkByWDsxVn"
+            ]
+        },
+      Entry
+        { title = "Applicative Parsing",
+          spec = Worksheet "sheet07.pdf",
+          materials = sheets 7 ++ [MkMaterial "Skeleton code" (sheetLink "Sheet7Skeleton.hs")] -- ++ answers 7
+        },
+      Entry
+        { title = "Monoids",
+          spec = WorksheetBonus "sheetBonus2.pdf",
+          materials = sheetsBonus 2 ++ [note "Monoids notes" "Monoids.pdf"] ++ answersBonus 2
+        }
+    ],
     -- -- Week 10
     -- [ Entry
     --     { title = "IO Cont. (Katamari Haskacy)",

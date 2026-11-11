@@ -1,4 +1,4 @@
-const currentWeek   = 8;
+const currentWeek   = 9;
 const activityNum   = 8;
 const columnNum     = 4;
 const title         = "FUNCTIONAL PROGRAMMING";
@@ -94,6 +94,14 @@ const activities = [
 ["9","(optional)","Binary Trees with Alex Kavvos","https://mediasite.bris.ac.uk/Mediasite/Play/b3fcbbfaf52a4ea0a850d131b088c8ac1d","","0","0",],
 ["0","","","","","0","0",],
 ["6","","Simplify","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Simplify/Simplify-Instrs.pdf","","119","3",],
+["0","","","","","0","0",],
+["8","Tues 15:00-17:00<br/>CHEM BLDG LT1","IO","501.html?d=2026-11-18","","122","1",],
+["8","Thur 15:00-16:00<br/>CHEM BLDG LT1","Monads","501.html?d=2026-11-20","","123","1",],
+["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Applicative Parsing","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet07.pdf","","124","3",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["7","(optional)","Monoids","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheetBonus2.pdf","","127","5",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -244,6 +252,16 @@ const files = [
 ["119","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Simplify/Simplify-Instrs.pdf","Simplify-Instrs.pdf",],
 ["120","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Simplify/Simplify-InstrsDyslexic.pdf","Simplify-InstrsDyslexic.pdf",],
 ["121","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Simplify/Simplify.zip","Simplify.zip",],
+["122","https://forms.cloud.microsoft/e/9Hd3RVV27R","Minute Sheet",],
+["123","https://forms.cloud.microsoft/e/pkByWDsxVn","Minute Sheet",],
+["124","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet07.pdf","sheet07.pdf",],
+["125","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet07Dyslexic.pdf","sheet07Dyslexic.pdf",],
+["126","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/Sheet7Skeleton.hs","Skeleton code",],
+["127","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheetBonus2.pdf","sheetBonus2.pdf",],
+["128","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheetBonus2Dyslexic.pdf","sheetBonus2Dyslexic.pdf",],
+["129","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/notes/Monoids.pdf","Monoids notes",],
+["130","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/answerBonus2.pdf","answerBonus2.pdf",],
+["131","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/answerBonus2Dyslexic.pdf","answerBonus2Dyslexic.pdf",],
 
 ];
 
