@@ -425,7 +425,7 @@ functionalPage =
       Entry
         { title = "Functors and Parsers",
           spec = Worksheet "", -- "sheet06.pdf",
-          materials = [notYetImplementedMaterial "sheet06.pdf" "2026-11-11"] -- sheets 6 -- ++ answers 6
+          materials = sheets 6 -- ++ answers 6
         },
       Entry
         { title = "Simplify",
