@@ -376,7 +376,6 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/d7Sv7F7kPF"
-            , notYetImplementedMaterial "ApplicativeTemplate.hs" "2026-11-09"
             , code "ParsersLive.hs"
             , code "ParsersTemplate.hs"
             , code "ParsersBP.hs"
@@ -396,7 +395,7 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/iacb4N8pbh"
-            , notYetImplementedMaterial "ApplicativeTemplate.hs" "2026-11-09"
+            , code "ApplicativeChessParsingLivePart1-2.hs"
             -- , code "ApplicativeLive.hs"
             -- , code "ApplicativeTemplate.hs"
             -- , code "ApplicativeBP.hs"
@@ -412,7 +411,7 @@ functionalPage =
         },
       sspMaterials
       [ code "ParsersBP.hs"
-      , notYetImplementedMaterial "ApplicativeBP.hs" "2026-11-11"
+      , notYetImplementedMaterial "ApplicativeChessParsingBP.hs" "2026-11-11"
       ],
       Entry
         { title = "",
