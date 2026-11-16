@@ -477,7 +477,7 @@ functionalPage =
       Entry
         { title = "Monoids",
           spec = WorksheetBonus "sheetBonus2.pdf",
-          materials = sheetsBonus 2 ++ [note "Monoids notes" "Monoids.pdf"]  ++ answersBonus 2
+          materials = sheetsBonus 2 ++ [note "Monoids notes" "Monoids.pdf"] -- ++ answersBonus 2
         }
     ],
     -- -- Week 10
