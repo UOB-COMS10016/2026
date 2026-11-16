@@ -443,7 +443,7 @@ functionalPage =
     ],
     -- Week 9
     [ Entry
-        { title = "IO",
+        { title = "Applicative Class + IO",
           spec =
             Lecture
               { slot = First,
@@ -466,6 +466,9 @@ functionalPage =
             [ minSheet "https://forms.cloud.microsoft/e/pkByWDsxVn"
             ]
         },
+      sspMaterials
+        [ code "IOBP.hs"
+        ],
       Entry
         { title = "Applicative Parsing",
           spec = Worksheet "sheet07.pdf",
@@ -474,7 +477,7 @@ functionalPage =
       Entry
         { title = "Monoids",
           spec = WorksheetBonus "sheetBonus2.pdf",
-          materials = sheetsBonus 2 ++ [note "Monoids notes" "Monoids.pdf"] ++ answersBonus 2
+          materials = sheetsBonus 2 ++ [note "Monoids notes" "Monoids.pdf"]  ++ answersBonus 2
         }
     ],
     -- -- Week 10

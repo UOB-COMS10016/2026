@@ -95,7 +95,7 @@ const activities = [
 ["0","","","","","0","0",],
 ["6","","Simplify","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Simplify/Simplify-Instrs.pdf","","121","3",],
 ["0","","","","","0","0",],
-["8","Tues 15:00-17:00<br/>CHEM BLDG LT1","IO","501.html?d=2026-11-18","","124","1",],
+["8","Tues 15:00-17:00<br/>CHEM BLDG LT1","Applicative Class + IO","501.html?d=2026-11-18","","124","1",],
 ["8","Thur 15:00-16:00<br/>CHEM BLDG LT1","Monads","501.html?d=2026-11-20","","125","1",],
 ["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Applicative Parsing","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet07.pdf","","126","3",],
 ["0","","","","","0","0",],
