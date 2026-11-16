@@ -129,7 +129,7 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Mon 09/11/26<br/>10am-11am<br/>CHEM BLDG LT1",   "FUNCTION POINTERS",     "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_18.pdf",          "https://mediasite.bris.ac.uk/Mediasite/Play/434d2a8c7d8940c5ada2244ed17243bb1d", "101", "3"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["6", "Mon 09/11/26<br/>3pm-5pm<br/>MVB2.11/1.15/2.34", "TEXT CHALLENGE", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week08/index.html", "", "96", "4"],
+["6", "Mon 09/11/26<br/>3pm-5pm<br/>MVB2.11/1.15/2.34", "TEXT CHALLENGE<br/><a target='_blank' href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week08/sample/text.c' target='_blank'>(Text Solution)</a><br/><a target='_blank' href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week08/sample/bits.c' target='_blank'>(Bits Solution)</a>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week08/index.html", "", "96", "4"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Fri 06/11/26<br/>10am-11am<br/>PHYS G42 POWELL",   "INPUT &amp; OUTPUT",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_19.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/5d0479bdadf5499a8c252f4911f5883f1d",  "121", "9"],
 ["10", "",                     "",                                 "", "", "0", "0"],
