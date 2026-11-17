@@ -452,6 +452,7 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/9Hd3RVV27R"
+            , code "ApplicativeTemplate.hs"
             ]
         },
       Entry
