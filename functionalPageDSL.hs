@@ -381,6 +381,7 @@ functionalPage =
             , code "ParsersBP.hs"
             , code "ApplicativeChessParsingTemplate.hs"
             , code "ApplicativeChessParsingLive.hs"
+            , code "ApplicativeChessParsingBP.hs"
             -- , code "ApplicativeLive.hs"
             -- , code "ApplicativeTemplate.hs"
             ]
@@ -396,6 +397,7 @@ functionalPage =
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/iacb4N8pbh"
             , code "ApplicativeChessParsingLivePart1-2.hs"
+            , code "ApplicativeChessParsingBP.hs"
             -- , code "ApplicativeLive.hs"
             -- , code "ApplicativeTemplate.hs"
             -- , code "ApplicativeBP.hs"
@@ -411,7 +413,7 @@ functionalPage =
         },
       sspMaterials
       [ code "ParsersBP.hs"
-      , notYetImplementedMaterial "ApplicativeChessParsingBP.hs" "2026-11-11"
+      , code "ApplicativeChessParsingBP.hs"
       ],
       Entry
         { title = "",
@@ -453,6 +455,10 @@ functionalPage =
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/9Hd3RVV27R"
             , code "ApplicativeTemplate.hs"
+            , code "ApplicativeLiveFinal.hs"
+            , code "ApplicativeChessParsingBP.hs"
+            , code "IOBP.hs"
+            , code "IOLive.hs"
             ]
         },
       Entry
@@ -469,6 +475,7 @@ functionalPage =
         },
       sspMaterials
         [ code "IOBP.hs"
+        , code "ApplicativeChessParsingBP.hs"
         ],
       Entry
         { title = "Applicative Parsing",
