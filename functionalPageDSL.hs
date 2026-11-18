@@ -28,7 +28,7 @@ main = do
 config :: Config
 config =
   MkConfig
-    { currentWeek = 9,
+    { currentWeek = 10,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -391,8 +391,8 @@ functionalPage =
           spec =
             Lecture
               { slot = Second,
-                slidesFile' = Left "2026-11-13", -- Right (BBCode "ApplicativeTemplate.hs"),
-                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/a98978fda34a4af6a46a542456c394361d"
+                slidesFile' = Right (BBCode "ApplicativeChessParsingBP.hs"), -- Right (BBCode "ApplicativeTemplate.hs"),
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/100e8b04f74a4571b91e03e1d22e65f41d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/iacb4N8pbh"
@@ -449,8 +449,8 @@ functionalPage =
           spec =
             Lecture
               { slot = First,
-                slidesFile' = Left "2026-11-18",-- Right (BBCode "ApplicativeChessParsingBP.hs"),
-                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/35dc3f438d8148c6b6ddec46dd280c8a1d"
+                slidesFile' = Right (BBCode "IOBP.hs"),-- Right (BBCode "ApplicativeChessParsingBP.hs"),
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/802acf762df04017a0ba6cf6026f8e8a1d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/9Hd3RVV27R"
@@ -462,7 +462,7 @@ functionalPage =
             ]
         },
       Entry
-        { title = "Monads",
+        { title = "Branching IO",
           spec =
             Lecture
               { slot = Second,
@@ -471,64 +471,64 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/pkByWDsxVn"
+            , code "KatamariHaskacyTemplate.hs"
             ]
         },
       sspMaterials
         [ code "IOBP.hs"
         , code "ApplicativeChessParsingBP.hs"
+        , code "KatamariHaskacyBP.hs"
         ],
       Entry
         { title = "Applicative Parsing",
           spec = Worksheet "sheet07.pdf",
-          materials = sheets 7 ++ [MkMaterial "Skeleton code" (sheetLink "Sheet7Skeleton.hs")] -- ++ answers 7
+          materials = sheets 7 ++ [MkMaterial "Skeleton code" (sheetLink "Sheet7Skeleton.hs")] ++ answers 7
         },
       Entry
         { title = "Monoids",
           spec = WorksheetBonus "sheetBonus2.pdf",
-          materials = sheetsBonus 2 ++ [note "Monoids notes" "Monoids.pdf"] -- ++ answersBonus 2
+          materials = sheetsBonus 2 ++ [note "Monoids notes" "Monoids.pdf"] ++ answersBonus 2
         }
     ],
-    -- -- Week 10
-    -- [ Entry
-    --     { title = "IO Cont. (Katamari Haskacy)",
-    --       spec =
-    --         Lecture
-    --           { slot = First,
-    --             slidesFile' = Right (BBCode "KatamariHaskacyBP.hs"),
-    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/f185786896274e328a172000e5d4c6fd1d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/Q8rH5TSGCa"
-    --         , code "MinSheetLecture16.hs"
-    --         , code "KatamariHaskacyBP.hs"
-    --         , code "KatamariHaskacyTemplate.hs"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "Functor and Applicative Power Scaling",
-    --       spec =
-    --         Lecture
-    --           { slot = Second,
-    --             slidesFile' = Right (External "https://wayground.com/join?gc=60715962"),
-    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/b4130a3e72e04b1dac534b1efb6038421d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/fJHcHfLUsz"
-    --         , external "Functor and Applicative slides + quiz" "https://wayground.com/join?gc=60715962"
-    --         ]
-    --     },
-
-    --   Entry
-    --     { title = "IO",
-    --       spec = Worksheet "sheet08.pdf",
-    --       materials = sheets 8 ++ -- answers 8
-    --     },
-    --   Entry
-    --     { title = "Maps, Tries, Sets, and Perfect Trees",
-    --       spec = WorksheetBonus "sheetBonus3.pdf",
-    --       materials = note "Data.Map" "DataMap.pdf" : sheetsBonus 3 ++ answersBonus 3
-    --     }
-    -- ],
+    -- Week 10
+    [ Entry
+        { title = "Monad Power Scaling",
+          spec =
+            Lecture
+              { slot = First,
+                slidesFile' = Left "2026-11-25", -- Right (BBCode "KatamariHaskacyBP.hs"),
+                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/f185786896274e328a172000e5d4c6fd1d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/Q8rH5TSGCa"
+            ]
+        },
+      Entry
+        { title = "Monads cont.",
+          spec =
+            Lecture
+              { slot = Second,
+                slidesFile' = Left "2026-11-27", -- Right (External "https://wayground.com/join?gc=60715962"),
+                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/b4130a3e72e04b1dac534b1efb6038421d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/fJHcHfLUsz"
+            ]
+        },
+      sspMaterials
+        [ 
+        ],
+      Entry
+        { title = "IO",
+          spec = Worksheet "sheet08.pdf",
+          materials = sheets 8 -- ++ -- answers 8
+        },
+      Entry
+        { title = "Maps, Tries, Sets, and Perfect Trees",
+          spec = WorksheetBonus "sheetBonus3.pdf",
+          materials = note "Data.Map" "DataMap.pdf" : sheetsBonus 3 -- ++ answersBonus 3
+        }
+    ],
     -- -- Week 11
     -- [ Entry
     --     { title = "Mock Test",
