@@ -462,7 +462,7 @@ functionalPage =
             ]
         },
       Entry
-        { title = "Branching IO",
+        { title = "Branching IO (Katamari Haskacy)",
           spec =
             Lecture
               { slot = Second,

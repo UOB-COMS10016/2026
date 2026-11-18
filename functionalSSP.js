@@ -97,7 +97,7 @@ const activities = [
 ["7","","Simplify","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/coursework/Simplify/Simplify-Instrs.pdf","","135","3",],
 ["0","","","","","0","0",],
 ["2","Tues 15:00-17:00<br/>CHEM BLDG LT1","Applicative Class + IO","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/IOBP.hs","https://mediasite.bris.ac.uk/Mediasite/Play/802acf762df04017a0ba6cf6026f8e8a1d","138","6",],
-["10","Thur 15:00-16:00<br/>CHEM BLDG LT1","Branching IO","501.html?d=2026-11-20","","144","2",],
+["10","Thur 15:00-16:00<br/>CHEM BLDG LT1","Branching IO (Katamari Haskacy)","501.html?d=2026-11-20","","144","2",],
 ["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Applicative Parsing","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet07.pdf","","146","6",],
 ["0","","","","","0","0",],
 ["6","","","","","152","3",],
