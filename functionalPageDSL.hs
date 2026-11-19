@@ -466,12 +466,14 @@ functionalPage =
           spec =
             Lecture
               { slot = Second,
-                slidesFile' = Left "2026-11-20",
+                slidesFile' = Right (BBCode "KatamariHaskacyBP.hs"),
                 lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/062d4c1d1b504f4799c9d0c255dd0a3f1d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/pkByWDsxVn"
             , code "KatamariHaskacyTemplate.hs"
+            , code "KatamariHaskacyLive.hs"
+            , code "KatamariHaskacyBP.hs"
             ]
         },
       sspMaterials
