@@ -133,17 +133,17 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Fri 06/11/26<br/>10am-11am<br/>PHYS G42 POWELL",   "INPUT &amp; OUTPUT",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_19.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/5d0479bdadf5499a8c252f4911f5883f1d",  "121", "9"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["8", "",                     "",                                 "", "", "0", "0"],
+["6", "Mon 16/11/26<br/>3pm-5pm<br/>MVB2.11/1.15/2.34", "GRAPHICS CHALLENGE", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week09/index.html", "", "107", "6"],
  
 //WEEK 09 - 
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Mon 16/11/26<br/>10am-11am<br/>CHEM BLDG LT1",   "MODULES",     "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_20_OR.pdf",          "https://mediasite.bris.ac.uk/Mediasite/Play/2b6abb9643bb40d5a6b4b0b1e42deef11d", "113", "8"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["6", "Mon 16/11/26<br/>3pm-5pm<br/>MVB2.11/1.15/2.34", "GRAPHICS CHALLENGE", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week09/index.html", "", "107", "6"],
+["7", "in your own time", "SKETCH ASSIGNMENT<br/>(10% of unit mark)<hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week10/index.html", "", "133", "28"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Fri 20/11/26<br/>10am-11am<br/>PHYS G42 POWELL",   "PREPROCESSOR",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_21_OR.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/554d0dcf701a44eca46968749456ee851d",  "112", "1"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["7", "in your own time", "SKETCH ASSIGNMENT<br/>(10% of unit mark)<hr/><b>Submission Deadline</b><br/>Thu 03/12/26<br/>01:00pm UK time<hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week10/index.html", "", "133", "28"],
+["8", "<b>Submission Deadline</b><br/>Thu 03/12/26<br/>01:00pm UK time<hr/><b>Help Labs</b><br/>Mon 23/11/26<br/>Mon 30/11/26<br/>3pm-6pm<br/>MVB2.11/1.15", "", "", "0", "0"], 
  
 //WEEK 10 - 
 ["10", "",                     "",                                 "", "", "0", "0"],
