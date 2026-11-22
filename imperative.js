@@ -133,30 +133,27 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Fri 06/11/26<br/>10am-11am<br/>PHYS G42 POWELL",   "INPUT &amp; OUTPUT",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_19.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/5d0479bdadf5499a8c252f4911f5883f1d",  "121", "9"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["6", "Mon 16/11/26<br/>3pm-5pm<br/>MVB2.11/1.15/2.34", "GRAPHICS CHALLENGE", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week09/index.html", "", "107", "6"],
+["8", "",                     "",                                 "", "", "0", "0"],
  
 //WEEK 09 - 
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Mon 16/11/26<br/>10am-11am<br/>CHEM BLDG LT1",   "MODULES",     "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_20_OR.pdf",          "https://mediasite.bris.ac.uk/Mediasite/Play/2b6abb9643bb40d5a6b4b0b1e42deef11d", "113", "8"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["7", "in your own time", "SKETCH ASSIGNMENT<br/>(10% of unit mark)<hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week10/index.html", "", "133", "28"],
+["6", "Mon 16/11/26<br/>3pm-5pm<br/>MVB2.11/1.15/2.34", "GRAPHICS CHALLENGE", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week09/index.html", "", "107", "6"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Fri 20/11/26<br/>10am-11am<br/>PHYS G42 POWELL",   "PREPROCESSOR",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_21_OR.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/554d0dcf701a44eca46968749456ee851d",  "112", "1"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["8", "<b>Submission Deadline</b><br/>Thu 03/12/26<br/>01:00pm UK time<hr/><b>Help Labs</b><br/>Mon 23/11/26<br/>Mon 30/11/26<br/>3pm-6pm<br/>MVB2.11/1.15", "", "", "0", "0"], 
+["7", "in your own time", "SKETCH ASSIGNMENT<br/>(10% of unit mark)<hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week10/index.html", "", "133", "28"],
  
 //WEEK 10 - 
 ["10", "",                     "",                                 "", "", "0", "0"],
-["0", "Thu 27/11/25<br/>16:00pm-16:50pm<br/>CHEM BLDG LT1",   "DESIGN", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_22.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/f205eea1d0014aa286f0bf98d613ee5f1d",  "112", "1"],
+["0", "Mon 23/11/26<br/>10am-11am<br/>CHEM BLDG LT1",   "DESIGN", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_22.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/f205eea1d0014aa286f0bf98d613ee5f1d",  "112", "1"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["8", "<b>Submission Deadline</b><br/>Thu 04/12/25<br/>01:00pm UK time<hr/>",                     "",                                  "", "", "0", "0"],
-//["7", "in your own time", "SKETCH ASSIGNMENT<br/>(30% of unit mark)<hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/week10CW/index.html", "", "133", "19"],
+["8", "<b>Submission Deadline</b><br/>Thu 03/12/26<br/>01:00pm UK time<hr/><b>Help Labs</b><br/>Mon 23/11/26<br/>Mon 30/11/26<br/>3pm-6pm<br/>MVB2.11/1.15", "", "", "0", "0"], 
 ["10", "",                     "",                                 "", "", "0", "0"],
-["0", "Fri 28/11/25<br/>10:00am-10:50am<br/>PHYS G42 POWELL", "LIBRARIES", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_23.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/3d51c01de15c41ad8a6492b99775bb981d",  "108", "3"],
+["0", "Fri 27/11/26<br/>10am-11am<br/>PHYS G42 POWELL", "LIBRARIES", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_23.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/3d51c01de15c41ad8a6492b99775bb981d",  "108", "3"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["8", "<b>Submission Help</b><br/>Wed 26/11/25<br/>Wed 03/12/25<br/>10:00am-01:00pm<br/>MVB2.11/1.15",                     "",                                  "", "", "0", "0"],
- //["8", "<b>Submission Deadline</b><br/>Thu 28/11/24<br/>01:00pm UK time<hr/><b>Submission Help</b><br/>Weds 20/11/24<br/>Weds 27/11/24<br/>10:00am-01:00pm<br/>MVB2.11/1.15<hr/><a target='_blank' href='https://www.ole.bris.ac.uk/ultra/courses/_259156_1/outline'></a>", "", "", "0", "0"], 
-////["8", "Support Labs<br/>Wed 30/11/22<br/>Wed 07/12/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15<hr/>Extra Help via<br/><a href='https://teams.microsoft.com/l/channel/19%3a6bdf63f6ee8b4aab95c84f75f1b25e7e%40thread.tacv2/Week%252009-11%2520(Imp)%2520-%2520Sketch%2520Assignment?groupId=7830f761-4803-4b75-8a0d-36308e7d5c31&tenantId=b2e47f30-cd7d-4a4e-a5da-b18cf1a4151b' target='_blank'>MS Teams Channel</a><hr/>",                     "",                              "", "", "0", "0"],
+["8", "",                     "",                                 "", "", "0", "0"],
  
 //WEEK 11 - READING WEEK
 ["10", "",                     "",                                 "", "", "0", "0"],
