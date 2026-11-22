@@ -109,7 +109,7 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["12", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["8", "<hr/><a target='_blank' href='https://www.ole.bris.ac.uk/ultra/courses/_269189_1/outline'><b>SUBMIT via Gradebook (Top Menu on Blackboard Page)</b></a>",                     "",                                  "", "", "0", "0"],
+["8", "",                     "",                                  "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
@@ -153,7 +153,7 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Fri 27/11/26<br/>10am-11am<br/>PHYS G42 POWELL", "LIBRARIES", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_23.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/3d51c01de15c41ad8a6492b99775bb981d",  "108", "3"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["8", "",                     "",                                 "", "", "0", "0"],
+["8", "<hr/><a target='_blank' href='https://www.ole.bris.ac.uk/ultra/courses/_269189_1/outline'><b>SUBMIT via Gradebook (Top Menu on Blackboard Page)</b></a>",                     "",                                  "", "", "0", "0"],
  
 //WEEK 11 - READING WEEK
 ["10", "",                     "",                                 "", "", "0", "0"],
