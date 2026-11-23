@@ -518,7 +518,8 @@ functionalPage =
             ]
         },
       sspMaterials
-        [ 
+        [ external "Functor and Applicative Slides + Quiz" "https://wayground.com/activity/admin/presentation/619be26fa9afb8001d4e68fa"
+        , external "Monads Slides + Quiz" "https://wayground.com/admin/presentation/61a1077bf56186001dc1301e"
         ],
       Entry
         { title = "IO",
