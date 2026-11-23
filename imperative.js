@@ -151,8 +151,8 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["8", "<b>Submission Deadline</b><br/>Thu 03/12/26<br/>01:00pm UK time<hr/><b>Help Labs</b><br/>Mon 23/11/26<br/>Mon 30/11/26<br/>3pm-6pm<br/>MVB2.11/1.15", "", "", "0", "0"], 
 ["10", "",                     "",                                 "", "", "0", "0"],
-["0", "Fri 27/11/26<br/>10am-11am<br/>PHYS G42 POWELL", "LIBRARIES", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_23.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/3d51c01de15c41ad8a6492b99775bb981d",  "108", "3"],
-["10", "",                     "",                                 "", "", "0", "0"],
+["0", "Mon 30/11/26<br/>10am-11am<br/>CHEM BLDG LT1", "LIBRARIES", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_23.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/3d51c01de15c41ad8a6492b99775bb981d",  "108", "3"],
+["0", "Fri 27/11/26<br/>10am-11am<br/>PHYS G42 POWELL",   "ADVANCED CONCEPTS",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/imperative/COMS10016_24.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/ff1c3ff560064ad0b8101bbe6cb2c90d1d", "152", "7"],
 ["8", "<hr/><a target='_blank' href='https://www.ole.bris.ac.uk/ultra/courses/_269189_1/outline'><b>SUBMIT via Gradebook (Top Menu on Blackboard Page)</b></a>",                     "",                                  "", "", "0", "0"],
  
 //WEEK 11 - READING WEEK
