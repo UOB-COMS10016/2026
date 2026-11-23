@@ -503,6 +503,7 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/Q8rH5TSGCa"
+            , code "MonadsTemplate.hs"
             ]
         },
       Entry
@@ -510,15 +511,18 @@ functionalPage =
           spec =
             Lecture
               { slot = Second,
-                slidesFile' = Left "2026-11-27", -- Right (External "https://wayground.com/join?gc=60715962"),
+                slidesFile' = Left "2026-11-27", -- Right "MonadsBP.hs",
                 lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/b4130a3e72e04b1dac534b1efb6038421d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/fJHcHfLUsz"
+            , code "MonadsTemplate.hs"
+            -- , code "MonadsBP.hs"
             ]
         },
       sspMaterials
-        [ external "Functor and Applicative Slides + Quiz" "https://wayground.com/activity/admin/presentation/619be26fa9afb8001d4e68fa"
+        [ code "MonadsBP.hs"
+        , external "Functor and Applicative Slides + Quiz" "https://wayground.com/activity/admin/presentation/619be26fa9afb8001d4e68fa"
         , external "Monads Slides + Quiz" "https://wayground.com/admin/presentation/61a1077bf56186001dc1301e"
         ],
       Entry
