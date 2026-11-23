@@ -503,6 +503,7 @@ functionalPage =
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/Q8rH5TSGCa"
+            , code "MonadsTemplate.hs"
             ]
         },
       Entry
@@ -510,15 +511,17 @@ functionalPage =
           spec =
             Lecture
               { slot = Second,
-                slidesFile' = Left "2026-11-27", -- Right (External "https://wayground.com/join?gc=60715962"),
+                slidesFile' = Left "2026-11-27", -- Right "MonadsBP.hs",
                 lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/b4130a3e72e04b1dac534b1efb6038421d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/fJHcHfLUsz"
+            , code "MonadsTemplate.hs"
+            -- , code "MonadsBP.hs"
             ]
         },
       sspMaterials
-        [ 
+        [ code "MonadsBP.hs"
         ],
       Entry
         { title = "IO",
