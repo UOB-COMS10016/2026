@@ -1,4 +1,4 @@
-const currentWeek   = 10;
+const currentWeek   = 11;
 const activityNum   = 8;
 const columnNum     = 4;
 const title         = "FUNCTIONAL PROGRAMMING";
@@ -27,6 +27,8 @@ var categories = [
 ["8","Bonus Worksheet","#EEEEDD","1","","Materials",],
 ["9","Bonus Lecture","#D8CCFF","0","","",],
 ["10","Lecture","#CCCFFF","0","","Materials",],
+["11","Mock Test","#EEEEDD","0","","Materials",],
+["12","Lecture","#CCCFFF","0","","",],
 
 ];
 
@@ -106,11 +108,19 @@ const activities = [
 ["0","","","","","0","0",],
 ["10","Tues 15:00-17:00<br/>CHEM BLDG LT1","Monad Power Scaling","501.html?d=2026-11-25","","162","2",],
 ["10","Thur 15:00-16:00<br/>CHEM BLDG LT1","Monads cont.","501.html?d=2026-11-27","","164","2",],
-["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","IO","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet08.pdf","","166","2",],
+["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","IO","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet08.pdf","","166","5",],
 ["0","","","","","0","0",],
-["6","","","","","168","3",],
+["6","","","","","171","3",],
 ["0","","","","","0","0",],
-["8","(optional)","Maps, Tries, Sets, and Perfect Trees","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheetBonus3.pdf","","171","3",],
+["8","(optional)","Maps, Tries, Sets, and Perfect Trees","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheetBonus3.pdf","","174","3",],
+["11","in your own time","Mock Test","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/notes/mock.pdf","","177","1",],
+["10","Tues 15:00-17:00<br/>CHEM BLDG LT1","Programming as data transformation","501.html?d=2026-12-02","","178","1",],
+["12","Thur 15:00-16:00<br/>CHEM BLDG LT1","Mock Test (interactive quiz)","501.html?d=2026-12-04","","0","0",],
+["4","Wed 9:00-11:00<br/>MVB2.11/2.34/1.15","Monads","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet09.pdf","","179","2",],
+["0","","","","","0","0",],
+["6","","","","","181","1",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -307,12 +317,20 @@ const files = [
 ["165","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/MonadsTemplate.hs","MonadsTemplate.hs",],
 ["166","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet08.pdf","sheet08.pdf",],
 ["167","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet08Dyslexic.pdf","sheet08Dyslexic.pdf",],
-["168","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/MonadsBP.hs","MonadsBP.hs",],
-["169","https://wayground.com/activity/admin/presentation/619be26fa9afb8001d4e68fa","Functor and Applicative Slides + Quiz",],
-["170","https://wayground.com/admin/presentation/61a1077bf56186001dc1301e","Monads Slides + Quiz",],
-["171","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/notes/DataMap.pdf","Data.Map",],
-["172","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheetBonus3.pdf","sheetBonus3.pdf",],
-["173","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheetBonus3Dyslexic.pdf","sheetBonus3Dyslexic.pdf",],
+["168","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/answer08.pdf","answer08.pdf",],
+["169","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/answer08Dyslexic.pdf","answer08Dyslexic.pdf",],
+["170","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/code08.hs","code08.hs",],
+["171","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/code/MonadsBP.hs","MonadsBP.hs",],
+["172","https://wayground.com/activity/admin/presentation/619be26fa9afb8001d4e68fa","Functor and Applicative Slides + Quiz",],
+["173","https://wayground.com/admin/presentation/61a1077bf56186001dc1301e","Monads Slides + Quiz",],
+["174","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/notes/DataMap.pdf","Data.Map",],
+["175","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheetBonus3.pdf","sheetBonus3.pdf",],
+["176","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheetBonus3Dyslexic.pdf","sheetBonus3Dyslexic.pdf",],
+["177","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/notes/mock.pdf","mock.pdf",],
+["178","https://forms.cloud.microsoft/e/jscNkH3f5Z","Minute Sheet",],
+["179","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet09.pdf","sheet09.pdf",],
+["180","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/sheets/sheet09Dyslexic.pdf","sheet09Dyslexic.pdf",],
+["181","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2026_TB-1/content/functional/notes/mock.pdf","mock.pdf",],
 
 ];
 

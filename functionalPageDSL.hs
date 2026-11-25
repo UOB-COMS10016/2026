@@ -28,7 +28,7 @@ main = do
 config :: Config
 config =
   MkConfig
-    { currentWeek = 10,
+    { currentWeek = 11,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -528,7 +528,7 @@ functionalPage =
       Entry
         { title = "IO",
           spec = Worksheet "sheet08.pdf",
-          materials = sheets 8 -- ++ -- answers 8
+          materials = sheets 8 ++ answers 8
         },
       Entry
         { title = "Maps, Tries, Sets, and Perfect Trees",
@@ -536,53 +536,51 @@ functionalPage =
           materials = note "Data.Map" "DataMap.pdf" : sheetsBonus 3 -- ++ answersBonus 3
         }
     ],
-    -- -- Week 11
-    -- [ Entry
-    --     { title = "Mock Test",
-    --       spec = MockTest {test = noteLink "mock.pdf"},
-    --       materials =
-    --         map
-    --           note'
-    --           [ "mock.pdf"
-    --           , "mock-answers.pdf"
-    --           ]
-    --     },
-    --   Entry
-    --     { title = "Monad Power Scaling",
-    --       spec =
-    --         Lecture
-    --           { slot = Other "Mon 10:00-10:50<br/><u><b>PRIORY RD COMPLX LT</b></u>",
-    --             slidesFile' = Right (External "https://wayground.com/join?gc=43039994"),
-    --             lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/41f1261416714e4cb705dba6674ed55e1d"
-    --           },
-    --       materials =
-    --         [ minSheet "https://forms.cloud.microsoft/e/jscNkH3f5Z"
-    --         , external "Monads slides + quiz" "https://wayground.com/join?gc=43039994"
-    --         ]
-    --     },
-    --   --   external "Functors and Applicatives slides + quiz"
-    --   --            "https://quizizz.com/admin/presentation/619be26fa9afb8001d4e68fa"
-    --   -- , code "ApplicativeLive2023.hs"
-
-    --   Entry
-    --     { title = "Mock Test (interactive quiz)",
-    --       spec =
-    --         Lecture
-    --           { slot = Second,
-    --             slidesFile' = Right (External $ "https://wayground.com/join?gc=59581434"),
-    --             lectureRecording = Nothing -- Just "https://"
-    --           },
-    --       materials =
-    --         [ external "Mock quiz" "https://wayground.com/join?gc=59581434"
-    --         , note' "interactive-mock-sheet-with-answers.pdf"
-    --         ]
-    --     },
-    --   Entry
-    --     { title = "Monads",
-    --       spec = Worksheet "sheet09.pdf",
-    --       materials = sheets 9 -- ++ answers 9 -- ++ [sheet "Grogu.hs"]
-    --     }
-    -- ],
+    -- Week 11
+    [ Entry
+        { title = "Mock Test",
+          spec = MockTest {test = noteLink "mock.pdf"},
+          materials =
+            map
+              note'
+              [ "mock.pdf"
+              --, "mock-answers.pdf"
+              ]
+        },
+      Entry
+        { title = "Programming as data transformation",
+          spec =
+            Lecture
+              { slot = First,
+                slidesFile' = Left "2026-12-02",
+                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/41f1261416714e4cb705dba6674ed55e1d"
+              },
+          materials =
+            [ minSheet "https://forms.cloud.microsoft/e/jscNkH3f5Z"
+            ]
+        },
+      Entry
+        { title = "Mock Test (interactive quiz)",
+          spec =
+            Lecture
+              { slot = Second,
+                slidesFile' = Left "2026-12-04",
+                lectureRecording = Nothing -- Just "https://"
+              },
+          materials =
+            [            ]
+        },
+        sspMaterials $ map
+              note'
+              [ "mock.pdf"
+              --, "mock-answers.pdf"
+              ],
+      Entry
+        { title = "Monads",
+          spec = Worksheet "sheet09.pdf",
+          materials = sheets 9 -- ++ answers 9
+        }
+    ],
     -- Week 12/revision week
     [
       --   Entry
