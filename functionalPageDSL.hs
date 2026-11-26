@@ -513,12 +513,13 @@ functionalPage =
           spec =
             Lecture
               { slot = Second,
-                slidesFile' = Left "2026-11-27", -- Right "MonadsBP.hs",
-                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/b4130a3e72e04b1dac534b1efb6038421d"
+                slidesFile' = Right (BBCode "MonadsLive.hs"),
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/90bb17d062bf4700be4048e6fc6837c71d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/fJHcHfLUsz"
             , code "MonadsTemplate.hs"
+            , code "MonadsLive.hs"
             -- , code "MonadsBP.hs"
             ]
         },
