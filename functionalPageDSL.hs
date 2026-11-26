@@ -498,12 +498,14 @@ functionalPage =
           spec =
             Lecture
               { slot = First,
-                slidesFile' = Left "2026-11-25", -- Right (BBCode "KatamariHaskacyBP.hs"),
-                lectureRecording = Nothing -- "https://mediasite.bris.ac.uk/Mediasite/Play/f185786896274e328a172000e5d4c6fd1d"
+                slidesFile' = Right (External "https://wayground.com/admin/presentation/61a1077bf56186001dc1301e"), -- Left "2026-11-25", -- Right (BBCode "KatamariHaskacyBP.hs"),
+                lectureRecording = Just "https://mediasite.bris.ac.uk/Mediasite/Play/e2f52f8f43b5499798f920ffb5bc7ff81d"
               },
           materials =
             [ minSheet "https://forms.cloud.microsoft/e/Q8rH5TSGCa"
             , code "MonadsTemplate.hs"
+            , external "Functor and Applicative Slides + Quiz" "https://wayground.com/activity/admin/presentation/619be26fa9afb8001d4e68fa"
+            , external "Monads Slides + Quiz" "https://wayground.com/admin/presentation/61a1077bf56186001dc1301e"
             ]
         },
       Entry
@@ -533,7 +535,7 @@ functionalPage =
       Entry
         { title = "Maps, Tries, Sets, and Perfect Trees",
           spec = WorksheetBonus "sheetBonus3.pdf",
-          materials = note "Data.Map" "DataMap.pdf" : sheetsBonus 3 -- ++ answersBonus 3
+          materials = note "Data.Map" "DataMap.pdf" : sheetsBonus 3 ++ answersBonus 3
         }
     ],
     -- Week 11
